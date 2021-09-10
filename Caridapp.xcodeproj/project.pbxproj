@@ -1,0 +1,592 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		72997B3326EADC6100099692 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72997B3226EADC6100099692 /* AppDelegate.swift */; };
+		72997B3526EADC6100099692 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72997B3426EADC6100099692 /* SceneDelegate.swift */; };
+		72997B3726EADC6100099692 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72997B3626EADC6100099692 /* ViewController.swift */; };
+		72997B3A26EADC6100099692 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72997B3826EADC6100099692 /* Main.storyboard */; };
+		72997B3C26EADC6200099692 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72997B3B26EADC6200099692 /* Assets.xcassets */; };
+		72997B3F26EADC6200099692 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72997B3D26EADC6200099692 /* LaunchScreen.storyboard */; };
+		72997B4A26EADC6200099692 /* CaridappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72997B4926EADC6200099692 /* CaridappTests.swift */; };
+		72997B5526EADC6200099692 /* CaridappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72997B5426EADC6200099692 /* CaridappUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		72997B4626EADC6200099692 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72997B2726EADC6100099692 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 72997B2E26EADC6100099692;
+			remoteInfo = Caridapp;
+		};
+		72997B5126EADC6200099692 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72997B2726EADC6100099692 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 72997B2E26EADC6100099692;
+			remoteInfo = Caridapp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		72997B2F26EADC6100099692 /* Caridapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Caridapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		72997B3226EADC6100099692 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		72997B3426EADC6100099692 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		72997B3626EADC6100099692 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		72997B3926EADC6100099692 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		72997B3B26EADC6200099692 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		72997B3E26EADC6200099692 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		72997B4026EADC6200099692 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72997B4526EADC6200099692 /* CaridappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CaridappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		72997B4926EADC6200099692 /* CaridappTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaridappTests.swift; sourceTree = "<group>"; };
+		72997B4B26EADC6200099692 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72997B5026EADC6200099692 /* CaridappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CaridappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		72997B5426EADC6200099692 /* CaridappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaridappUITests.swift; sourceTree = "<group>"; };
+		72997B5626EADC6200099692 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		72997B2C26EADC6100099692 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72997B4226EADC6200099692 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72997B4D26EADC6200099692 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		72997B2626EADC6100099692 = {
+			isa = PBXGroup;
+			children = (
+				72997B3126EADC6100099692 /* Caridapp */,
+				72997B4826EADC6200099692 /* CaridappTests */,
+				72997B5326EADC6200099692 /* CaridappUITests */,
+				72997B3026EADC6100099692 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		72997B3026EADC6100099692 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				72997B2F26EADC6100099692 /* Caridapp.app */,
+				72997B4526EADC6200099692 /* CaridappTests.xctest */,
+				72997B5026EADC6200099692 /* CaridappUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		72997B3126EADC6100099692 /* Caridapp */ = {
+			isa = PBXGroup;
+			children = (
+				72997B3226EADC6100099692 /* AppDelegate.swift */,
+				72997B3426EADC6100099692 /* SceneDelegate.swift */,
+				72997B3626EADC6100099692 /* ViewController.swift */,
+				72997B3826EADC6100099692 /* Main.storyboard */,
+				72997B3B26EADC6200099692 /* Assets.xcassets */,
+				72997B3D26EADC6200099692 /* LaunchScreen.storyboard */,
+				72997B4026EADC6200099692 /* Info.plist */,
+			);
+			path = Caridapp;
+			sourceTree = "<group>";
+		};
+		72997B4826EADC6200099692 /* CaridappTests */ = {
+			isa = PBXGroup;
+			children = (
+				72997B4926EADC6200099692 /* CaridappTests.swift */,
+				72997B4B26EADC6200099692 /* Info.plist */,
+			);
+			path = CaridappTests;
+			sourceTree = "<group>";
+		};
+		72997B5326EADC6200099692 /* CaridappUITests */ = {
+			isa = PBXGroup;
+			children = (
+				72997B5426EADC6200099692 /* CaridappUITests.swift */,
+				72997B5626EADC6200099692 /* Info.plist */,
+			);
+			path = CaridappUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		72997B2E26EADC6100099692 /* Caridapp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72997B5926EADC6200099692 /* Build configuration list for PBXNativeTarget "Caridapp" */;
+			buildPhases = (
+				72997B2B26EADC6100099692 /* Sources */,
+				72997B2C26EADC6100099692 /* Frameworks */,
+				72997B2D26EADC6100099692 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Caridapp;
+			productName = Caridapp;
+			productReference = 72997B2F26EADC6100099692 /* Caridapp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		72997B4426EADC6200099692 /* CaridappTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72997B5C26EADC6200099692 /* Build configuration list for PBXNativeTarget "CaridappTests" */;
+			buildPhases = (
+				72997B4126EADC6200099692 /* Sources */,
+				72997B4226EADC6200099692 /* Frameworks */,
+				72997B4326EADC6200099692 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				72997B4726EADC6200099692 /* PBXTargetDependency */,
+			);
+			name = CaridappTests;
+			productName = CaridappTests;
+			productReference = 72997B4526EADC6200099692 /* CaridappTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		72997B4F26EADC6200099692 /* CaridappUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72997B5F26EADC6200099692 /* Build configuration list for PBXNativeTarget "CaridappUITests" */;
+			buildPhases = (
+				72997B4C26EADC6200099692 /* Sources */,
+				72997B4D26EADC6200099692 /* Frameworks */,
+				72997B4E26EADC6200099692 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				72997B5226EADC6200099692 /* PBXTargetDependency */,
+			);
+			name = CaridappUITests;
+			productName = CaridappUITests;
+			productReference = 72997B5026EADC6200099692 /* CaridappUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		72997B2726EADC6100099692 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					72997B2E26EADC6100099692 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					72997B4426EADC6200099692 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 72997B2E26EADC6100099692;
+					};
+					72997B4F26EADC6200099692 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 72997B2E26EADC6100099692;
+					};
+				};
+			};
+			buildConfigurationList = 72997B2A26EADC6100099692 /* Build configuration list for PBXProject "Caridapp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 72997B2626EADC6100099692;
+			productRefGroup = 72997B3026EADC6100099692 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				72997B2E26EADC6100099692 /* Caridapp */,
+				72997B4426EADC6200099692 /* CaridappTests */,
+				72997B4F26EADC6200099692 /* CaridappUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		72997B2D26EADC6100099692 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72997B3F26EADC6200099692 /* LaunchScreen.storyboard in Resources */,
+				72997B3C26EADC6200099692 /* Assets.xcassets in Resources */,
+				72997B3A26EADC6100099692 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72997B4326EADC6200099692 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72997B4E26EADC6200099692 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		72997B2B26EADC6100099692 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72997B3726EADC6100099692 /* ViewController.swift in Sources */,
+				72997B3326EADC6100099692 /* AppDelegate.swift in Sources */,
+				72997B3526EADC6100099692 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72997B4126EADC6200099692 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72997B4A26EADC6200099692 /* CaridappTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72997B4C26EADC6200099692 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72997B5526EADC6200099692 /* CaridappUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		72997B4726EADC6200099692 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 72997B2E26EADC6100099692 /* Caridapp */;
+			targetProxy = 72997B4626EADC6200099692 /* PBXContainerItemProxy */;
+		};
+		72997B5226EADC6200099692 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 72997B2E26EADC6100099692 /* Caridapp */;
+			targetProxy = 72997B5126EADC6200099692 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		72997B3826EADC6100099692 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				72997B3926EADC6100099692 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		72997B3D26EADC6200099692 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				72997B3E26EADC6200099692 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		72997B5726EADC6200099692 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		72997B5826EADC6200099692 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		72997B5A26EADC6200099692 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Caridapp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.caritas.app.Caridapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		72997B5B26EADC6200099692 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Caridapp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.caritas.app.Caridapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		72997B5D26EADC6200099692 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CaridappTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.caritas.app.CaridappTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Caridapp.app/Caridapp";
+			};
+			name = Debug;
+		};
+		72997B5E26EADC6200099692 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CaridappTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.caritas.app.CaridappTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Caridapp.app/Caridapp";
+			};
+			name = Release;
+		};
+		72997B6026EADC6200099692 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CaridappUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.caritas.app.CaridappUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Caridapp;
+			};
+			name = Debug;
+		};
+		72997B6126EADC6200099692 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CaridappUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.caritas.app.CaridappUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Caridapp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		72997B2A26EADC6100099692 /* Build configuration list for PBXProject "Caridapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72997B5726EADC6200099692 /* Debug */,
+				72997B5826EADC6200099692 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72997B5926EADC6200099692 /* Build configuration list for PBXNativeTarget "Caridapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72997B5A26EADC6200099692 /* Debug */,
+				72997B5B26EADC6200099692 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72997B5C26EADC6200099692 /* Build configuration list for PBXNativeTarget "CaridappTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72997B5D26EADC6200099692 /* Debug */,
+				72997B5E26EADC6200099692 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72997B5F26EADC6200099692 /* Build configuration list for PBXNativeTarget "CaridappUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72997B6026EADC6200099692 /* Debug */,
+				72997B6126EADC6200099692 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 72997B2726EADC6100099692 /* Project object */;
+}
