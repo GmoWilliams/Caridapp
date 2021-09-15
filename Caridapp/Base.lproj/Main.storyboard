@@ -43,7 +43,8 @@
                                                 <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                                 <attributedString key="attributedText">
                                                     <fragment>
-                                                        <string key="content">Bienvenido aCaridapp</string>
+                                                        <string key="content">Bienvenido a
+Caridapp</string>
                                                         <attributes>
                                                             <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <font key="NSFont" size="17" name="LucidaGrande"/>
