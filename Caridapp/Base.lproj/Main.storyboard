@@ -997,13 +997,13 @@ recibida.</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bdn-8L-3fz" userLabel="Main">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="84.5" width="414" height="737.5"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UTM-1b-L2c" userLabel="Row1">
-                                        <rect key="frame" x="0.0" y="30" width="414" height="122.5"/>
+                                        <rect key="frame" x="0.0" y="30" width="414" height="110.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c1I-iQ-mwr" userLabel="Bienvenido a Caridapp">
-                                                <rect key="frame" x="124" y="24.5" width="166" height="73.5"/>
+                                                <rect key="frame" x="124" y="22" width="166" height="66.5"/>
                                                 <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                                 <attributedString key="attributedText">
                                                     <fragment>
@@ -1029,10 +1029,10 @@ Caridapp</string>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E95-jm-ke5" userLabel="Row2">
-                                        <rect key="frame" x="20.5" y="172.5" width="373" height="654.5"/>
+                                        <rect key="frame" x="20.5" y="160.5" width="373" height="590"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VpR-uN-9JV">
-                                                <rect key="frame" x="40" y="40" width="298.5" height="33"/>
+                                                <rect key="frame" x="40" y="40" width="298.5" height="29.5"/>
                                                 <attributedString key="attributedText">
                                                     <fragment content="Sign In">
                                                         <attributes>
@@ -1044,12 +1044,12 @@ Caridapp</string>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KG9-E4-7yW" userLabel="Box">
-                                                <rect key="frame" x="0.0" y="0.0" width="373" height="654.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="373" height="590"/>
                                                 <attributedString key="attributedText"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W1D-Sq-Bz4">
-                                                <rect key="frame" x="40" y="93" width="298.5" height="32.5"/>
+                                                <rect key="frame" x="40" y="89.5" width="298.5" height="29.5"/>
                                                 <attributedString key="attributedText">
                                                     <fragment content="Nombre de Usuario:">
                                                         <attributes>
@@ -1062,12 +1062,12 @@ Caridapp</string>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WlQ-i8-m3X" userLabel="john doe">
-                                                <rect key="frame" x="40" y="125.5" width="298.5" height="33"/>
+                                                <rect key="frame" x="40" y="119" width="298.5" height="29.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BeH-uW-ba6" userLabel="Contraseña">
-                                                <rect key="frame" x="40" y="198.5" width="298.5" height="32.5"/>
+                                                <rect key="frame" x="40" y="188.5" width="298.5" height="29.5"/>
                                                 <attributedString key="attributedText">
                                                     <fragment content="Contraseña:">
                                                         <attributes>
@@ -1079,12 +1079,12 @@ Caridapp</string>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9qA-Hq-dFb" userLabel="******">
-                                                <rect key="frame" x="40" y="231" width="298.5" height="33"/>
+                                                <rect key="frame" x="40" y="218" width="298.5" height="29.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ptE-Yd-cID">
-                                                <rect key="frame" x="134.5" y="304" width="104" height="32.5"/>
+                                                <rect key="frame" x="134.5" y="287.5" width="104" height="29.5"/>
                                                 <color key="backgroundColor" name="AccentColor"/>
                                                 <state key="normal">
                                                     <attributedString key="attributedTitle">
@@ -1102,14 +1102,16 @@ Caridapp</string>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <color key="tintColor" systemColor="labelColor"/>
                                         <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="W1D-Sq-Bz4" secondAttribute="trailing" constant="34.5" id="34e-S1-MCg"/>
                                             <constraint firstItem="BeH-uW-ba6" firstAttribute="top" secondItem="WlQ-i8-m3X" secondAttribute="bottom" constant="40" id="5iI-za-ktt"/>
                                             <constraint firstItem="KG9-E4-7yW" firstAttribute="centerX" secondItem="E95-jm-ke5" secondAttribute="centerX" id="6kE-7L-45Q"/>
                                             <constraint firstItem="WlQ-i8-m3X" firstAttribute="top" secondItem="W1D-Sq-Bz4" secondAttribute="bottom" id="FX5-oz-Tu7"/>
                                             <constraint firstItem="KG9-E4-7yW" firstAttribute="width" secondItem="E95-jm-ke5" secondAttribute="width" id="Fdi-az-iuf"/>
                                             <constraint firstItem="BeH-uW-ba6" firstAttribute="height" secondItem="VpR-uN-9JV" secondAttribute="height" id="JdL-BY-VpE"/>
-                                            <constraint firstItem="BeH-uW-ba6" firstAttribute="leading" secondItem="VpR-uN-9JV" secondAttribute="leading" id="JpR-hM-kAt"/>
+                                            <constraint firstItem="BeH-uW-ba6" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="VpR-uN-9JV" secondAttribute="leading" id="JpR-hM-kAt"/>
                                             <constraint firstItem="9qA-Hq-dFb" firstAttribute="height" secondItem="VpR-uN-9JV" secondAttribute="height" id="L3J-sH-dqK"/>
-                                            <constraint firstItem="W1D-Sq-Bz4" firstAttribute="leading" secondItem="VpR-uN-9JV" secondAttribute="leading" id="Oi3-0G-MJS"/>
+                                            <constraint firstItem="W1D-Sq-Bz4" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="VpR-uN-9JV" secondAttribute="leading" id="Oi3-0G-MJS"/>
+                                            <constraint firstAttribute="trailing" secondItem="BeH-uW-ba6" secondAttribute="trailing" constant="34.5" id="PAx-xP-BmT"/>
                                             <constraint firstItem="ptE-Yd-cID" firstAttribute="width" secondItem="VpR-uN-9JV" secondAttribute="width" multiplier="0.35" id="PI9-84-slj"/>
                                             <constraint firstItem="BeH-uW-ba6" firstAttribute="width" secondItem="VpR-uN-9JV" secondAttribute="width" id="Rh9-k2-dPj"/>
                                             <constraint firstItem="ptE-Yd-cID" firstAttribute="centerX" secondItem="KG9-E4-7yW" secondAttribute="centerX" id="WR2-QH-RFi"/>
@@ -1127,6 +1129,7 @@ Caridapp</string>
                                             <constraint firstItem="W1D-Sq-Bz4" firstAttribute="width" secondItem="VpR-uN-9JV" secondAttribute="width" id="s5W-nw-obi"/>
                                             <constraint firstItem="WlQ-i8-m3X" firstAttribute="leading" secondItem="VpR-uN-9JV" secondAttribute="leading" id="t3e-ld-U7c"/>
                                             <constraint firstItem="VpR-uN-9JV" firstAttribute="height" secondItem="E95-jm-ke5" secondAttribute="height" multiplier="0.05" id="tR9-TV-6yL"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="VpR-uN-9JV" secondAttribute="trailing" constant="20" symbolic="YES" id="tSH-6q-HtN"/>
                                             <constraint firstItem="KG9-E4-7yW" firstAttribute="height" secondItem="E95-jm-ke5" secondAttribute="height" id="tbO-Lg-tId"/>
                                             <constraint firstItem="KG9-E4-7yW" firstAttribute="centerY" secondItem="E95-jm-ke5" secondAttribute="centerY" id="uAH-9F-vJ5"/>
                                             <constraint firstItem="VpR-uN-9JV" firstAttribute="top" secondItem="E95-jm-ke5" secondAttribute="top" constant="40" id="zTr-o7-sLH"/>
@@ -1140,7 +1143,6 @@ Caridapp</string>
                                     <constraint firstItem="UTM-1b-L2c" firstAttribute="height" secondItem="bdn-8L-3fz" secondAttribute="height" multiplier="0.15" id="EHv-cY-d3S"/>
                                     <constraint firstItem="E95-jm-ke5" firstAttribute="centerX" secondItem="bdn-8L-3fz" secondAttribute="centerX" id="FUg-sh-RQb"/>
                                     <constraint firstItem="E95-jm-ke5" firstAttribute="top" secondItem="UTM-1b-L2c" secondAttribute="bottom" constant="20" id="IWM-Xr-VrK"/>
-                                    <constraint firstItem="E95-jm-ke5" firstAttribute="centerY" secondItem="bdn-8L-3fz" secondAttribute="centerY" id="S9u-0P-KcD"/>
                                     <constraint firstItem="E95-jm-ke5" firstAttribute="width" secondItem="bdn-8L-3fz" secondAttribute="width" multiplier="0.9" id="Zaf-cm-K4K"/>
                                     <constraint firstItem="UTM-1b-L2c" firstAttribute="leading" secondItem="bdn-8L-3fz" secondAttribute="leading" id="qOf-Lv-xge"/>
                                     <constraint firstItem="UTM-1b-L2c" firstAttribute="top" secondItem="bdn-8L-3fz" secondAttribute="top" constant="30" id="r4e-E8-mSi"/>
@@ -1151,7 +1153,6 @@ Caridapp</string>
                         <viewLayoutGuide key="safeArea" id="E7u-vk-Pxr"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="bdn-8L-3fz" firstAttribute="height" secondItem="E7u-vk-Pxr" secondAttribute="height" id="8gh-SD-8X6"/>
                             <constraint firstItem="bdn-8L-3fz" firstAttribute="centerX" secondItem="E7u-vk-Pxr" secondAttribute="centerX" id="Yc7-pe-6zw"/>
                             <constraint firstItem="bdn-8L-3fz" firstAttribute="centerY" secondItem="E7u-vk-Pxr" secondAttribute="centerY" id="ajG-Ig-uSn"/>
                             <constraint firstItem="bdn-8L-3fz" firstAttribute="width" secondItem="E7u-vk-Pxr" secondAttribute="width" id="pVX-S0-dTJ"/>
@@ -1171,13 +1172,13 @@ Caridapp</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zdz-zK-rlu" userLabel="Main">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="-234.5" width="414" height="1375"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RxH-Zr-jJm" userLabel="Row1">
-                                        <rect key="frame" x="0.0" y="30" width="414" height="122.5"/>
+                                        <rect key="frame" x="0.0" y="30" width="414" height="206.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zUp-xx-T1L" userLabel="Bienvenido a Caridapp">
-                                                <rect key="frame" x="124" y="24.5" width="166" height="73.5"/>
+                                                <rect key="frame" x="124" y="41" width="166" height="124"/>
                                                 <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                                 <attributedString key="attributedText">
                                                     <fragment content="Caridapp">
@@ -1201,27 +1202,27 @@ Caridapp</string>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8K7-Hz-xH3" userLabel="Row2">
-                                        <rect key="frame" x="20.5" y="172.5" width="373" height="654.5"/>
+                                        <rect key="frame" x="20.5" y="256.5" width="373" height="1100"/>
                                         <subviews>
                                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tII-kx-QkA" userLabel="Back">
-                                                <rect key="frame" x="0.0" y="0.0" width="74.5" height="26.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="74.5" height="44"/>
                                                 <items>
                                                     <navigationItem title="Back" id="BgM-No-Mgd"/>
                                                 </items>
                                             </navigationBar>
                                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G8j-06-Vju" userLabel="Productos">
-                                                <rect key="frame" x="40" y="89" width="298.5" height="26.5"/>
+                                                <rect key="frame" x="40" y="129" width="298.5" height="44"/>
                                                 <items>
                                                     <navigationItem title="Productos más racurrentes" id="oBI-9t-iQ7"/>
                                                 </items>
                                             </navigationBar>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hJx-0p-Xg6" userLabel="Box">
-                                                <rect key="frame" x="0.0" y="0.0" width="165" height="21"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hJx-0p-Xg6" userLabel="Box">
+                                                <rect key="frame" x="0.0" y="0.0" width="373" height="1100"/>
                                                 <attributedString key="attributedText"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zdg-eO-jlu">
-                                                <rect key="frame" x="40" y="56.5" width="298.5" height="32.5"/>
+                                                <rect key="frame" x="40" y="74" width="298.5" height="55"/>
                                                 <attributedString key="attributedText">
                                                     <fragment content="Registrar Importación">
                                                         <attributes>
@@ -1233,7 +1234,7 @@ Caridapp</string>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O4i-4r-iRR" userLabel="Mi Producto No Se Encuentra  en la Lista">
-                                                <rect key="frame" x="40" y="135.5" width="298.5" height="65"/>
+                                                <rect key="frame" x="40" y="193" width="298.5" height="110"/>
                                                 <attributedString key="attributedText">
                                                     <fragment>
                                                         <string key="content">Mi Producto No Se Encuentra 
@@ -1247,7 +1248,7 @@ en la Lista</string>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zoa-Mu-jaR">
-                                                <rect key="frame" x="160" y="200.5" width="179" height="21.5"/>
+                                                <rect key="frame" x="160" y="303" width="179" height="35.5"/>
                                                 <attributedString key="attributedText">
                                                     <fragment content="Nombre del Producto:">
                                                         <attributes>
@@ -1259,12 +1260,12 @@ en la Lista</string>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Oe-zz-tdr" userLabel="nombre del producto">
-                                                <rect key="frame" x="160" y="222" width="179" height="21"/>
+                                                <rect key="frame" x="160" y="338.5" width="179" height="36"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mDA-ZG-BCR">
-                                                <rect key="frame" x="160" y="273" width="179" height="21.5"/>
+                                                <rect key="frame" x="160" y="404.5" width="179" height="35.5"/>
                                                 <attributedString key="attributedText">
                                                     <fragment content="Descripción">
                                                         <attributes>
@@ -1276,12 +1277,12 @@ en la Lista</string>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pBn-7a-dPh" userLabel="descripcion">
-                                                <rect key="frame" x="160" y="294.5" width="179" height="21.5"/>
+                                                <rect key="frame" x="160" y="440" width="179" height="36"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Abj-E3-cE8">
-                                                <rect key="frame" x="160" y="346" width="179" height="21"/>
+                                                <rect key="frame" x="160" y="506" width="179" height="35.5"/>
                                                 <attributedString key="attributedText">
                                                     <fragment content="UPC:">
                                                         <attributes>
@@ -1293,12 +1294,12 @@ en la Lista</string>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aLx-oa-Z4I" userLabel="upc">
-                                                <rect key="frame" x="160" y="367" width="179" height="21.5"/>
+                                                <rect key="frame" x="160" y="541.5" width="179" height="36"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j2m-lR-ETa">
-                                                <rect key="frame" x="160" y="418.5" width="179" height="21"/>
+                                                <rect key="frame" x="160" y="607.5" width="179" height="35.5"/>
                                                 <attributedString key="attributedText">
                                                     <fragment content="Peso:">
                                                         <attributes>
@@ -1310,12 +1311,12 @@ en la Lista</string>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AzD-ro-ixM" userLabel="peso">
-                                                <rect key="frame" x="160" y="448.5" width="179" height="21"/>
+                                                <rect key="frame" x="160" y="637.5" width="179" height="35.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wa5-ki-5uf">
-                                                <rect key="frame" x="160" y="499.5" width="179" height="21.5"/>
+                                                <rect key="frame" x="160" y="703" width="179" height="36"/>
                                                 <attributedString key="attributedText">
                                                     <fragment content="Fotografía:">
                                                         <attributes>
@@ -1327,10 +1328,10 @@ en la Lista</string>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="glP-GJ-nbo">
-                                                <rect key="frame" x="160" y="521" width="179" height="85"/>
+                                                <rect key="frame" x="160" y="739" width="179" height="143"/>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qcn-e1-u5d">
-                                                <rect key="frame" x="40" y="346" width="107.5" height="29.5"/>
+                                                <rect key="frame" x="40" y="506" width="107.5" height="49.5"/>
                                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                                 <state key="normal">
                                                     <attributedString key="attributedTitle">
@@ -1349,6 +1350,8 @@ en la Lista</string>
                                         <constraints>
                                             <constraint firstItem="O4i-4r-iRR" firstAttribute="height" secondItem="Zdg-eO-jlu" secondAttribute="height" multiplier="2" id="1fW-Qt-mrd"/>
                                             <constraint firstItem="pBn-7a-dPh" firstAttribute="leading" secondItem="mDA-ZG-BCR" secondAttribute="leading" id="1vw-bZ-uWU"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="mDA-ZG-BCR" secondAttribute="trailing" constant="20" symbolic="YES" id="2uV-ow-jFW"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Abj-E3-cE8" secondAttribute="trailing" constant="20" symbolic="YES" id="3Du-CY-ipI"/>
                                             <constraint firstItem="Zdg-eO-jlu" firstAttribute="height" secondItem="8K7-Hz-xH3" secondAttribute="height" multiplier="0.05" id="5AV-P6-ZJK"/>
                                             <constraint firstItem="Abj-E3-cE8" firstAttribute="top" secondItem="pBn-7a-dPh" secondAttribute="bottom" constant="30" id="5xZ-ae-8RR"/>
                                             <constraint firstItem="Qcn-e1-u5d" firstAttribute="leading" secondItem="O4i-4r-iRR" secondAttribute="leading" id="7CT-ng-uio"/>
@@ -1372,9 +1375,11 @@ en la Lista</string>
                                             <constraint firstItem="Zdg-eO-jlu" firstAttribute="leading" secondItem="8K7-Hz-xH3" secondAttribute="leading" constant="40" id="HcG-WA-6Vd"/>
                                             <constraint firstItem="wa5-ki-5uf" firstAttribute="leading" secondItem="AzD-ro-ixM" secondAttribute="leading" id="Hh3-pw-gjs"/>
                                             <constraint firstItem="mDA-ZG-BCR" firstAttribute="height" secondItem="7Oe-zz-tdr" secondAttribute="height" id="I1c-9m-Fmg"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="O4i-4r-iRR" secondAttribute="trailing" constant="20" symbolic="YES" id="IwH-c2-PxG"/>
                                             <constraint firstItem="zoa-Mu-jaR" firstAttribute="top" secondItem="O4i-4r-iRR" secondAttribute="bottom" id="KEV-rk-Wdq"/>
                                             <constraint firstItem="Qcn-e1-u5d" firstAttribute="top" secondItem="Abj-E3-cE8" secondAttribute="top" id="KVt-9R-L4W"/>
                                             <constraint firstItem="tII-kx-QkA" firstAttribute="leading" secondItem="8K7-Hz-xH3" secondAttribute="leading" id="ND0-yc-Jta"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="j2m-lR-ETa" secondAttribute="trailing" constant="20" symbolic="YES" id="PR7-oU-JcG"/>
                                             <constraint firstItem="pBn-7a-dPh" firstAttribute="height" secondItem="mDA-ZG-BCR" secondAttribute="height" id="SML-2p-pju"/>
                                             <constraint firstItem="pBn-7a-dPh" firstAttribute="top" secondItem="mDA-ZG-BCR" secondAttribute="bottom" id="Sdf-RF-M1s"/>
                                             <constraint firstItem="hJx-0p-Xg6" firstAttribute="width" secondItem="8K7-Hz-xH3" secondAttribute="width" id="TH3-67-eg0"/>
@@ -1385,6 +1390,7 @@ en la Lista</string>
                                             <constraint firstItem="O4i-4r-iRR" firstAttribute="leading" secondItem="Zdg-eO-jlu" secondAttribute="leading" id="YwC-dD-YXQ"/>
                                             <constraint firstItem="wa5-ki-5uf" firstAttribute="top" secondItem="AzD-ro-ixM" secondAttribute="bottom" constant="30" id="ZUU-Lj-cW6"/>
                                             <constraint firstItem="zoa-Mu-jaR" firstAttribute="leading" secondItem="Zdg-eO-jlu" secondAttribute="leading" constant="120" id="a5F-cW-h4R"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Zdg-eO-jlu" secondAttribute="trailing" constant="20" symbolic="YES" id="a8G-kk-gVA"/>
                                             <constraint firstItem="Abj-E3-cE8" firstAttribute="width" secondItem="pBn-7a-dPh" secondAttribute="width" id="cPL-rA-q8s"/>
                                             <constraint firstItem="pBn-7a-dPh" firstAttribute="width" secondItem="mDA-ZG-BCR" secondAttribute="width" id="dpo-PX-Cmp"/>
                                             <constraint firstItem="G8j-06-Vju" firstAttribute="leading" secondItem="Zdg-eO-jlu" secondAttribute="leading" id="eVa-r3-oqy"/>
@@ -1395,6 +1401,7 @@ en la Lista</string>
                                             <constraint firstItem="Qcn-e1-u5d" firstAttribute="height" secondItem="zoa-Mu-jaR" secondAttribute="height" multiplier="1.39535" id="mFP-3h-iV5"/>
                                             <constraint firstItem="O4i-4r-iRR" firstAttribute="top" secondItem="G8j-06-Vju" secondAttribute="bottom" constant="20" id="mJK-uv-3jm"/>
                                             <constraint firstItem="Abj-E3-cE8" firstAttribute="height" secondItem="pBn-7a-dPh" secondAttribute="height" id="mbC-pe-veJ"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="zoa-Mu-jaR" secondAttribute="trailing" constant="20" symbolic="YES" id="mr5-qH-FPp"/>
                                             <constraint firstItem="j2m-lR-ETa" firstAttribute="top" secondItem="aLx-oa-Z4I" secondAttribute="bottom" constant="30" id="mrV-tG-tIM"/>
                                             <constraint firstItem="tII-kx-QkA" firstAttribute="height" secondItem="8K7-Hz-xH3" secondAttribute="height" multiplier="0.04" id="nrc-xK-2Tt"/>
                                             <constraint firstItem="glP-GJ-nbo" firstAttribute="leading" secondItem="wa5-ki-5uf" secondAttribute="leading" id="oBk-gY-LPG"/>
@@ -1412,12 +1419,12 @@ en la Lista</string>
                                             <constraint firstItem="AzD-ro-ixM" firstAttribute="leading" secondItem="j2m-lR-ETa" secondAttribute="leading" id="xBr-3Q-sXb"/>
                                             <constraint firstItem="G8j-06-Vju" firstAttribute="width" secondItem="Zdg-eO-jlu" secondAttribute="width" id="zBo-KI-2OJ"/>
                                             <constraint firstItem="zoa-Mu-jaR" firstAttribute="width" secondItem="Zdg-eO-jlu" secondAttribute="width" multiplier="0.6" id="zS8-Yr-SR6"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="wa5-ki-5uf" secondAttribute="trailing" constant="20" symbolic="YES" id="zzz-tL-7MG"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstItem="8K7-Hz-xH3" firstAttribute="centerY" secondItem="Zdz-zK-rlu" secondAttribute="centerY" id="365-mA-QNM"/>
                                     <constraint firstItem="8K7-Hz-xH3" firstAttribute="width" secondItem="Zdz-zK-rlu" secondAttribute="width" multiplier="0.9" id="9yk-Ea-CCj"/>
                                     <constraint firstItem="8K7-Hz-xH3" firstAttribute="centerX" secondItem="Zdz-zK-rlu" secondAttribute="centerX" id="An1-SQ-xGn"/>
                                     <constraint firstItem="RxH-Zr-jJm" firstAttribute="height" secondItem="Zdz-zK-rlu" secondAttribute="height" multiplier="0.15" id="DY7-yf-Aev"/>
@@ -1432,7 +1439,6 @@ en la Lista</string>
                         <viewLayoutGuide key="safeArea" id="ngk-BS-98r"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Zdz-zK-rlu" firstAttribute="height" secondItem="ngk-BS-98r" secondAttribute="height" id="3Sy-9O-36E"/>
                             <constraint firstItem="Zdz-zK-rlu" firstAttribute="centerY" secondItem="ngk-BS-98r" secondAttribute="centerY" id="AkB-Il-hgX"/>
                             <constraint firstItem="Zdz-zK-rlu" firstAttribute="width" secondItem="ngk-BS-98r" secondAttribute="width" id="IyX-z1-nEz"/>
                             <constraint firstItem="Zdz-zK-rlu" firstAttribute="centerX" secondItem="ngk-BS-98r" secondAttribute="centerX" id="mM2-Xz-GPM"/>
