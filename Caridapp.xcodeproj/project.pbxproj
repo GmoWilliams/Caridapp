@@ -15,11 +15,11 @@
 		72997B3F26EADC6200099692 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72997B3D26EADC6200099692 /* LaunchScreen.storyboard */; };
 		72997B4A26EADC6200099692 /* CaridappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72997B4926EADC6200099692 /* CaridappTests.swift */; };
 		72997B5526EADC6200099692 /* CaridappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72997B5426EADC6200099692 /* CaridappUITests.swift */; };
-
-		C0FF88B726F80F2D006BA0F9 /* ViewControllerBDA14.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FF88B626F80F2D006BA0F9 /* ViewControllerBDA14.swift */; };
-
 		72997B6626EAF62900099692 /* RegisterProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72997B6526EAF62900099692 /* RegisterProductViewController.swift */; };
-
+		C0B23DD72703CA34003CE6DE /* VewControllerBDA14_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B23DD62703CA34003CE6DE /* VewControllerBDA14_2.swift */; };
+		C0B23DDC2703CB78003CE6DE /* VewControllerReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B23DDB2703CB78003CE6DE /* VewControllerReceiver.swift */; };
+		C0B23DE52703CC96003CE6DE /* ViewControllerBDA15.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B23DE42703CC96003CE6DE /* ViewControllerBDA15.swift */; };
+		C0FF88B726F80F2D006BA0F9 /* ViewControllerBDA14.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FF88B626F80F2D006BA0F9 /* ViewControllerBDA14.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,11 +54,11 @@
 		72997B5026EADC6200099692 /* CaridappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CaridappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		72997B5426EADC6200099692 /* CaridappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaridappUITests.swift; sourceTree = "<group>"; };
 		72997B5626EADC6200099692 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-
-		C0FF88B626F80F2D006BA0F9 /* ViewControllerBDA14.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerBDA14.swift; sourceTree = "<group>"; };
-
 		72997B6526EAF62900099692 /* RegisterProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterProductViewController.swift; sourceTree = "<group>"; };
-
+		C0B23DD62703CA34003CE6DE /* VewControllerBDA14_2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VewControllerBDA14_2.swift; sourceTree = "<group>"; };
+		C0B23DDB2703CB78003CE6DE /* VewControllerReceiver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VewControllerReceiver.swift; sourceTree = "<group>"; };
+		C0B23DE42703CC96003CE6DE /* ViewControllerBDA15.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerBDA15.swift; sourceTree = "<group>"; };
+		C0FF88B626F80F2D006BA0F9 /* ViewControllerBDA14.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerBDA14.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,7 +111,7 @@
 			children = (
 				72997B3226EADC6100099692 /* AppDelegate.swift */,
 				72997B3426EADC6100099692 /* SceneDelegate.swift */,
-				C0FF88B626F80F2D006BA0F9 /* ViewControllerBDA14.swift */,
+				C0B23DE02703CC07003CE6DE /* ViewControllerBDA14-15 */,
 				72997B3626EADC6100099692 /* ViewController.swift */,
 				72997B3826EADC6100099692 /* Main.storyboard */,
 				72997B3B26EADC6200099692 /* Assets.xcassets */,
@@ -138,6 +138,17 @@
 				72997B5626EADC6200099692 /* Info.plist */,
 			);
 			path = CaridappUITests;
+			sourceTree = "<group>";
+		};
+		C0B23DE02703CC07003CE6DE /* ViewControllerBDA14-15 */ = {
+			isa = PBXGroup;
+			children = (
+				C0B23DDB2703CB78003CE6DE /* VewControllerReceiver.swift */,
+				C0FF88B626F80F2D006BA0F9 /* ViewControllerBDA14.swift */,
+				C0B23DD62703CA34003CE6DE /* VewControllerBDA14_2.swift */,
+				C0B23DE42703CC96003CE6DE /* ViewControllerBDA15.swift */,
+			);
+			path = "ViewControllerBDA14-15";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,14 +281,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0B23DE52703CC96003CE6DE /* ViewControllerBDA15.swift in Sources */,
 				72997B3726EADC6100099692 /* ViewController.swift in Sources */,
+				C0B23DDC2703CB78003CE6DE /* VewControllerReceiver.swift in Sources */,
 				72997B3326EADC6100099692 /* AppDelegate.swift in Sources */,
+				C0B23DD72703CA34003CE6DE /* VewControllerBDA14_2.swift in Sources */,
 				72997B3526EADC6100099692 /* SceneDelegate.swift in Sources */,
-
 				C0FF88B726F80F2D006BA0F9 /* ViewControllerBDA14.swift in Sources */,
-
 				72997B6626EAF62900099692 /* RegisterProductViewController.swift in Sources */,
-
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
