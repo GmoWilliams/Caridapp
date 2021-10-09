@@ -23,15 +23,35 @@ extension UIViewController {
 
 class ViewControllerBDA11: UIViewController {
     //let addImportation =
-    let importationService = ImportationService()
+    //let importationService = ImportationService()
     
     @IBAction func registrarAction(_ sender: Any) {
         
-        if let nameP = nombreTF.text {
+        let alert = UIAlertController(title: "Registrar Datos", message: "Se enviara la informacion al servidor", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Cancelar", style:.cancel, handler: nil))
+        
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: {
+            action in
+            guard let nameP = self.nombreTF.text else {print("No hay nada escrito"); return}
+            
+            let datos = Importation(name: nameP)
+            print (datos)
+            let postRequest = APIRequest(endpoint: "import")
+            postRequest.save(datos, completion: {result in
+                switch result{
+                case .success(let datos):
+                    print("Nombre del producto: \(datos.name)")
+                case .failure(let err):
+                    print("Ocurrio un error: \(err)")
+                }
+                })
+        }))
+        self.present(alert, animated: true)
+        /*if let nameP = nombreTF.text {
             if !nameP.isEmpty {
                 let name = Importation(name: String(nameP))
             }
-        }
+        }*/
         
     }
     
@@ -47,7 +67,7 @@ class ViewControllerBDA11: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    /*override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showHistory" {
             let controller = (segue.destination as! ImportationTableView)
             
@@ -60,7 +80,7 @@ class ViewControllerBDA11: UIViewController {
             }
             
         }
-    }
+    }*/
     
 
 }// end of class

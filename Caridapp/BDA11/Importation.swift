@@ -11,7 +11,7 @@ import Foundation
 //@objc(Importation)
 public class Importation: Codable{
     //public let id: Int32!
-    public let name: String
+    public var name: String
     //public let desc: String!
     //public let deletedDate: Date?
     public init (name: String){
