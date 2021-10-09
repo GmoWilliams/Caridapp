@@ -16,6 +16,9 @@
 		72997B4A26EADC6200099692 /* CaridappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72997B4926EADC6200099692 /* CaridappTests.swift */; };
 		72997B5526EADC6200099692 /* CaridappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72997B5426EADC6200099692 /* CaridappUITests.swift */; };
 		72997B6626EAF62900099692 /* RegisterProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72997B6526EAF62900099692 /* RegisterProductViewController.swift */; };
+		8A18D29727121ADD00D5720E /* DonationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A18D29627121ADD00D5720E /* DonationService.swift */; };
+		8A18D29C27122D8400D5720E /* CaridappServiceTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A18D29B27122D8400D5720E /* CaridappServiceTestCase.swift */; };
+		8A18D2A027122EDA00D5720E /* DonationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A18D29627121ADD00D5720E /* DonationService.swift */; };
 		8A9C956E27051A30004DE62A /* Donation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9C956C27051A30004DE62A /* Donation.swift */; };
 		8A9C956F27051A30004DE62A /* Donation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9C956C27051A30004DE62A /* Donation.swift */; };
 		8A9C957027051A30004DE62A /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9C956D27051A30004DE62A /* Product.swift */; };
@@ -56,6 +59,8 @@
 		72997B5426EADC6200099692 /* CaridappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaridappUITests.swift; sourceTree = "<group>"; };
 		72997B5626EADC6200099692 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		72997B6526EAF62900099692 /* RegisterProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterProductViewController.swift; sourceTree = "<group>"; };
+		8A18D29627121ADD00D5720E /* DonationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationService.swift; sourceTree = "<group>"; };
+		8A18D29B27122D8400D5720E /* CaridappServiceTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaridappServiceTestCase.swift; sourceTree = "<group>"; };
 		8A9C956C27051A30004DE62A /* Donation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Donation.swift; sourceTree = "<group>"; };
 		8A9C956D27051A30004DE62A /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		C0FF88B626F80F2D006BA0F9 /* ViewControllerBDA14.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerBDA14.swift; sourceTree = "<group>"; };
@@ -127,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				72997B4926EADC6200099692 /* CaridappTests.swift */,
+				8A18D29B27122D8400D5720E /* CaridappServiceTestCase.swift */,
 				72997B4B26EADC6200099692 /* Info.plist */,
 			);
 			path = CaridappTests;
@@ -141,9 +147,18 @@
 			path = CaridappUITests;
 			sourceTree = "<group>";
 		};
+		8A18D29527121A5B00D5720E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8A18D29627121ADD00D5720E /* DonationService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		8A9C956A27051A30004DE62A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8A18D29527121A5B00D5720E /* Services */,
 				8A9C956B27051A30004DE62A /* ValueObject */,
 			);
 			path = Model;
@@ -293,6 +308,7 @@
 				72997B3526EADC6100099692 /* SceneDelegate.swift in Sources */,
 				8A9C956E27051A30004DE62A /* Donation.swift in Sources */,
 				C0FF88B726F80F2D006BA0F9 /* ViewControllerBDA14.swift in Sources */,
+				8A18D29727121ADD00D5720E /* DonationService.swift in Sources */,
 				72997B6626EAF62900099692 /* RegisterProductViewController.swift in Sources */,
 				8A9C957027051A30004DE62A /* Product.swift in Sources */,
 			);
@@ -303,6 +319,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				72997B4A26EADC6200099692 /* CaridappTests.swift in Sources */,
+				8A18D29C27122D8400D5720E /* CaridappServiceTestCase.swift in Sources */,
+				8A18D2A027122EDA00D5720E /* DonationService.swift in Sources */,
 				8A9C956F27051A30004DE62A /* Donation.swift in Sources */,
 				8A9C957127051A30004DE62A /* Product.swift in Sources */,
 			);

@@ -7,10 +7,21 @@
 
 import Foundation
 
-public class Donation {
-    public var productArray: [Product];
+public class Donation: Codable {
+    public var productArray = [Product]();
+    public var status: Int?;
+    public var receptionDate: Date?;
+    public var pickUpDate: Date?;
+    public var warehouse: Int?;
     
-    public init (products: [Product]){
-        self.productArray = products;
+    public init (status: Int?, receptionDate: Date?, pickUpDate: Date?, warehouse: Int?){
+        self.status = status;
+        self.receptionDate = receptionDate;
+        self.pickUpDate = pickUpDate;
+        self.warehouse = warehouse;
+    }
+    
+    public func addProduct (product: Product) {
+        self.productArray.append(product);
     }
 }
