@@ -32,15 +32,16 @@ class ViewControllerBDA11: UIViewController {
         
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: {
             action in
-            guard let nameP = self.nombreTF.text else {print("No hay nada escrito"); return}
+            guard let nameP = self.nombreTF.text else {print("Hace falta el nombre"); return}
+            guard let descP = self.descripcionTF.text else {print("Hace falta la descripcion"); return}
             
-            let datos = Importation(name: nameP)
+            let datos = Importation(name: nameP, desc: descP)
             print (datos)
             let postRequest = APIRequest(endpoint: "import")
             postRequest.save(datos, completion: {result in
                 switch result{
                 case .success(let datos):
-                    print("Nombre del producto: \(datos.name)")
+                    print("Nombre del producto: \(datos.name)\n Descripcion: \(datos.desc)")
                 case .failure(let err):
                     print("Ocurrio un error: \(err)")
                 }

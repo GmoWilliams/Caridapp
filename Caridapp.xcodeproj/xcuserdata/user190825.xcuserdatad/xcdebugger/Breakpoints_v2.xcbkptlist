@@ -49,15 +49,15 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "953E0865-99EC-4D63-A345-4E8136E4A607"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             condition = "name"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Caridapp/BDA11/ViewControllerBDA11.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
             landmarkName = "registrarAction(_:)"
             landmarkType = "7">
             <Actions>

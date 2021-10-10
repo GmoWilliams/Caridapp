@@ -27,7 +27,7 @@ struct APIRequest {
         do{
             var urlRequest = URLRequest(url: resourceURL)
             urlRequest.httpMethod = "POST"
-            urlRequest.addValue("aplication/json", forHTTPHeaderField: "Content-Type")
+            urlRequest.addValue("application/json", forHTTPHeaderField: "Content-Type")
             urlRequest.httpBody = try JSONEncoder().encode(dataToSave)
             let task = URLSession.shared.dataTask(with: urlRequest){
                 data, response, _ in

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7204A2B5270AE35C004AFA6F /* ImportationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7204A2B4270AE35C004AFA6F /* ImportationCell.swift */; };
 		7204A2BA270AE374004AFA6F /* ImportationTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7204A2B9270AE374004AFA6F /* ImportationTableView.swift */; };
+		724F20A227127FA100BA3B03 /* ImportationServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724F20A127127FA100BA3B03 /* ImportationServiceTests.swift */; };
 		7263345D270CFE5900833FE1 /* Importation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7263345C270CFE5900833FE1 /* Importation.swift */; };
 		72997B3326EADC6100099692 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72997B3226EADC6100099692 /* AppDelegate.swift */; };
 		72997B3526EADC6100099692 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72997B3426EADC6100099692 /* SceneDelegate.swift */; };
@@ -45,6 +46,7 @@
 /* Begin PBXFileReference section */
 		7204A2B4270AE35C004AFA6F /* ImportationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportationCell.swift; sourceTree = "<group>"; };
 		7204A2B9270AE374004AFA6F /* ImportationTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportationTableView.swift; sourceTree = "<group>"; };
+		724F20A127127FA100BA3B03 /* ImportationServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportationServiceTests.swift; sourceTree = "<group>"; };
 		7263345C270CFE5900833FE1 /* Importation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Importation.swift; sourceTree = "<group>"; };
 		72997B2F26EADC6100099692 /* Caridapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Caridapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72997B3226EADC6100099692 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				72997B4926EADC6200099692 /* CaridappTests.swift */,
+				724F20A127127FA100BA3B03 /* ImportationServiceTests.swift */,
 				72997B4B26EADC6200099692 /* Info.plist */,
 			);
 			path = CaridappTests;
@@ -308,6 +311,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				724F20A227127FA100BA3B03 /* ImportationServiceTests.swift in Sources */,
 				72997B4A26EADC6200099692 /* CaridappTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
