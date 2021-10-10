@@ -19,10 +19,11 @@
 		8A18D29727121ADD00D5720E /* DonationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A18D29627121ADD00D5720E /* DonationService.swift */; };
 		8A18D29C27122D8400D5720E /* CaridappServiceTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A18D29B27122D8400D5720E /* CaridappServiceTestCase.swift */; };
 		8A18D2A027122EDA00D5720E /* DonationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A18D29627121ADD00D5720E /* DonationService.swift */; };
+		8A22992D27127266001CE110 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A22992C27127266001CE110 /* Product.swift */; };
 		8A9C956E27051A30004DE62A /* Donation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9C956C27051A30004DE62A /* Donation.swift */; };
 		8A9C956F27051A30004DE62A /* Donation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9C956C27051A30004DE62A /* Donation.swift */; };
-		8A9C957027051A30004DE62A /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9C956D27051A30004DE62A /* Product.swift */; };
-		8A9C957127051A30004DE62A /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9C956D27051A30004DE62A /* Product.swift */; };
+		8A9C957027051A30004DE62A /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9C956D27051A30004DE62A /* Line.swift */; };
+		8A9C957127051A30004DE62A /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9C956D27051A30004DE62A /* Line.swift */; };
 		C0FF88B726F80F2D006BA0F9 /* ViewControllerBDA14.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FF88B626F80F2D006BA0F9 /* ViewControllerBDA14.swift */; };
 /* End PBXBuildFile section */
 
@@ -61,8 +62,9 @@
 		72997B6526EAF62900099692 /* RegisterProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterProductViewController.swift; sourceTree = "<group>"; };
 		8A18D29627121ADD00D5720E /* DonationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationService.swift; sourceTree = "<group>"; };
 		8A18D29B27122D8400D5720E /* CaridappServiceTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaridappServiceTestCase.swift; sourceTree = "<group>"; };
+		8A22992C27127266001CE110 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		8A9C956C27051A30004DE62A /* Donation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Donation.swift; sourceTree = "<group>"; };
-		8A9C956D27051A30004DE62A /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		8A9C956D27051A30004DE62A /* Line.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
 		C0FF88B626F80F2D006BA0F9 /* ViewControllerBDA14.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerBDA14.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -168,7 +170,8 @@
 			isa = PBXGroup;
 			children = (
 				8A9C956C27051A30004DE62A /* Donation.swift */,
-				8A9C956D27051A30004DE62A /* Product.swift */,
+				8A9C956D27051A30004DE62A /* Line.swift */,
+				8A22992C27127266001CE110 /* Product.swift */,
 			);
 			path = ValueObject;
 			sourceTree = "<group>";
@@ -305,12 +308,13 @@
 			files = (
 				72997B3726EADC6100099692 /* ViewController.swift in Sources */,
 				72997B3326EADC6100099692 /* AppDelegate.swift in Sources */,
+				8A22992D27127266001CE110 /* Product.swift in Sources */,
 				72997B3526EADC6100099692 /* SceneDelegate.swift in Sources */,
 				8A9C956E27051A30004DE62A /* Donation.swift in Sources */,
 				C0FF88B726F80F2D006BA0F9 /* ViewControllerBDA14.swift in Sources */,
 				8A18D29727121ADD00D5720E /* DonationService.swift in Sources */,
 				72997B6626EAF62900099692 /* RegisterProductViewController.swift in Sources */,
-				8A9C957027051A30004DE62A /* Product.swift in Sources */,
+				8A9C957027051A30004DE62A /* Line.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,7 +326,7 @@
 				8A18D29C27122D8400D5720E /* CaridappServiceTestCase.swift in Sources */,
 				8A18D2A027122EDA00D5720E /* DonationService.swift in Sources */,
 				8A9C956F27051A30004DE62A /* Donation.swift in Sources */,
-				8A9C957127051A30004DE62A /* Product.swift in Sources */,
+				8A9C957127051A30004DE62A /* Line.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

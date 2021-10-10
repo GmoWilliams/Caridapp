@@ -11,7 +11,7 @@ public class DonationService {
     public typealias PublishDonationClosure = (Data) -> Void
     
     public func publishDonation(donation: Donation , _ handler: @escaping PublishDonationClosure) {
-        let publishDonationEndpoint: String = "https://caridapp-personal.herokuapp.com/setDonation"
+        let publishDonationEndpoint: String = "https://caridapp.herokuapp.com/setDonation"
         guard let url = URL(string: publishDonationEndpoint) else {
             print("Error: cannot create URL")
             return
@@ -25,7 +25,10 @@ public class DonationService {
         urlRequest.httpMethod = "POST"
         urlRequest.setValue("application/json", forHTTPHeaderField: "Content-Type")
         
-        let encoder = JSONEncoder()
+        let dateFormatter = DateFormatter();
+        dateFormatter.dateFormat = "yyyy-MM-dd";
+        let encoder = JSONEncoder();
+        encoder.dateEncodingStrategy = .formatted(dateFormatter);
         //let decoder = JSONDecoder()
         let jsonData = try! encoder.encode(donation)
         urlRequest.httpBody = jsonData

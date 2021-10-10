@@ -8,7 +8,7 @@
 import Foundation
 
 public class Donation: Codable {
-    public var productArray = [Product]();
+    public var lineArray = [Line]();
     public var status: Int?;
     public var receptionDate: Date?;
     public var pickUpDate: Date?;
@@ -21,7 +21,7 @@ public class Donation: Codable {
         self.warehouse = warehouse;
     }
     
-    public func addProduct (product: Product) {
-        self.productArray.append(product);
+    public func addLine (line: Line) {
+        self.lineArray.append(line);
     }
 }
