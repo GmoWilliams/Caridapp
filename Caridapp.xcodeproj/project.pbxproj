@@ -15,11 +15,18 @@
 		72997B3F26EADC6200099692 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72997B3D26EADC6200099692 /* LaunchScreen.storyboard */; };
 		72997B4A26EADC6200099692 /* CaridappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72997B4926EADC6200099692 /* CaridappTests.swift */; };
 		72997B5526EADC6200099692 /* CaridappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72997B5426EADC6200099692 /* CaridappUITests.swift */; };
-
-		C0FF88B726F80F2D006BA0F9 /* ViewControllerBDA14.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FF88B626F80F2D006BA0F9 /* ViewControllerBDA14.swift */; };
-
 		72997B6626EAF62900099692 /* RegisterProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72997B6526EAF62900099692 /* RegisterProductViewController.swift */; };
-
+		8A18D29727121ADD00D5720E /* DonationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A18D29627121ADD00D5720E /* DonationService.swift */; };
+		8A18D29C27122D8400D5720E /* CaridappServiceTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A18D29B27122D8400D5720E /* CaridappServiceTestCase.swift */; };
+		8A18D2A027122EDA00D5720E /* DonationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A18D29627121ADD00D5720E /* DonationService.swift */; };
+		8A22992D27127266001CE110 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A22992C27127266001CE110 /* Product.swift */; };
+		8A9C956E27051A30004DE62A /* Donation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9C956C27051A30004DE62A /* Donation.swift */; };
+		8A9C956F27051A30004DE62A /* Donation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9C956C27051A30004DE62A /* Donation.swift */; };
+		8A9C957027051A30004DE62A /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9C956D27051A30004DE62A /* Line.swift */; };
+		8A9C957127051A30004DE62A /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9C956D27051A30004DE62A /* Line.swift */; };
+		8AFA66AB27129B9300905EE9 /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFA66AA27129B9300905EE9 /* ProductTableViewCell.swift */; };
+		8AFA66B32712A31200905EE9 /* RegisterNewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFA66B22712A31200905EE9 /* RegisterNewViewController.swift */; };
+		C0FF88B726F80F2D006BA0F9 /* ViewControllerBDA14.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FF88B626F80F2D006BA0F9 /* ViewControllerBDA14.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,11 +61,15 @@
 		72997B5026EADC6200099692 /* CaridappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CaridappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		72997B5426EADC6200099692 /* CaridappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaridappUITests.swift; sourceTree = "<group>"; };
 		72997B5626EADC6200099692 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-
-		C0FF88B626F80F2D006BA0F9 /* ViewControllerBDA14.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerBDA14.swift; sourceTree = "<group>"; };
-
 		72997B6526EAF62900099692 /* RegisterProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterProductViewController.swift; sourceTree = "<group>"; };
-
+		8A18D29627121ADD00D5720E /* DonationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationService.swift; sourceTree = "<group>"; };
+		8A18D29B27122D8400D5720E /* CaridappServiceTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaridappServiceTestCase.swift; sourceTree = "<group>"; };
+		8A22992C27127266001CE110 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		8A9C956C27051A30004DE62A /* Donation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Donation.swift; sourceTree = "<group>"; };
+		8A9C956D27051A30004DE62A /* Line.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
+		8AFA66AA27129B9300905EE9 /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
+		8AFA66B22712A31200905EE9 /* RegisterNewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterNewViewController.swift; sourceTree = "<group>"; };
+		C0FF88B626F80F2D006BA0F9 /* ViewControllerBDA14.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerBDA14.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,10 +120,13 @@
 		72997B3126EADC6100099692 /* Caridapp */ = {
 			isa = PBXGroup;
 			children = (
+				8AFA66A927129B5500905EE9 /* View */,
+				8A9C956A27051A30004DE62A /* Model */,
 				72997B3226EADC6100099692 /* AppDelegate.swift */,
 				72997B3426EADC6100099692 /* SceneDelegate.swift */,
 				C0FF88B626F80F2D006BA0F9 /* ViewControllerBDA14.swift */,
 				72997B3626EADC6100099692 /* ViewController.swift */,
+				8AFA66B22712A31200905EE9 /* RegisterNewViewController.swift */,
 				72997B3826EADC6100099692 /* Main.storyboard */,
 				72997B3B26EADC6200099692 /* Assets.xcassets */,
 				72997B3D26EADC6200099692 /* LaunchScreen.storyboard */,
@@ -126,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				72997B4926EADC6200099692 /* CaridappTests.swift */,
+				8A18D29B27122D8400D5720E /* CaridappServiceTestCase.swift */,
 				72997B4B26EADC6200099692 /* Info.plist */,
 			);
 			path = CaridappTests;
@@ -138,6 +153,41 @@
 				72997B5626EADC6200099692 /* Info.plist */,
 			);
 			path = CaridappUITests;
+			sourceTree = "<group>";
+		};
+		8A18D29527121A5B00D5720E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8A18D29627121ADD00D5720E /* DonationService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		8A9C956A27051A30004DE62A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8A18D29527121A5B00D5720E /* Services */,
+				8A9C956B27051A30004DE62A /* ValueObject */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8A9C956B27051A30004DE62A /* ValueObject */ = {
+			isa = PBXGroup;
+			children = (
+				8A9C956C27051A30004DE62A /* Donation.swift */,
+				8A9C956D27051A30004DE62A /* Line.swift */,
+				8A22992C27127266001CE110 /* Product.swift */,
+			);
+			path = ValueObject;
+			sourceTree = "<group>";
+		};
+		8AFA66A927129B5500905EE9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8AFA66AA27129B9300905EE9 /* ProductTableViewCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,12 +322,15 @@
 			files = (
 				72997B3726EADC6100099692 /* ViewController.swift in Sources */,
 				72997B3326EADC6100099692 /* AppDelegate.swift in Sources */,
+				8A22992D27127266001CE110 /* Product.swift in Sources */,
 				72997B3526EADC6100099692 /* SceneDelegate.swift in Sources */,
-
+				8A9C956E27051A30004DE62A /* Donation.swift in Sources */,
 				C0FF88B726F80F2D006BA0F9 /* ViewControllerBDA14.swift in Sources */,
-
+				8AFA66B32712A31200905EE9 /* RegisterNewViewController.swift in Sources */,
+				8A18D29727121ADD00D5720E /* DonationService.swift in Sources */,
+				8AFA66AB27129B9300905EE9 /* ProductTableViewCell.swift in Sources */,
 				72997B6626EAF62900099692 /* RegisterProductViewController.swift in Sources */,
-
+				8A9C957027051A30004DE62A /* Line.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +339,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				72997B4A26EADC6200099692 /* CaridappTests.swift in Sources */,
+				8A18D29C27122D8400D5720E /* CaridappServiceTestCase.swift in Sources */,
+				8A18D2A027122EDA00D5720E /* DonationService.swift in Sources */,
+				8A9C956F27051A30004DE62A /* Donation.swift in Sources */,
+				8A9C957127051A30004DE62A /* Line.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
