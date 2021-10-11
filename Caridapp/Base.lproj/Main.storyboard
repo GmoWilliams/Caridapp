@@ -1550,6 +1550,7 @@ en la Lista</string>
                     <connections>
                         <outlet property="descripcionTF" destination="pBn-7a-dPh" id="Sze-21-5Ic"/>
                         <outlet property="nombreTF" destination="7Oe-zz-tdr" id="8cT-yM-XMf"/>
+                        <outlet property="upcTF" destination="aLx-oa-Z4I" id="okK-BX-8cM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bqw-QV-3nF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

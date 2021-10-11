@@ -34,14 +34,15 @@ class ViewControllerBDA11: UIViewController {
             action in
             guard let nameP = self.nombreTF.text else {print("Hace falta el nombre"); return}
             guard let descP = self.descripcionTF.text else {print("Hace falta la descripcion"); return}
+            guard let upcT = self.upcTF.text, let upcP = Int32(upcT) else {print("Hace falta la descripcion"); return}
             
-            let datos = Importation(name: nameP, desc: descP)
-            print (datos)
+            let datos = Importation(name: nameP, desc: descP, upc: upcP)
+            
             let postRequest = APIRequest(endpoint: "import")
             postRequest.save(datos, completion: {result in
                 switch result{
                 case .success(let datos):
-                    print("Nombre del producto: \(datos.name)\n Descripcion: \(datos.desc)")
+                    print("Se registro en la Base de Datos exitosamente tu producto:\n Nombre del producto: \(datos.name)\n Descripcion: \(datos.desc)\n UPC: \(datos.upc)")
                 case .failure(let err):
                     print("Ocurrio un error: \(err)")
                 }
@@ -50,6 +51,9 @@ class ViewControllerBDA11: UIViewController {
         
         self.present(alert, animated: true)
     }
+    
+    
+    @IBOutlet weak var upcTF: UITextField!
     
     @IBOutlet weak var nombreTF: UITextField!
     

@@ -33,8 +33,12 @@ struct APIRequest {
             let task = URLSession.shared.dataTask(with: urlRequest){
                 data, response, _ in
                 guard let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200, let JSONData =
-                    data else {
+                        data else {
                     completion(.failure(.responseProblem))
+                    // Getting the servers Response for debugging
+                    if let jsonResponse = String(data: data!, encoding: String.Encoding.utf8) {
+                        print("JSON String: \(jsonResponse)")
+                    }
                     
                     return
                 }
@@ -42,7 +46,14 @@ struct APIRequest {
                 let contentData = try JSONDecoder().decode(Importation.self, from: JSONData)
                 completion(.success(contentData))
             }catch{
-                print(JSONData)
+                
+                if let jsonResponse = String(data: data!, encoding: String.Encoding.utf8) {
+                    print("JSON String: \(jsonResponse)")
+                }
+                /*  // Another way to get the servers Response
+                let JSONResponse = String(data: JSONData, encoding: String.Encoding.utf8)
+                print(JSONResponse!)
+                */
                 completion(.failure(.decodingProblem))
                 }
             }
