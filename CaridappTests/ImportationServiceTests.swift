@@ -28,4 +28,5 @@ class ImportationServiceIntegrationTests: XCTestCase {
         }
     }
     
-}
+    
+}//end of class

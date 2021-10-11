@@ -97,6 +97,7 @@ class ImportationService {
                     if let httpResponse = response as? HTTPURLResponse {
                         print("statusCode: \(httpResponse.statusCode)")
                     }
+                            
         
                     handler(history)
                 } catch {
