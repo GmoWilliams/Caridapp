@@ -22,8 +22,8 @@ extension UIViewController {
 }
 
 class ViewControllerBDA11: UIViewController {
-    //let addImportation =
-    //let importationService = ImportationService()
+    
+    let importationService = ImportationService()
     
     @IBAction func registrarAction(_ sender: Any) {
         
@@ -47,13 +47,8 @@ class ViewControllerBDA11: UIViewController {
                 }
                 })
         }))
-        self.present(alert, animated: true)
-        /*if let nameP = nombreTF.text {
-            if !nameP.isEmpty {
-                let name = Importation(name: String(nameP))
-            }
-        }*/
         
+        self.present(alert, animated: true)
     }
     
     @IBOutlet weak var nombreTF: UITextField!
@@ -68,20 +63,20 @@ class ViewControllerBDA11: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    /*override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "showHistory" {
-            let controller = (segue.destination as! ImportationTableView)
-            
-            importationService.retrieveHistory() {
-                (history) in
-                DispatchQueue.main.async {
-                    controller.history = history
-                    controller.tableView.reloadData()
+
+        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            if segue.identifier == "showHistory" {
+                let controller = (segue.destination as! ImportationTableView)
+                
+                importationService.retrieveHistory() {
+                    (history) in
+                    DispatchQueue.main.async {
+                        controller.history = history
+                        controller.tableView.reloadData()
+                    }
                 }
+                
             }
-            
         }
-    }*/
-    
 
 }// end of class

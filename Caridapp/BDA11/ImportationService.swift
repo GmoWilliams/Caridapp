@@ -29,6 +29,7 @@ struct APIRequest {
             urlRequest.httpMethod = "POST"
             urlRequest.addValue("application/json", forHTTPHeaderField: "Content-Type")
             urlRequest.httpBody = try JSONEncoder().encode(dataToSave)
+            
             let task = URLSession.shared.dataTask(with: urlRequest){
                 data, response, _ in
                 guard let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200, let JSONData =
@@ -52,64 +53,11 @@ struct APIRequest {
     }
 }
 
-/*class ImportationService {
-    public typealias addImportationClosure = (Importation) -> Void
+class ImportationService {
     public typealias RetrieveHistoryClosure = ([Importation]) -> Void
     
-    func addImportation(importation: Importation, _ handler: @escaping addImportationClosure) {
-        let importationEndpoint: String = //"https://caridapp.herokuapp.com/import"
-            "http://localhost:3001/import"
-        guard let url = URL(string: importationEndpoint) else {
-            print("Error: cannot create URL")
-            return
-        }
-    
-        var urlRequest = URLRequest(url: url)
-
-        let config = URLSessionConfiguration.default
-        let session = URLSession(configuration: config)
-        
-        urlRequest.httpMethod = "POST"
-        urlRequest.setValue("application/json", forHTTPHeaderField: "Content-Type")
-        let encoder = JSONEncoder()
-        let decoder = JSONDecoder()
-        let jsonData = try! encoder.encode(importation)
-        urlRequest.httpBody = jsonData
-        let task = session.dataTask(with: urlRequest) {
-            (data, response, error) in
-            guard error == nil else {
-                print("error calling POST on /import")
-                print(error!)
-                return
-            }
-            
-            guard let responseData = data else {
-                print("Error: did not receive data")
-                return
-            }
-            
-            do {
-                let importation = try decoder.decode(Importation.self, from: responseData)
-                
-                if let httpResponse = response as? HTTPURLResponse {
-                    print("statusCode: \(httpResponse.statusCode)")
-                    print("value: \(importation.name)")
-                    //print("unit: \(importation.desc)")
-                }
-                
-                handler(importation)
-            } catch {
-                print("error trying to convert data to JSON")
-                return
-            }
-
-        }
-        task.resume()
-  }
-    
     func retrieveHistory(_ handler: @escaping RetrieveHistoryClosure) {
-            let historyEndpoint: String = //"https://caridapp.herokuapp.com/history"
-                "http://localhost:3001/history"
+            let historyEndpoint: String = "https://caridapp.herokuapp.com/history"
             guard let url = URL(string: historyEndpoint) else {
                 print("Error: cannot create URL")
                 return
@@ -123,7 +71,7 @@ struct APIRequest {
             let task = session.dataTask(with: urlRequest) {
                 (data, response, error) in
                 guard error == nil else {
-                    print("error calling GET on /hhistory")
+                    print("error calling GET on /history")
                     print(error!)
                     return
                 }
@@ -134,10 +82,12 @@ struct APIRequest {
                 }
                 
                 do {
+                    /*
                     let dateFormatter = DateFormatter()
                     dateFormatter.dateFormat = "yyyy-MM-dd"
                     decoder.dateDecodingStrategy = .formatted(dateFormatter)
-                    
+                    */
+ 
                     if let jsonResponse = String(data: responseData, encoding: String.Encoding.utf8) {
                         print("JSON String: \(jsonResponse)")
                     }
@@ -157,5 +107,5 @@ struct APIRequest {
             }
             task.resume()
       }
-}*/
+}
 

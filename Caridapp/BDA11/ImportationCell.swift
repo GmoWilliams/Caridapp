@@ -15,9 +15,10 @@ class ImportationCell: UITableViewCell
     @IBOutlet weak var descripcionLabel: UILabel!
     
     func updateCell(importation: Importation){
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "YYYY-MM-dd"
+        //let dateFormatter = DateFormatter()
+        //dateFormatter.dateFormat = "YYYY-MM-dd"
         nombreLabel.text = String(importation.name)
+        descripcionLabel.text = String(importation.desc)
     }
 }
 
