@@ -56,8 +56,8 @@
             filePath = "Caridapp/BDA11/ViewControllerBDA11.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "39"
-            endingLineNumber = "39"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
             landmarkName = "registrarAction(_:)"
             landmarkType = "7">
             <Actions>

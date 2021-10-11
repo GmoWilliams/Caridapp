@@ -20,7 +20,6 @@
 		72997B4A26EADC6200099692 /* CaridappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72997B4926EADC6200099692 /* CaridappTests.swift */; };
 		72997B5526EADC6200099692 /* CaridappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72997B5426EADC6200099692 /* CaridappUITests.swift */; };
 		72997B6626EAF62900099692 /* RegisterProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72997B6526EAF62900099692 /* RegisterProductViewController.swift */; };
-		729E638427096846001F5611 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 729E638227096846001F5611 /* Model.xcdatamodeld */; };
 		729FDB70270F754400895695 /* ImportationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729FDB6F270F754400895695 /* ImportationService.swift */; };
 		72C9C90D270AB62F00CB33AB /* ViewControllerBDA11.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C9C90C270AB62F00CB33AB /* ViewControllerBDA11.swift */; };
 		C0FF88B726F80F2D006BA0F9 /* ViewControllerBDA14.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FF88B626F80F2D006BA0F9 /* ViewControllerBDA14.swift */; };
@@ -63,7 +62,6 @@
 		72997B5426EADC6200099692 /* CaridappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaridappUITests.swift; sourceTree = "<group>"; };
 		72997B5626EADC6200099692 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		72997B6526EAF62900099692 /* RegisterProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterProductViewController.swift; sourceTree = "<group>"; };
-		729E638327096846001F5611 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		729FDB6F270F754400895695 /* ImportationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportationService.swift; sourceTree = "<group>"; };
 		72C9C90C270AB62F00CB33AB /* ViewControllerBDA11.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerBDA11.swift; sourceTree = "<group>"; };
 		C0FF88B626F80F2D006BA0F9 /* ViewControllerBDA14.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerBDA14.swift; sourceTree = "<group>"; };
@@ -123,7 +121,6 @@
 				C0FF88B626F80F2D006BA0F9 /* ViewControllerBDA14.swift */,
 				72997B3626EADC6100099692 /* ViewController.swift */,
 				72997B3826EADC6100099692 /* Main.storyboard */,
-				729E638227096846001F5611 /* Model.xcdatamodeld */,
 				72997B3B26EADC6200099692 /* Assets.xcassets */,
 				72997B3D26EADC6200099692 /* LaunchScreen.storyboard */,
 				72997B4026EADC6200099692 /* Info.plist */,
@@ -302,7 +299,6 @@
 				C0FF88B726F80F2D006BA0F9 /* ViewControllerBDA14.swift in Sources */,
 				72997B6626EAF62900099692 /* RegisterProductViewController.swift in Sources */,
 				7204A2B5270AE35C004AFA6F /* ImportationCell.swift in Sources */,
-				729E638427096846001F5611 /* Model.xcdatamodeld in Sources */,
 				7204A2BA270AE374004AFA6F /* ImportationTableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -631,19 +627,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		729E638227096846001F5611 /* Model.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				729E638327096846001F5611 /* Model.xcdatamodel */,
-			);
-			currentVersion = 729E638327096846001F5611 /* Model.xcdatamodel */;
-			path = Model.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 72997B2726EADC6100099692 /* Project object */;
 }

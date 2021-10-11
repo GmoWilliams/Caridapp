@@ -34,15 +34,16 @@ class ViewControllerBDA11: UIViewController {
             action in
             guard let nameP = self.nombreTF.text else {print("Hace falta el nombre"); return}
             guard let descP = self.descripcionTF.text else {print("Hace falta la descripcion"); return}
-            guard let upcT = self.upcTF.text, let upcP = Int32(upcT) else {print("Hace falta la descripcion"); return}
+            guard let upcT = self.upcTF.text, let upcP = Int64(upcT) else {print("Hace falta la descripcion"); return}
+            guard let weightT = self.pesoTF.text, let weightP = Double(weightT) else {print("Hace falta la descripcion"); return}
             
-            let datos = Importation(name: nameP, desc: descP, upc: upcP)
+            let datos = Importation(name: nameP, desc: descP, upc: upcP, weight: weightP)
             
             let postRequest = APIRequest(endpoint: "import")
             postRequest.save(datos, completion: {result in
                 switch result{
                 case .success(let datos):
-                    print("Se registro en la Base de Datos exitosamente tu producto:\n Nombre del producto: \(datos.name)\n Descripcion: \(datos.desc)\n UPC: \(datos.upc)")
+                    print("Se registro en la Base de Datos exitosamente tu producto:\n Nombre del producto: \(datos.name)\n Descripcion: \(datos.desc)\n UPC: \(datos.upc)\n Peso: \(datos.weight)")
                 case .failure(let err):
                     print("Ocurrio un error: \(err)")
                 }
@@ -58,6 +59,8 @@ class ViewControllerBDA11: UIViewController {
     @IBOutlet weak var nombreTF: UITextField!
     
     @IBOutlet weak var descripcionTF: UITextField!
+    
+    @IBOutlet weak var pesoTF: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()

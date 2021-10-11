@@ -10,14 +10,19 @@ import Foundation
 
 //@objc(Importation)
 public class Importation: Codable{
-    //public let id: Int32!
+    
     public var name: String
     public let desc: String
-    public let upc: Int32
-    //public let deletedDate: Date?
-    public init (name: String, desc: String, upc: Int32){
+    public let upc: Int64
+    public let weight: Double
+    
+    //public let picture: String?
+    
+    public init (name: String, desc: String, upc: Int64, weight: Double){
         self.name = name
         self.desc = desc
         self.upc = upc
+        self.weight = weight
+        //self.picture = picture
     }
 }
