@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7204A2B5270AE35C004AFA6F /* ImportationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7204A2B4270AE35C004AFA6F /* ImportationCell.swift */; };
-		7204A2BA270AE374004AFA6F /* ImportationTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7204A2B9270AE374004AFA6F /* ImportationTableView.swift */; };
 		724F20A227127FA100BA3B03 /* ImportationServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724F20A127127FA100BA3B03 /* ImportationServiceTests.swift */; };
 		7263345D270CFE5900833FE1 /* Importation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7263345C270CFE5900833FE1 /* Importation.swift */; };
 		72997B3326EADC6100099692 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72997B3226EADC6100099692 /* AppDelegate.swift */; };
@@ -19,7 +17,6 @@
 		72997B3F26EADC6200099692 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72997B3D26EADC6200099692 /* LaunchScreen.storyboard */; };
 		72997B4A26EADC6200099692 /* CaridappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72997B4926EADC6200099692 /* CaridappTests.swift */; };
 		72997B5526EADC6200099692 /* CaridappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72997B5426EADC6200099692 /* CaridappUITests.swift */; };
-		72997B6626EAF62900099692 /* RegisterProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72997B6526EAF62900099692 /* RegisterProductViewController.swift */; };
 		729FDB70270F754400895695 /* ImportationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729FDB6F270F754400895695 /* ImportationService.swift */; };
 		72C9C90D270AB62F00CB33AB /* ViewControllerBDA11.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C9C90C270AB62F00CB33AB /* ViewControllerBDA11.swift */; };
 		C0FF88B726F80F2D006BA0F9 /* ViewControllerBDA14.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FF88B626F80F2D006BA0F9 /* ViewControllerBDA14.swift */; };
@@ -43,8 +40,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		7204A2B4270AE35C004AFA6F /* ImportationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportationCell.swift; sourceTree = "<group>"; };
-		7204A2B9270AE374004AFA6F /* ImportationTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportationTableView.swift; sourceTree = "<group>"; };
 		724F20A127127FA100BA3B03 /* ImportationServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportationServiceTests.swift; sourceTree = "<group>"; };
 		7263345C270CFE5900833FE1 /* Importation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Importation.swift; sourceTree = "<group>"; };
 		72997B2F26EADC6100099692 /* Caridapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Caridapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,7 +56,6 @@
 		72997B5026EADC6200099692 /* CaridappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CaridappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		72997B5426EADC6200099692 /* CaridappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaridappUITests.swift; sourceTree = "<group>"; };
 		72997B5626EADC6200099692 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		72997B6526EAF62900099692 /* RegisterProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterProductViewController.swift; sourceTree = "<group>"; };
 		729FDB6F270F754400895695 /* ImportationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportationService.swift; sourceTree = "<group>"; };
 		72C9C90C270AB62F00CB33AB /* ViewControllerBDA11.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerBDA11.swift; sourceTree = "<group>"; };
 		C0FF88B626F80F2D006BA0F9 /* ViewControllerBDA14.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerBDA14.swift; sourceTree = "<group>"; };
@@ -124,7 +118,6 @@
 				72997B3B26EADC6200099692 /* Assets.xcassets */,
 				72997B3D26EADC6200099692 /* LaunchScreen.storyboard */,
 				72997B4026EADC6200099692 /* Info.plist */,
-				72997B6526EAF62900099692 /* RegisterProductViewController.swift */,
 			);
 			path = Caridapp;
 			sourceTree = "<group>";
@@ -153,8 +146,6 @@
 			children = (
 				7263345C270CFE5900833FE1 /* Importation.swift */,
 				729FDB6F270F754400895695 /* ImportationService.swift */,
-				7204A2B9270AE374004AFA6F /* ImportationTableView.swift */,
-				7204A2B4270AE35C004AFA6F /* ImportationCell.swift */,
 				72C9C90C270AB62F00CB33AB /* ViewControllerBDA11.swift */,
 			);
 			path = BDA11;
@@ -297,9 +288,6 @@
 				729FDB70270F754400895695 /* ImportationService.swift in Sources */,
 				72997B3526EADC6100099692 /* SceneDelegate.swift in Sources */,
 				C0FF88B726F80F2D006BA0F9 /* ViewControllerBDA14.swift in Sources */,
-				72997B6626EAF62900099692 /* RegisterProductViewController.swift in Sources */,
-				7204A2B5270AE35C004AFA6F /* ImportationCell.swift in Sources */,
-				7204A2BA270AE374004AFA6F /* ImportationTableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

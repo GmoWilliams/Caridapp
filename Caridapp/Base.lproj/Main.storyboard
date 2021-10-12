@@ -727,69 +727,6 @@ recibida.</string>
             </objects>
             <point key="canvasLocation" x="2488" y="-644"/>
         </scene>
-        <!--Importation Table View-->
-        <scene sceneID="csv-mg-CYi">
-            <objects>
-                <tableViewController id="a1x-U0-FLD" customClass="ImportationTableView" customModule="Caridapp" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="p4N-sN-heT">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <button key="tableHeaderView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="tMV-uR-HzQ">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <state key="normal" title="Back"/>
-                        </button>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="importationCellID" id="V0G-Rb-axc" customClass="ImportationCell" customModule="Caridapp" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="72" width="414" height="90"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="V0G-Rb-axc" id="Bq4-35-InR">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre del Producto" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nal-Rb-fkK">
-                                            <rect key="frame" x="30" y="11" width="414" height="36"/>
-                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descripcion" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kug-7F-F3X">
-                                            <rect key="frame" x="30" y="47" width="231" height="36"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstItem="kug-7F-F3X" firstAttribute="height" secondItem="nal-Rb-fkK" secondAttribute="height" id="Ab5-YR-tvL"/>
-                                        <constraint firstItem="kug-7F-F3X" firstAttribute="leading" secondItem="nal-Rb-fkK" secondAttribute="leading" id="Krm-yW-Oc8"/>
-                                        <constraint firstItem="kug-7F-F3X" firstAttribute="top" secondItem="nal-Rb-fkK" secondAttribute="bottom" id="cwT-d2-I47"/>
-                                        <constraint firstItem="kug-7F-F3X" firstAttribute="width" secondItem="nal-Rb-fkK" secondAttribute="width" multiplier="0.558282" id="rMr-oL-7CX"/>
-                                    </constraints>
-                                </tableViewCellContentView>
-                                <constraints>
-                                    <constraint firstItem="nal-Rb-fkK" firstAttribute="height" secondItem="V0G-Rb-axc" secondAttribute="height" multiplier="0.4" id="1iN-GW-rZa"/>
-                                    <constraint firstItem="nal-Rb-fkK" firstAttribute="leading" secondItem="V0G-Rb-axc" secondAttribute="leading" constant="30" id="9JR-ld-h9R"/>
-                                    <constraint firstItem="nal-Rb-fkK" firstAttribute="width" secondItem="V0G-Rb-axc" secondAttribute="width" id="hQd-6N-lMN"/>
-                                    <constraint firstItem="nal-Rb-fkK" firstAttribute="top" secondItem="V0G-Rb-axc" secondAttribute="top" constant="11" id="mEq-8v-JnE"/>
-                                </constraints>
-                                <connections>
-                                    <outlet property="descripcionLabel" destination="kug-7F-F3X" id="8Jk-PV-Q9f"/>
-                                    <outlet property="nombreLabel" destination="nal-Rb-fkK" id="ASD-5h-Bjb"/>
-                                </connections>
-                            </tableViewCell>
-                        </prototypes>
-                    </tableView>
-                    <navigationItem key="navigationItem" id="z5r-RV-1yV"/>
-                    <connections>
-                        <outlet property="tableView" destination="p4N-sN-heT" id="C1u-YL-TlM"/>
-                    </connections>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Xmm-aI-rXS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3504" y="50"/>
-        </scene>
         <!--AddingProduct-->
         <scene sceneID="4Zj-7J-cHy">
             <objects>
@@ -1512,9 +1449,6 @@ en la Lista</string>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w35-6z-5YS">
                                                 <rect key="frame" x="147" y="63" width="120" height="28.5"/>
                                                 <state key="normal" title="Ver mis Registros"/>
-                                                <connections>
-                                                    <segue destination="a1x-U0-FLD" kind="show" identifier="showHistory" id="yt7-uf-QMk"/>
-                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>

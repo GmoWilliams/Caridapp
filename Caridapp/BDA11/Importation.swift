@@ -6,9 +6,7 @@
 //
 
 import Foundation
-//import CoreData
 
-//@objc(Importation)
 public class Importation: Codable{
     
     public var name: String

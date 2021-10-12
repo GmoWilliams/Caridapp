@@ -34,8 +34,8 @@ class ViewControllerBDA11: UIViewController {
             action in
             guard let nameP = self.nombreTF.text else {print("Hace falta el nombre"); return}
             guard let descP = self.descripcionTF.text else {print("Hace falta la descripcion"); return}
-            guard let upcT = self.upcTF.text, let upcP = Int64(upcT) else {print("Hace falta la descripcion"); return}
-            guard let weightT = self.pesoTF.text, let weightP = Double(weightT) else {print("Hace falta la descripcion"); return}
+            guard let upcT = self.upcTF.text, let upcP = Int64(upcT) else {print("Hace falta el upc"); return}
+            guard let weightT = self.pesoTF.text, let weightP = Double(weightT) else {print("Hace falta el peso"); return}
             
             let datos = Importation(name: nameP, desc: descP, upc: upcP, weight: weightP)
             
@@ -70,20 +70,5 @@ class ViewControllerBDA11: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
-        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-            if segue.identifier == "showHistory" {
-                let controller = (segue.destination as! ImportationTableView)
-                
-                importationService.retrieveHistory() {
-                    (history) in
-                    DispatchQueue.main.async {
-                        controller.history = history
-                        controller.tableView.reloadData()
-                    }
-                }
-                
-            }
-        }
 
 }// end of class
