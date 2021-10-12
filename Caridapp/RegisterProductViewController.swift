@@ -16,6 +16,16 @@ class RegisterProductViewController: UIViewController {
     }
     
     var donation : Donation?
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "selectProduct" {
+            let controller = (segue.destination as! SelectProductViewController)
+            
+            DispatchQueue.main.async {
+                controller.donation = self.donation;
+            }
+        }
+    }
 
 
 }

@@ -37,5 +37,25 @@ class CaridappServiceTestCase: XCTestCase {
             }
         }
     }
+    
+    func testGetProducts() throws {
+        // When
+        let convertExpectation = expectation(description: "Get Products Done")
+        donationService.getProducts() {
+            (products) in
+            convertExpectation.fulfill()
+        }
+        
+        // Then
+        waitForExpectations(timeout: 10) {
+            (error) in
+
+            if let error = error {
+                XCTFail("waitForExpectations errored: \(error)")
+            } else {
+                XCTAssert(true)
+            }
+        }
+    }
 
 }
