@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hHT-Dd-Uqv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nNb-nu-5CU">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -1071,7 +1071,7 @@ Caridapp</string>
         <!--RegisterNewScene-->
         <scene sceneID="4zX-p5-pra">
             <objects>
-                <viewController id="nNb-nu-5CU" userLabel="RegisterNewScene" sceneMemberID="viewController">
+                <viewController id="nNb-nu-5CU" userLabel="RegisterNewScene" customClass="ViewControllerBDA11" customModule="Caridapp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Xll-pc-4p9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1244,7 +1244,7 @@ en la Lista</string>
                                                     </attributedString>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="Xmt-DU-kpm" kind="show" identifier="manualSelection" id="Vdf-52-wMw"/>
+                                                    <action selector="registratAction:" destination="nNb-nu-5CU" eventType="touchUpInside" id="SNf-7Z-PvI"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S89-2l-mlT">
@@ -1355,6 +1355,13 @@ en la Lista</string>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="OLe-fc-Z8U"/>
+                    <connections>
+                        <outlet property="descripcionTF" destination="pBn-7a-dPh" id="kWE-ee-NkC"/>
+                        <outlet property="nombreTF" destination="7Oe-zz-tdr" id="f8t-F3-hiN"/>
+                        <outlet property="pesoTF" destination="AzD-ro-ixM" id="lE6-ll-9h9"/>
+                        <outlet property="upcTF" destination="aLx-oa-Z4I" id="A2v-RJ-O8a"/>
+                        <segue destination="Xmt-DU-kpm" kind="show" identifier="AddingProduct" id="qUF-QR-Pfd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bqw-QV-3nF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2118,8 +2125,8 @@ en la Lista</string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="dDj-3g-bAi"/>
-        <segue reference="a5a-sJ-RrV"/>
+        <segue reference="jQN-Vh-f52"/>
+        <segue reference="qUF-QR-Pfd"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="checkmark.rectangle.fill" catalog="system" width="128" height="93"/>
