@@ -21,7 +21,8 @@ extension UIViewController {
 
 class ViewControllerBDA11: UIViewController {
     
-    //let importationService = ImportationService()
+    let importationService = DonationService()
+    
     @IBAction func registratAction(_ sender: Any) {
         
         
@@ -82,10 +83,27 @@ class ViewControllerBDA11: UIViewController {
     var donation : Donation?
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        print("Recieving prepare");
         if segue.identifier == "selectProduct" {
             let controller = (segue.destination as! SelectProductViewController)
+            print("Recognizing identifier")
+            
+            importationService.getProducts() {
+                (products) in
+                DispatchQueue.main.async {
+                    print("Entering dispatch queue")
+                    controller.products = products;
+                    controller.tableView.reloadData();
+                    controller.donation = self.donation;
+                }
+            }
+        } else if segue.identifier == "addingProduct" {
+            let controller = (segue.destination as! RegisterLineViewController)
+            let upcT = self.upcTF.text;
+            let upcN = Int64(upcT!)
             
             DispatchQueue.main.async {
+                controller.upc = upcN!;
                 controller.donation = self.donation;
             }
         }

@@ -7,13 +7,40 @@
 
 import UIKit
 
-class SelectProductViewController: UIViewController {
+class SelectProductViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    @IBOutlet weak var tableView: UITableView!
     
     var donation : Donation?
+    
+    var products : [Product]? {
+        didSet {
+            
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return products?.count ?? 0
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        print("Getting into setter")
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? ProductTableViewCell {
+            print("Updating cell for \(indexPath.row)")
+            let product = products?[indexPath.row]
+            cell.updateCell(product: product!)
+            return cell
+        }
+        return UITableViewCell()
     }
 
 }

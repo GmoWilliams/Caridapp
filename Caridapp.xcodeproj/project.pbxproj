@@ -20,6 +20,7 @@
 		8A18D29727121ADD00D5720E /* DonationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A18D29627121ADD00D5720E /* DonationService.swift */; };
 		8A18D29C27122D8400D5720E /* CaridappServiceTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A18D29B27122D8400D5720E /* CaridappServiceTestCase.swift */; };
 		8A22992D27127266001CE110 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A22992C27127266001CE110 /* Product.swift */; };
+		8A4A3F5A271813BF00744FE2 /* RegisterLineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4A3F59271813BF00744FE2 /* RegisterLineViewController.swift */; };
 		8A9C956E27051A30004DE62A /* Donation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9C956C27051A30004DE62A /* Donation.swift */; };
 		8A9C956F27051A30004DE62A /* Donation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9C956C27051A30004DE62A /* Donation.swift */; };
 		8A9C957027051A30004DE62A /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9C956D27051A30004DE62A /* Line.swift */; };
@@ -69,6 +70,7 @@
 		8A18D29627121ADD00D5720E /* DonationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationService.swift; sourceTree = "<group>"; };
 		8A18D29B27122D8400D5720E /* CaridappServiceTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaridappServiceTestCase.swift; sourceTree = "<group>"; };
 		8A22992C27127266001CE110 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		8A4A3F59271813BF00744FE2 /* RegisterLineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterLineViewController.swift; sourceTree = "<group>"; };
 		8A9C956C27051A30004DE62A /* Donation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Donation.swift; sourceTree = "<group>"; };
 		8A9C956D27051A30004DE62A /* Line.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
 		8AE13BD32714CA0F003805DB /* SelectProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectProductViewController.swift; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 				72997B4026EADC6200099692 /* Info.plist */,
 				8AE13BD32714CA0F003805DB /* SelectProductViewController.swift */,
 				8AFA66DE2712AE3F00905EE9 /* MenuImportationViewController.swift */,
+				8A4A3F59271813BF00744FE2 /* RegisterLineViewController.swift */,
 			);
 			path = Caridapp;
 			sourceTree = "<group>";
@@ -335,6 +338,7 @@
 				8AE13BD42714CA0F003805DB /* SelectProductViewController.swift in Sources */,
 				72997B3526EADC6100099692 /* SceneDelegate.swift in Sources */,
 				8A9C956E27051A30004DE62A /* Donation.swift in Sources */,
+				8A4A3F5A271813BF00744FE2 /* RegisterLineViewController.swift in Sources */,
 				C0FF88B726F80F2D006BA0F9 /* ViewControllerBDA14.swift in Sources */,
 				8A18D29727121ADD00D5720E /* DonationService.swift in Sources */,
 				8AFA66AB27129B9300905EE9 /* ProductTableViewCell.swift in Sources */,

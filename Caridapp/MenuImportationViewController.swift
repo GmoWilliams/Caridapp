@@ -16,7 +16,7 @@ class MenuImportationViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "addImportation" {
-            let controller = (segue.destination as! RegisterProductViewController)
+            let controller = (segue.destination as! ViewControllerBDA11)
             
             DispatchQueue.main.async {
                 controller.donation = Donation(status: nil, receptionDate: nil, pickUpDate: nil, warehouse: nil)
