@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		721AD2CE271653D50010BE30 /* NewProductService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721AD2CD271653D50010BE30 /* NewProductService.swift */; };
 		721AD2D3271657330010BE30 /* ViewControllerBDA-11.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721AD2D2271657330010BE30 /* ViewControllerBDA-11.swift */; };
+		726877B72718101F009399E1 /* RegisterProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726877B62718101F009399E1 /* RegisterProductViewController.swift */; };
 		72997B3326EADC6100099692 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72997B3226EADC6100099692 /* AppDelegate.swift */; };
 		72997B3526EADC6100099692 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72997B3426EADC6100099692 /* SceneDelegate.swift */; };
 		72997B3726EADC6100099692 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72997B3626EADC6100099692 /* ViewController.swift */; };
@@ -17,11 +18,10 @@
 		72997B3F26EADC6200099692 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72997B3D26EADC6200099692 /* LaunchScreen.storyboard */; };
 		72997B4A26EADC6200099692 /* CaridappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72997B4926EADC6200099692 /* CaridappTests.swift */; };
 		72997B5526EADC6200099692 /* CaridappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72997B5426EADC6200099692 /* CaridappUITests.swift */; };
-		72997B6626EAF62900099692 /* RegisterProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72997B6526EAF62900099692 /* RegisterProductViewController.swift */; };
-		C05D61BE27123661000BE433 /* ViewControllerBDA14Lines.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05D61BD27123661000BE433 /* ViewControllerBDA14Lines.swift */; };
-		C0B23DD72703CA34003CE6DE /* VewControllerBDA14_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B23DD62703CA34003CE6DE /* VewControllerBDA14_2.swift */; };
-		C0B23DDC2703CB78003CE6DE /* VewControllerReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B23DDB2703CB78003CE6DE /* VewControllerReceiver.swift */; };
-		C0B23DE52703CC96003CE6DE /* ViewControllerBDA15.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B23DE42703CC96003CE6DE /* ViewControllerBDA15.swift */; };
+		72F6DD8B271890AC007E29C3 /* LineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F6DD8A271890AC007E29C3 /* LineViewController.swift */; };
+		72F6DD982718925B007E29C3 /* LineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F6DD972718925B007E29C3 /* LineTableViewController.swift */; };
+		72F6DDA527189C22007E29C3 /* HeroStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F6DDA427189C22007E29C3 /* HeroStats.swift */; };
+		72F6DDAA27189CD7007E29C3 /* LineP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F6DDA927189CD7007E29C3 /* LineP.swift */; };
 		8A18D29727121ADD00D5720E /* DonationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A18D29627121ADD00D5720E /* DonationService.swift */; };
 		8A18D29C27122D8400D5720E /* CaridappServiceTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A18D29B27122D8400D5720E /* CaridappServiceTestCase.swift */; };
 		8A22992D27127266001CE110 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A22992C27127266001CE110 /* Product.swift */; };
@@ -34,6 +34,10 @@
 		8AE13BE32714D8FE003805DB /* DonationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A18D29627121ADD00D5720E /* DonationService.swift */; };
 		8AFA66AB27129B9300905EE9 /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFA66AA27129B9300905EE9 /* ProductTableViewCell.swift */; };
 		8AFA66DF2712AE3F00905EE9 /* MenuImportationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFA66DE2712AE3F00905EE9 /* MenuImportationViewController.swift */; };
+		C05D61BE27123661000BE433 /* ViewControllerBDA14Lines.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05D61BD27123661000BE433 /* ViewControllerBDA14Lines.swift */; };
+		C0B23DD72703CA34003CE6DE /* VewControllerBDA14_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B23DD62703CA34003CE6DE /* VewControllerBDA14_2.swift */; };
+		C0B23DDC2703CB78003CE6DE /* VewControllerReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B23DDB2703CB78003CE6DE /* VewControllerReceiver.swift */; };
+		C0B23DE52703CC96003CE6DE /* ViewControllerBDA15.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B23DE42703CC96003CE6DE /* ViewControllerBDA15.swift */; };
 		C0FF88B726F80F2D006BA0F9 /* ViewControllerBDA14.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FF88B626F80F2D006BA0F9 /* ViewControllerBDA14.swift */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +61,7 @@
 /* Begin PBXFileReference section */
 		721AD2CD271653D50010BE30 /* NewProductService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewProductService.swift; sourceTree = "<group>"; };
 		721AD2D2271657330010BE30 /* ViewControllerBDA-11.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewControllerBDA-11.swift"; sourceTree = "<group>"; };
+		726877B62718101F009399E1 /* RegisterProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterProductViewController.swift; sourceTree = "<group>"; };
 		72997B2F26EADC6100099692 /* Caridapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Caridapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72997B3226EADC6100099692 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		72997B3426EADC6100099692 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,11 +76,10 @@
 		72997B5026EADC6200099692 /* CaridappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CaridappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		72997B5426EADC6200099692 /* CaridappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaridappUITests.swift; sourceTree = "<group>"; };
 		72997B5626EADC6200099692 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		72997B6526EAF62900099692 /* RegisterProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterProductViewController.swift; sourceTree = "<group>"; };
-		C05D61BD27123661000BE433 /* ViewControllerBDA14Lines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerBDA14Lines.swift; sourceTree = "<group>"; };
-		C0B23DD62703CA34003CE6DE /* VewControllerBDA14_2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VewControllerBDA14_2.swift; sourceTree = "<group>"; };
-		C0B23DDB2703CB78003CE6DE /* VewControllerReceiver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VewControllerReceiver.swift; sourceTree = "<group>"; };
-		C0B23DE42703CC96003CE6DE /* ViewControllerBDA15.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerBDA15.swift; sourceTree = "<group>"; };
+		72F6DD8A271890AC007E29C3 /* LineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineViewController.swift; sourceTree = "<group>"; };
+		72F6DD972718925B007E29C3 /* LineTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineTableViewController.swift; sourceTree = "<group>"; };
+		72F6DDA427189C22007E29C3 /* HeroStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroStats.swift; sourceTree = "<group>"; };
+		72F6DDA927189CD7007E29C3 /* LineP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineP.swift; sourceTree = "<group>"; };
 		8A18D29627121ADD00D5720E /* DonationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationService.swift; sourceTree = "<group>"; };
 		8A18D29B27122D8400D5720E /* CaridappServiceTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaridappServiceTestCase.swift; sourceTree = "<group>"; };
 		8A22992C27127266001CE110 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
@@ -84,6 +88,10 @@
 		8AE13BD32714CA0F003805DB /* SelectProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectProductViewController.swift; sourceTree = "<group>"; };
 		8AFA66AA27129B9300905EE9 /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
 		8AFA66DE2712AE3F00905EE9 /* MenuImportationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuImportationViewController.swift; sourceTree = "<group>"; };
+		C05D61BD27123661000BE433 /* ViewControllerBDA14Lines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerBDA14Lines.swift; sourceTree = "<group>"; };
+		C0B23DD62703CA34003CE6DE /* VewControllerBDA14_2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VewControllerBDA14_2.swift; sourceTree = "<group>"; };
+		C0B23DDB2703CB78003CE6DE /* VewControllerReceiver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VewControllerReceiver.swift; sourceTree = "<group>"; };
+		C0B23DE42703CC96003CE6DE /* ViewControllerBDA15.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerBDA15.swift; sourceTree = "<group>"; };
 		C0FF88B626F80F2D006BA0F9 /* ViewControllerBDA14.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerBDA14.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -112,6 +120,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7268779927180D61009399E1 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
 		72997B2626EADC6100099692 = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +134,7 @@
 				72997B4826EADC6200099692 /* CaridappTests */,
 				72997B5326EADC6200099692 /* CaridappUITests */,
 				72997B3026EADC6100099692 /* Products */,
+				7268779927180D61009399E1 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -135,17 +151,19 @@
 		72997B3126EADC6100099692 /* Caridapp */ = {
 			isa = PBXGroup;
 			children = (
+				C0B23DE02703CC07003CE6DE /* ViewControllerBDA14-15 */,
 				8AFA66A927129B5500905EE9 /* View */,
 				8A9C956A27051A30004DE62A /* Model */,
-				72997B3226EADC6100099692 /* AppDelegate.swift */,
+				72F6DD8927189079007E29C3 /* BDA-2 */,
 				72997B3426EADC6100099692 /* SceneDelegate.swift */,
-				C0B23DE02703CC07003CE6DE /* ViewControllerBDA14-15 */,
+				72997B3226EADC6100099692 /* AppDelegate.swift */,
 				72997B3626EADC6100099692 /* ViewController.swift */,
 				72997B3826EADC6100099692 /* Main.storyboard */,
 				721AD2D2271657330010BE30 /* ViewControllerBDA-11.swift */,
 				72997B3B26EADC6200099692 /* Assets.xcassets */,
 				72997B3D26EADC6200099692 /* LaunchScreen.storyboard */,
 				72997B4026EADC6200099692 /* Info.plist */,
+				726877B62718101F009399E1 /* RegisterProductViewController.swift */,
 				8AE13BD32714CA0F003805DB /* SelectProductViewController.swift */,
 				8AFA66DE2712AE3F00905EE9 /* MenuImportationViewController.swift */,
 			);
@@ -171,17 +189,16 @@
 			path = CaridappUITests;
 			sourceTree = "<group>";
 		};
-		C0B23DE02703CC07003CE6DE /* ViewControllerBDA14-15 */ = {
+		72F6DD8927189079007E29C3 /* BDA-2 */ = {
 			isa = PBXGroup;
 			children = (
-				C0B23DDB2703CB78003CE6DE /* VewControllerReceiver.swift */,
-				C0FF88B626F80F2D006BA0F9 /* ViewControllerBDA14.swift */,
-				C0B23DD62703CA34003CE6DE /* VewControllerBDA14_2.swift */,
-				C0B23DE42703CC96003CE6DE /* ViewControllerBDA15.swift */,
-				C05D61BD27123661000BE433 /* ViewControllerBDA14Lines.swift */,
+				72F6DD8A271890AC007E29C3 /* LineViewController.swift */,
+				72F6DD972718925B007E29C3 /* LineTableViewController.swift */,
+				72F6DDA427189C22007E29C3 /* HeroStats.swift */,
+				72F6DDA927189CD7007E29C3 /* LineP.swift */,
 			);
-			path = "ViewControllerBDA14-15";
-      sourceTree = "<group>";
+			path = "BDA-2";
+			sourceTree = "<group>";
 		};
 		8A18D29527121A5B00D5720E /* Services */ = {
 			isa = PBXGroup;
@@ -217,6 +234,18 @@
 				8AFA66AA27129B9300905EE9 /* ProductTableViewCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		C0B23DE02703CC07003CE6DE /* ViewControllerBDA14-15 */ = {
+			isa = PBXGroup;
+			children = (
+				C0B23DDB2703CB78003CE6DE /* VewControllerReceiver.swift */,
+				C0FF88B626F80F2D006BA0F9 /* ViewControllerBDA14.swift */,
+				C0B23DD62703CA34003CE6DE /* VewControllerBDA14_2.swift */,
+				C0B23DE42703CC96003CE6DE /* ViewControllerBDA15.swift */,
+				C05D61BD27123661000BE433 /* ViewControllerBDA14Lines.swift */,
+			);
+			path = "ViewControllerBDA14-15";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -351,19 +380,22 @@
 			files = (
 				C0B23DE52703CC96003CE6DE /* ViewControllerBDA15.swift in Sources */,
 				72997B3726EADC6100099692 /* ViewController.swift in Sources */,
+				72F6DDAA27189CD7007E29C3 /* LineP.swift in Sources */,
 				C0B23DDC2703CB78003CE6DE /* VewControllerReceiver.swift in Sources */,
 				C05D61BE27123661000BE433 /* ViewControllerBDA14Lines.swift in Sources */,
 				72997B3326EADC6100099692 /* AppDelegate.swift in Sources */,
 				C0B23DD72703CA34003CE6DE /* VewControllerBDA14_2.swift in Sources */,
 				72997B3526EADC6100099692 /* SceneDelegate.swift in Sources */,
 				C0FF88B726F80F2D006BA0F9 /* ViewControllerBDA14.swift in Sources */,
-				72997B6626EAF62900099692 /* RegisterProductViewController.swift in Sources */,
+				72F6DDA527189C22007E29C3 /* HeroStats.swift in Sources */,
 				8AFA66DF2712AE3F00905EE9 /* MenuImportationViewController.swift in Sources */,
 				72997B3726EADC6100099692 /* ViewController.swift in Sources */,
 				721AD2D3271657330010BE30 /* ViewControllerBDA-11.swift in Sources */,
+				72F6DD8B271890AC007E29C3 /* LineViewController.swift in Sources */,
 				72997B3326EADC6100099692 /* AppDelegate.swift in Sources */,
 				8A22992D27127266001CE110 /* Product.swift in Sources */,
 				8AE13BD42714CA0F003805DB /* SelectProductViewController.swift in Sources */,
+				726877B72718101F009399E1 /* RegisterProductViewController.swift in Sources */,
 				72997B3526EADC6100099692 /* SceneDelegate.swift in Sources */,
 				8A9C956E27051A30004DE62A /* Donation.swift in Sources */,
 				C0FF88B726F80F2D006BA0F9 /* ViewControllerBDA14.swift in Sources */,
@@ -371,6 +403,7 @@
 				8AFA66AB27129B9300905EE9 /* ProductTableViewCell.swift in Sources */,
 				8A9C957027051A30004DE62A /* Line.swift in Sources */,
 				721AD2CE271653D50010BE30 /* NewProductService.swift in Sources */,
+				72F6DD982718925B007E29C3 /* LineTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
