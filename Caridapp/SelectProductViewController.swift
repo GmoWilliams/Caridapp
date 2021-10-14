@@ -1,19 +1,19 @@
 //
-//  RegisterProductViewController.swift
+//  SelectProductViewController.swift
 //  Caridapp
 //
-//  Created by user190825 on 9/9/21.
+//  Created by user194082 on 10/11/21.
 //
-
 
 import UIKit
 
-class RegisterProductViewController: UIViewController {
+class SelectProductViewController: UIViewController {
+    
+    var donation : Donation?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
 
 }
