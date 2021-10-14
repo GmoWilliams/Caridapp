@@ -16,6 +16,7 @@
 		72997B4A26EADC6200099692 /* CaridappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72997B4926EADC6200099692 /* CaridappTests.swift */; };
 		72997B5526EADC6200099692 /* CaridappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72997B5426EADC6200099692 /* CaridappUITests.swift */; };
 		72997B6626EAF62900099692 /* RegisterProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72997B6526EAF62900099692 /* RegisterProductViewController.swift */; };
+		C05D61BE27123661000BE433 /* ViewControllerBDA14Lines.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05D61BD27123661000BE433 /* ViewControllerBDA14Lines.swift */; };
 		C0B23DD72703CA34003CE6DE /* VewControllerBDA14_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B23DD62703CA34003CE6DE /* VewControllerBDA14_2.swift */; };
 		C0B23DDC2703CB78003CE6DE /* VewControllerReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B23DDB2703CB78003CE6DE /* VewControllerReceiver.swift */; };
 		C0B23DE52703CC96003CE6DE /* ViewControllerBDA15.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B23DE42703CC96003CE6DE /* ViewControllerBDA15.swift */; };
@@ -55,6 +56,7 @@
 		72997B5426EADC6200099692 /* CaridappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaridappUITests.swift; sourceTree = "<group>"; };
 		72997B5626EADC6200099692 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		72997B6526EAF62900099692 /* RegisterProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterProductViewController.swift; sourceTree = "<group>"; };
+		C05D61BD27123661000BE433 /* ViewControllerBDA14Lines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerBDA14Lines.swift; sourceTree = "<group>"; };
 		C0B23DD62703CA34003CE6DE /* VewControllerBDA14_2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VewControllerBDA14_2.swift; sourceTree = "<group>"; };
 		C0B23DDB2703CB78003CE6DE /* VewControllerReceiver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VewControllerReceiver.swift; sourceTree = "<group>"; };
 		C0B23DE42703CC96003CE6DE /* ViewControllerBDA15.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerBDA15.swift; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 				C0FF88B626F80F2D006BA0F9 /* ViewControllerBDA14.swift */,
 				C0B23DD62703CA34003CE6DE /* VewControllerBDA14_2.swift */,
 				C0B23DE42703CC96003CE6DE /* ViewControllerBDA15.swift */,
+				C05D61BD27123661000BE433 /* ViewControllerBDA14Lines.swift */,
 			);
 			path = "ViewControllerBDA14-15";
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 				C0B23DE52703CC96003CE6DE /* ViewControllerBDA15.swift in Sources */,
 				72997B3726EADC6100099692 /* ViewController.swift in Sources */,
 				C0B23DDC2703CB78003CE6DE /* VewControllerReceiver.swift in Sources */,
+				C05D61BE27123661000BE433 /* ViewControllerBDA14Lines.swift in Sources */,
 				72997B3326EADC6100099692 /* AppDelegate.swift in Sources */,
 				C0B23DD72703CA34003CE6DE /* VewControllerBDA14_2.swift in Sources */,
 				72997B3526EADC6100099692 /* SceneDelegate.swift in Sources */,
