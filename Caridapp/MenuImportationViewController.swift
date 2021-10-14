@@ -14,14 +14,14 @@ class MenuImportationViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "addImportation" {
-            let controller = (segue.destination as! RegisterProductViewController)
-            
-            DispatchQueue.main.async {
-                controller.donation = Donation(status: nil, receptionDate: nil, pickUpDate: nil, warehouse: nil)
-            }
-        }
-    }
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if segue.identifier == "addImportation" {
+//            let controller = (segue.destination as! RegisterProductViewController)
+//
+//            DispatchQueue.main.async {
+//                controller.donation = Donation(status: nil, receptionDate: nil, pickUpDate: nil, warehouse: nil)
+//            }
+//        }
+//    }
 
 }
