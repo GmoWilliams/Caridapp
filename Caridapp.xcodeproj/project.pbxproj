@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		721AD2CE271653D50010BE30 /* NewProductService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721AD2CD271653D50010BE30 /* NewProductService.swift */; };
+		721AD2D3271657330010BE30 /* ViewControllerBDA-11.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721AD2D2271657330010BE30 /* ViewControllerBDA-11.swift */; };
 		72997B3326EADC6100099692 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72997B3226EADC6100099692 /* AppDelegate.swift */; };
 		72997B3526EADC6100099692 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72997B3426EADC6100099692 /* SceneDelegate.swift */; };
 		72997B3726EADC6100099692 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72997B3626EADC6100099692 /* ViewController.swift */; };
@@ -49,6 +51,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		721AD2CD271653D50010BE30 /* NewProductService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewProductService.swift; sourceTree = "<group>"; };
+		721AD2D2271657330010BE30 /* ViewControllerBDA-11.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewControllerBDA-11.swift"; sourceTree = "<group>"; };
 		72997B2F26EADC6100099692 /* Caridapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Caridapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72997B3226EADC6100099692 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		72997B3426EADC6100099692 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -130,6 +134,7 @@
 				C0FF88B626F80F2D006BA0F9 /* ViewControllerBDA14.swift */,
 				72997B3626EADC6100099692 /* ViewController.swift */,
 				72997B3826EADC6100099692 /* Main.storyboard */,
+				721AD2D2271657330010BE30 /* ViewControllerBDA-11.swift */,
 				72997B3B26EADC6200099692 /* Assets.xcassets */,
 				72997B3D26EADC6200099692 /* LaunchScreen.storyboard */,
 				72997B4026EADC6200099692 /* Info.plist */,
@@ -163,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				8A18D29627121ADD00D5720E /* DonationService.swift */,
+				721AD2CD271653D50010BE30 /* NewProductService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -326,6 +332,7 @@
 			files = (
 				8AFA66DF2712AE3F00905EE9 /* MenuImportationViewController.swift in Sources */,
 				72997B3726EADC6100099692 /* ViewController.swift in Sources */,
+				721AD2D3271657330010BE30 /* ViewControllerBDA-11.swift in Sources */,
 				72997B3326EADC6100099692 /* AppDelegate.swift in Sources */,
 				8A22992D27127266001CE110 /* Product.swift in Sources */,
 				8AE13BD42714CA0F003805DB /* SelectProductViewController.swift in Sources */,
@@ -336,6 +343,7 @@
 				8AFA66AB27129B9300905EE9 /* ProductTableViewCell.swift in Sources */,
 				72997B6626EAF62900099692 /* RegisterProductViewController.swift in Sources */,
 				8A9C957027051A30004DE62A /* Line.swift in Sources */,
+				721AD2CE271653D50010BE30 /* NewProductService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
