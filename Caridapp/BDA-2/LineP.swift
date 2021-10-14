@@ -8,6 +8,8 @@
 import Foundation
 
 public class LineP: Decodable {
+    public let donationID: Int64;
+    public let lineID: Int64;
     public let upc: Int64;
     public let itemName: String;
     public let unitaryCost: Float;
