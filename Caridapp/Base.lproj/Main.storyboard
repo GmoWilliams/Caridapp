@@ -17,50 +17,52 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7j4-vi-cU8">
+                                <rect key="frame" x="119" y="304" width="176" height="71"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="71" id="0Np-Am-BHN"/>
+                                    <constraint firstAttribute="width" constant="176" id="hHd-Jc-4CE"/>
+                                </constraints>
+                                <state key="normal" title="Donadores">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7pK-Xh-1Ze">
+                                <rect key="frame" x="119" y="452" width="176" height="71"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="71" id="3aZ-kN-vH3"/>
+                                    <constraint firstAttribute="width" constant="176" id="cZT-3U-UTE"/>
+                                </constraints>
+                                <state key="normal" title="Calendario">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CARIDAPP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kI9-AU-E6K">
-                                <rect key="frame" x="126" y="66" width="162" height="63"/>
+                                <rect key="frame" x="126" y="90" width="162" height="63"/>
                                 <color key="backgroundColor" name="AccentColor"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="63" id="h6G-HS-sef"/>
                                     <constraint firstAttribute="width" constant="162" id="oJg-kx-88d"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="162" id="rVR-bD-WFr"/>
                                     <constraint firstAttribute="height" constant="63" id="zHe-Cg-6ck"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7j4-vi-cU8">
-                                <rect key="frame" x="119" y="304" width="176" height="71"/>
-                                <color key="backgroundColor" systemColor="systemGreenColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="71" id="0Np-Am-BHN"/>
-                                    <constraint firstAttribute="width" constant="176" id="hHd-Jc-4CE"/>
-                                </constraints>
-                                <state key="normal" title="Donadores">
-                                    <color key="titleColor" systemColor="secondarySystemBackgroundColor"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7pK-Xh-1Ze">
-                                <rect key="frame" x="119" y="452" width="176" height="71"/>
-                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="71" id="3aZ-kN-vH3"/>
-                                    <constraint firstAttribute="width" constant="176" id="cZT-3U-UTE"/>
-                                </constraints>
-                                <state key="normal" title="Calendario">
-                                    <color key="titleColor" systemColor="secondarySystemBackgroundColor"/>
-                                </state>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="7pK-Xh-1Ze" firstAttribute="top" secondItem="7j4-vi-cU8" secondAttribute="bottom" constant="77" id="14O-Mh-H1x"/>
-                            <constraint firstItem="kI9-AU-E6K" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="126" id="8Dh-Oh-bpR"/>
+                            <constraint firstItem="kI9-AU-E6K" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="46" id="DEq-sl-btf"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7pK-Xh-1Ze" secondAttribute="bottom" constant="339" id="GfI-vB-MMi"/>
-                            <constraint firstItem="7j4-vi-cU8" firstAttribute="top" secondItem="kI9-AU-E6K" secondAttribute="bottom" constant="175" id="Gm5-q2-0ZI"/>
+                            <constraint firstItem="kI9-AU-E6K" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="126" id="L1E-n1-2a9"/>
                             <constraint firstItem="7j4-vi-cU8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="119" id="Lew-bF-ZPX"/>
                             <constraint firstItem="7pK-Xh-1Ze" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="119" id="RPn-dE-419"/>
-                            <constraint firstItem="kI9-AU-E6K" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="22" id="Uq4-yD-RIV"/>
+                            <constraint firstItem="7j4-vi-cU8" firstAttribute="top" secondItem="kI9-AU-E6K" secondAttribute="bottom" constant="151" id="U22-yh-tqe"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -75,19 +77,66 @@
                     <view key="view" contentMode="scaleToFill" id="Oj1-Ea-468">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CARIDAPP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="smu-ez-cwK">
+                                <rect key="frame" x="133" y="80" width="147" height="66"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="147" id="muM-7b-QIy"/>
+                                    <constraint firstAttribute="height" constant="66" id="pDk-cs-sV8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q1B-Lc-VDP">
+                                <rect key="frame" x="133" y="315" width="147" height="67"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="147" id="Smr-EQ-DDO"/>
+                                    <constraint firstAttribute="height" constant="67" id="WKI-Sa-yis"/>
+                                </constraints>
+                                <state key="normal" title="Registrar Donador">
+                                    <color key="titleColor" systemColor="secondarySystemBackgroundColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8dv-p0-Jtd">
+                                <rect key="frame" x="134" y="462" width="147" height="66"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="66" id="pst-D4-IzC"/>
+                                    <constraint firstAttribute="width" constant="147" id="sbd-pd-Pj1"/>
+                                </constraints>
+                                <state key="normal" title="Modificar Donador">
+                                    <color key="titleColor" systemColor="secondarySystemBackgroundColor"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="pcf-kN-9fD"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="smu-ez-cwK" firstAttribute="top" secondItem="pcf-kN-9fD" secondAttribute="top" constant="36" id="8gC-bi-0Eh"/>
+                            <constraint firstItem="8dv-p0-Jtd" firstAttribute="top" secondItem="q1B-Lc-VDP" secondAttribute="bottom" constant="80" id="9pp-HU-Lsh"/>
+                            <constraint firstItem="q1B-Lc-VDP" firstAttribute="top" secondItem="smu-ez-cwK" secondAttribute="bottom" constant="169" id="Sux-PM-M3a"/>
+                            <constraint firstItem="8dv-p0-Jtd" firstAttribute="leading" secondItem="pcf-kN-9fD" secondAttribute="leading" constant="134" id="Vbd-YR-LVy"/>
+                            <constraint firstItem="pcf-kN-9fD" firstAttribute="bottom" secondItem="8dv-p0-Jtd" secondAttribute="bottom" constant="334" id="myv-8L-3B5"/>
+                            <constraint firstItem="q1B-Lc-VDP" firstAttribute="leading" secondItem="pcf-kN-9fD" secondAttribute="leading" constant="133" id="n3t-pT-5Rh"/>
+                            <constraint firstItem="smu-ez-cwK" firstAttribute="leading" secondItem="pcf-kN-9fD" secondAttribute="leading" constant="133" id="x2A-oq-8Tx"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Dx-ih-RKO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="843" y="78"/>
+            <point key="canvasLocation" x="842.02898550724649" y="77.678571428571431"/>
         </scene>
     </scenes>
     <resources>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="secondarySystemBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
@@ -99,6 +148,9 @@
         </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
