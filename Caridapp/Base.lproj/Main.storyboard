@@ -27,6 +27,9 @@
                                 <state key="normal" title="Donadores">
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
+                                <connections>
+                                    <segue destination="zRp-EN-1YI" kind="presentation" id="SmQ-9A-YfL"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7pK-Xh-1Ze">
                                 <rect key="frame" x="119" y="452" width="176" height="71"/>
@@ -75,11 +78,11 @@
             <objects>
                 <viewController title="DonatorMenu" id="zRp-EN-1YI" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Oj1-Ea-468">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CARIDAPP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="smu-ez-cwK">
-                                <rect key="frame" x="133" y="80" width="147" height="66"/>
+                                <rect key="frame" x="133" y="36" width="147" height="66"/>
                                 <color key="backgroundColor" name="AccentColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="147" id="muM-7b-QIy"/>
@@ -89,8 +92,8 @@
                                 <color key="textColor" systemColor="systemBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q1B-Lc-VDP">
-                                <rect key="frame" x="133" y="315" width="147" height="67"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q1B-Lc-VDP">
+                                <rect key="frame" x="133" y="271" width="147" height="67"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="147" id="Smr-EQ-DDO"/>
@@ -99,9 +102,12 @@
                                 <state key="normal" title="Registrar Donador">
                                     <color key="titleColor" systemColor="secondarySystemBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <segue destination="uEn-an-NlH" kind="show" id="ufF-XY-xBf"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8dv-p0-Jtd">
-                                <rect key="frame" x="134" y="462" width="147" height="66"/>
+                                <rect key="frame" x="134" y="381" width="147" height="66"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="66" id="pst-D4-IzC"/>
@@ -132,9 +138,9 @@
         <!--RegisterDonator-->
         <scene sceneID="5bm-zz-3OD">
             <objects>
-                <viewController title="RegisterDonator" id="uEn-an-NlH" sceneMemberID="viewController">
+                <viewController title="RegisterDonator" id="uEn-an-NlH" customClass="ViewControllerBDA8" customModule="Caridapp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jph-Bz-COe">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CARIDAPP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Xd-c5-Tu6">
@@ -249,6 +255,15 @@
                         <viewLayoutGuide key="safeArea" id="s2z-Nz-pPa"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="7iy-1S-3Fm"/>
+                    <connections>
+                        <outlet property="AddressF" destination="Kbs-nl-Llh" id="YQ0-Sl-btp"/>
+                        <outlet property="AddressR" destination="foJ-SI-esO" id="YxM-ng-g9f"/>
+                        <outlet property="Email" destination="WwN-Ak-8Qx" id="EfO-3A-taE"/>
+                        <outlet property="NameD" destination="u5d-jZ-Upu" id="fdC-X3-uSy"/>
+                        <outlet property="Phone" destination="1Yb-JH-ZV4" id="nn2-oZ-25F"/>
+                        <outlet property="Rfc" destination="CPG-Up-sci" id="evA-It-ztq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kKL-ah-rWp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

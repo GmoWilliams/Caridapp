@@ -21,6 +21,8 @@
 		F2A18684271A29B600079AA6 /* NewProductService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A1867F271A29B600079AA6 /* NewProductService.swift */; };
 		F2A18685271A29B600079AA6 /* DonationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A18680271A29B600079AA6 /* DonationService.swift */; };
 		F2A18691271A2A0A00079AA6 /* ViewControllerBDA-8.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A18690271A2A0A00079AA6 /* ViewControllerBDA-8.swift */; };
+		F2A186A3271A35F300079AA6 /* Donator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A186A2271A35F300079AA6 /* Donator.swift */; };
+		F2A186A8271A383400079AA6 /* NewDonator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A186A7271A383400079AA6 /* NewDonator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		F2A1867F271A29B600079AA6 /* NewProductService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewProductService.swift; sourceTree = "<group>"; };
 		F2A18680271A29B600079AA6 /* DonationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DonationService.swift; sourceTree = "<group>"; };
 		F2A18690271A2A0A00079AA6 /* ViewControllerBDA-8.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewControllerBDA-8.swift"; sourceTree = "<group>"; };
+		F2A186A2271A35F300079AA6 /* Donator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Donator.swift; sourceTree = "<group>"; };
+		F2A186A7271A383400079AA6 /* NewDonator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewDonator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +161,7 @@
 				F2A1867B271A29B600079AA6 /* Donation.swift */,
 				F2A1867C271A29B600079AA6 /* Line.swift */,
 				F2A1867D271A29B600079AA6 /* Product.swift */,
+				F2A186A2271A35F300079AA6 /* Donator.swift */,
 			);
 			path = ValueObject;
 			sourceTree = "<group>";
@@ -166,6 +171,7 @@
 			children = (
 				F2A1867F271A29B600079AA6 /* NewProductService.swift */,
 				F2A18680271A29B600079AA6 /* DonationService.swift */,
+				F2A186A7271A383400079AA6 /* NewDonator.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -302,6 +308,7 @@
 			files = (
 				72997B3726EADC6100099692 /* ViewController.swift in Sources */,
 				F2A18681271A29B600079AA6 /* Donation.swift in Sources */,
+				F2A186A8271A383400079AA6 /* NewDonator.swift in Sources */,
 				72997B3326EADC6100099692 /* AppDelegate.swift in Sources */,
 				72997B3526EADC6100099692 /* SceneDelegate.swift in Sources */,
 				F2A18691271A2A0A00079AA6 /* ViewControllerBDA-8.swift in Sources */,
@@ -309,6 +316,7 @@
 				F2A18685271A29B600079AA6 /* DonationService.swift in Sources */,
 				F2A18684271A29B600079AA6 /* NewProductService.swift in Sources */,
 				F2A18683271A29B600079AA6 /* Product.swift in Sources */,
+				F2A186A3271A35F300079AA6 /* Donator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

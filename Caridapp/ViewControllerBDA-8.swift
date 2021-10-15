@@ -19,7 +19,7 @@ extension UIViewController {
     }
 }
 
-class ViewControllerBDA11: UIViewController {
+class ViewControllerBDA8: UIViewController {
     
     //let importationService = ImportationService()
     @IBAction func registratAction(_ sender: Any) {
@@ -31,12 +31,14 @@ class ViewControllerBDA11: UIViewController {
         
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: {
             action in
-            guard let nameP = self.nombreTF.text else {print("Hace falta el nombre"); return}
-            guard let descP = self.descripcionTF.text else {print("Hace falta la descripcion"); return}
-            guard let upcT = self.upcTF.text, let upcP = Int64(upcT) else {print("Hace falta el upc"); return}
-            guard let weightT = self.pesoTF.text, let weightP = Double(weightT) else {print("Hace falta el peso"); return}
+            guard let nameD = self.NameD.text else {print("Hace falta el nombre"); return}
+            guard let adsF = self.AddressF.text else {print("Hace falta la descripcion"); return}
+            guard let adsR = self.AddressR.text else {print("Hace falta el upc"); return}
+            guard let rfc = self.Rfc.text else {print("Hace falta el peso"); return}
+            guard let phone = self.Phone.text else {print("Hace falta el peso"); return}
+            guard let email = self.Email.text else {print("Hace falta el peso"); return}
             
-            let datos = Product(upc: upcP, itemName: nameP, description: descP,  unitaryWeight: weightP)
+            let datos = Donator(name: nameD, addressF: adsF, addressR: adsR, rfc: rfc, phone: phone, email: email)
             
             let postRequest = APIRequest(endpoint: "import")
             postRequest.save(datos, completion: {result in
@@ -62,14 +64,15 @@ class ViewControllerBDA11: UIViewController {
     }
     
     
-    @IBOutlet weak var upcTF: UITextField!
+    @IBOutlet weak var Rfc: UITextField!
+    @IBOutlet weak var NameD: UITextField!
     
-    @IBOutlet weak var nombreTF: UITextField!
+    @IBOutlet weak var Phone: UITextField!
+    @IBOutlet weak var AddressF: UITextField!
     
-    @IBOutlet weak var descripcionTF: UITextField!
+    @IBOutlet weak var Email: UITextField!
     
-    @IBOutlet weak var pesoTF: UITextField!
-    
+    @IBOutlet weak var AddressR: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
