@@ -20,6 +20,7 @@
 		F2A18683271A29B600079AA6 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A1867D271A29B600079AA6 /* Product.swift */; };
 		F2A18684271A29B600079AA6 /* NewProductService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A1867F271A29B600079AA6 /* NewProductService.swift */; };
 		F2A18685271A29B600079AA6 /* DonationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A18680271A29B600079AA6 /* DonationService.swift */; };
+		F2A18691271A2A0A00079AA6 /* ViewControllerBDA-8.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A18690271A2A0A00079AA6 /* ViewControllerBDA-8.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		F2A1867D271A29B600079AA6 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		F2A1867F271A29B600079AA6 /* NewProductService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewProductService.swift; sourceTree = "<group>"; };
 		F2A18680271A29B600079AA6 /* DonationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DonationService.swift; sourceTree = "<group>"; };
+		F2A18690271A2A0A00079AA6 /* ViewControllerBDA-8.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewControllerBDA-8.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 				72997B3226EADC6100099692 /* AppDelegate.swift */,
 				72997B3426EADC6100099692 /* SceneDelegate.swift */,
 				72997B3626EADC6100099692 /* ViewController.swift */,
+				F2A18690271A2A0A00079AA6 /* ViewControllerBDA-8.swift */,
 				72997B3826EADC6100099692 /* Main.storyboard */,
 				72997B3B26EADC6200099692 /* Assets.xcassets */,
 				72997B3D26EADC6200099692 /* LaunchScreen.storyboard */,
@@ -301,6 +304,7 @@
 				F2A18681271A29B600079AA6 /* Donation.swift in Sources */,
 				72997B3326EADC6100099692 /* AppDelegate.swift in Sources */,
 				72997B3526EADC6100099692 /* SceneDelegate.swift in Sources */,
+				F2A18691271A2A0A00079AA6 /* ViewControllerBDA-8.swift in Sources */,
 				F2A18682271A29B600079AA6 /* Line.swift in Sources */,
 				F2A18685271A29B600079AA6 /* DonationService.swift in Sources */,
 				F2A18684271A29B600079AA6 /* NewProductService.swift in Sources */,
