@@ -8,12 +8,17 @@
 import UIKit
 
 class ViewControllerReceiver: UIViewController {
+    @IBOutlet var sideMenuBtn: UIBarButtonItem!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        
+
+        sideMenuBtn.target = revealViewController()
+        sideMenuBtn.action = #selector(revealViewController()?.revealSideMenu)
+        self.hideKeyboardWhenTappedAround()
     }
+
+
     
 
     @IBOutlet var ReceiverDonationInfo: UILabel!

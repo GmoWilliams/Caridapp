@@ -28,12 +28,18 @@
 		8AE13BDF2714D8F7003805DB /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A22992C27127266001CE110 /* Product.swift */; };
 		8AE13BE32714D8FE003805DB /* DonationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A18D29627121ADD00D5720E /* DonationService.swift */; };
 		8AFA66AB27129B9300905EE9 /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFA66AA27129B9300905EE9 /* ProductTableViewCell.swift */; };
-		8AFA66DF2712AE3F00905EE9 /* MenuImportationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFA66DE2712AE3F00905EE9 /* MenuImportationViewController.swift */; };
+		8AFA66DF2712AE3F00905EE9 /* sideMenuBtn.target = revealViewController()         sideMenuBtn.action = #selector(revealViewController()?.revealSideMenu).swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFA66DE2712AE3F00905EE9 /* sideMenuBtn.target = revealViewController()         sideMenuBtn.action = #selector(revealViewController()?.revealSideMenu).swift */; };
+		C0009EB2271A1402000BD5A8 /* SideMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0009EB0271A1402000BD5A8 /* SideMenuCell.swift */; };
+		C0009EB3271A1402000BD5A8 /* SideMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0009EB1271A1402000BD5A8 /* SideMenuCell.xib */; };
+		C031CF3F271946EE00A0BB5D /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C031CF3E271946EE00A0BB5D /* SideMenuViewController.swift */; };
+		C031CF4D27194B2A00A0BB5D /* SideMenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C031CF4C27194B2A00A0BB5D /* SideMenuModel.swift */; };
+		C031CF57271950B200A0BB5D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C031CF56271950B200A0BB5D /* MainViewController.swift */; };
 		C05D61BE27123661000BE433 /* ViewControllerBDA14Lines.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05D61BD27123661000BE433 /* ViewControllerBDA14Lines.swift */; };
 		C094D3972717FEFD0003EF36 /* RegisterProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C094D3962717FEFD0003EF36 /* RegisterProductViewController.swift */; };
 		C0B23DD72703CA34003CE6DE /* VewControllerBDA14_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B23DD62703CA34003CE6DE /* VewControllerBDA14_2.swift */; };
 		C0B23DDC2703CB78003CE6DE /* VewControllerReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B23DDB2703CB78003CE6DE /* VewControllerReceiver.swift */; };
 		C0B23DE52703CC96003CE6DE /* ViewControllerBDA15.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B23DE42703CC96003CE6DE /* ViewControllerBDA15.swift */; };
+		C0FB283E271919A4001E34E9 /* LinePV.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FB283D271919A3001E34E9 /* LinePV.swift */; };
 		C0FF88B726F80F2D006BA0F9 /* ViewControllerBDA14.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FF88B626F80F2D006BA0F9 /* ViewControllerBDA14.swift */; };
 /* End PBXBuildFile section */
 
@@ -78,12 +84,18 @@
 		8A9C956D27051A30004DE62A /* Line.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
 		8AE13BD32714CA0F003805DB /* SelectProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectProductViewController.swift; sourceTree = "<group>"; };
 		8AFA66AA27129B9300905EE9 /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
-		8AFA66DE2712AE3F00905EE9 /* MenuImportationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuImportationViewController.swift; sourceTree = "<group>"; };
+		8AFA66DE2712AE3F00905EE9 /* sideMenuBtn.target = revealViewController()         sideMenuBtn.action = #selector(revealViewController()?.revealSideMenu).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "sideMenuBtn.target = revealViewController()         sideMenuBtn.action = #selector(revealViewController()?.revealSideMenu).swift"; sourceTree = "<group>"; };
+		C0009EB0271A1402000BD5A8 /* SideMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuCell.swift; sourceTree = "<group>"; };
+		C0009EB1271A1402000BD5A8 /* SideMenuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SideMenuCell.xib; sourceTree = "<group>"; };
+		C031CF3E271946EE00A0BB5D /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
+		C031CF4C27194B2A00A0BB5D /* SideMenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuModel.swift; sourceTree = "<group>"; };
+		C031CF56271950B200A0BB5D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		C05D61BD27123661000BE433 /* ViewControllerBDA14Lines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerBDA14Lines.swift; sourceTree = "<group>"; };
 		C094D3962717FEFD0003EF36 /* RegisterProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterProductViewController.swift; sourceTree = "<group>"; };
 		C0B23DD62703CA34003CE6DE /* VewControllerBDA14_2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VewControllerBDA14_2.swift; sourceTree = "<group>"; };
 		C0B23DDB2703CB78003CE6DE /* VewControllerReceiver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VewControllerReceiver.swift; sourceTree = "<group>"; };
 		C0B23DE42703CC96003CE6DE /* ViewControllerBDA15.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerBDA15.swift; sourceTree = "<group>"; };
+		C0FB283D271919A3001E34E9 /* LinePV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinePV.swift; sourceTree = "<group>"; };
 		C0FF88B626F80F2D006BA0F9 /* ViewControllerBDA14.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerBDA14.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -142,6 +154,7 @@
 				72997B3426EADC6100099692 /* SceneDelegate.swift */,
 				C0B23DE02703CC07003CE6DE /* ViewControllerBDA14-15 */,
 				72997B3626EADC6100099692 /* ViewController.swift */,
+				C031CF5B2719578F00A0BB5D /* SideMenu */,
 				72997B3826EADC6100099692 /* Main.storyboard */,
 				721AD2D2271657330010BE30 /* ViewControllerBDA-11.swift */,
 				72997B3B26EADC6200099692 /* Assets.xcassets */,
@@ -149,7 +162,7 @@
 				C094D3962717FEFD0003EF36 /* RegisterProductViewController.swift */,
 				72997B4026EADC6200099692 /* Info.plist */,
 				8AE13BD32714CA0F003805DB /* SelectProductViewController.swift */,
-				8AFA66DE2712AE3F00905EE9 /* MenuImportationViewController.swift */,
+				8AFA66DE2712AE3F00905EE9 /* sideMenuBtn.target = revealViewController()         sideMenuBtn.action = #selector(revealViewController()?.revealSideMenu).swift */,
 			);
 			path = Caridapp;
 			sourceTree = "<group>";
@@ -209,6 +222,18 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		C031CF5B2719578F00A0BB5D /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				C031CF3E271946EE00A0BB5D /* SideMenuViewController.swift */,
+				C031CF56271950B200A0BB5D /* MainViewController.swift */,
+				C031CF4C27194B2A00A0BB5D /* SideMenuModel.swift */,
+				C0009EB0271A1402000BD5A8 /* SideMenuCell.swift */,
+				C0009EB1271A1402000BD5A8 /* SideMenuCell.xib */,
+			);
+			path = SideMenu;
+			sourceTree = "<group>";
+		};
 		C094D38F2717FAFE0003EF36 /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
@@ -220,6 +245,7 @@
 			isa = PBXGroup;
 			children = (
 				C0B23DDB2703CB78003CE6DE /* VewControllerReceiver.swift */,
+				C0FB283D271919A3001E34E9 /* LinePV.swift */,
 				C0FF88B626F80F2D006BA0F9 /* ViewControllerBDA14.swift */,
 				C0B23DD62703CA34003CE6DE /* VewControllerBDA14_2.swift */,
 				C0B23DE42703CC96003CE6DE /* ViewControllerBDA15.swift */,
@@ -334,6 +360,7 @@
 				72997B3F26EADC6200099692 /* LaunchScreen.storyboard in Resources */,
 				72997B3C26EADC6200099692 /* Assets.xcassets in Resources */,
 				72997B3A26EADC6100099692 /* Main.storyboard in Resources */,
+				C0009EB3271A1402000BD5A8 /* SideMenuCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,11 +392,15 @@
 				72997B3326EADC6100099692 /* AppDelegate.swift in Sources */,
 				C0B23DD72703CA34003CE6DE /* VewControllerBDA14_2.swift in Sources */,
 				72997B3526EADC6100099692 /* SceneDelegate.swift in Sources */,
+				C031CF3F271946EE00A0BB5D /* SideMenuViewController.swift in Sources */,
 				C0FF88B726F80F2D006BA0F9 /* ViewControllerBDA14.swift in Sources */,
-				8AFA66DF2712AE3F00905EE9 /* MenuImportationViewController.swift in Sources */,
+				8AFA66DF2712AE3F00905EE9 /* sideMenuBtn.target = revealViewController()         sideMenuBtn.action = #selector(revealViewController()?.revealSideMenu).swift in Sources */,
+				C0FB283E271919A4001E34E9 /* LinePV.swift in Sources */,
 				72997B3726EADC6100099692 /* ViewController.swift in Sources */,
 				721AD2D3271657330010BE30 /* ViewControllerBDA-11.swift in Sources */,
 				72997B3326EADC6100099692 /* AppDelegate.swift in Sources */,
+				C0009EB2271A1402000BD5A8 /* SideMenuCell.swift in Sources */,
+				C031CF4D27194B2A00A0BB5D /* SideMenuModel.swift in Sources */,
 				8A22992D27127266001CE110 /* Product.swift in Sources */,
 				8AE13BD42714CA0F003805DB /* SelectProductViewController.swift in Sources */,
 				C094D3972717FEFD0003EF36 /* RegisterProductViewController.swift in Sources */,
@@ -378,6 +409,7 @@
 				C0FF88B726F80F2D006BA0F9 /* ViewControllerBDA14.swift in Sources */,
 				8A18D29727121ADD00D5720E /* DonationService.swift in Sources */,
 				8AFA66AB27129B9300905EE9 /* ProductTableViewCell.swift in Sources */,
+				C031CF57271950B200A0BB5D /* MainViewController.swift in Sources */,
 				8A9C957027051A30004DE62A /* Line.swift in Sources */,
 				721AD2CE271653D50010BE30 /* NewProductService.swift in Sources */,
 			);

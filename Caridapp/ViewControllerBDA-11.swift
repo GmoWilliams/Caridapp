@@ -21,7 +21,8 @@ extension UIViewController {
 
 class ViewControllerBDA11: UIViewController {
     
-    //let importationService = ImportationService()
+  
+
     @IBAction func registratAction(_ sender: Any) {
         
         
@@ -70,14 +71,17 @@ class ViewControllerBDA11: UIViewController {
     
     @IBOutlet weak var pesoTF: UITextField!
     
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         self.hideKeyboardWhenTappedAround()
 
-        // Do any additional setup after loading the view.
     }
+    
+    
     
     var donation : Donation?
     
