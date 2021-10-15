@@ -13,7 +13,7 @@ class ViewControllerBDA14: UIViewController {
     
     @IBOutlet var verifTble: UITableView!
     
-    var lines = [String]()
+    var lines = [LinePV]()
     var tableViewDataSource = Array(0...100)
     
     override func viewDidLoad() {
@@ -31,33 +31,33 @@ class ViewControllerBDA14: UIViewController {
     
     func addLines() {
         
-        lines.removeAll()
-        guard let count = UserDefaults().value(forKey: "count") as? Int else{
-            return
-        }
-        for x in 0 ..< count {
-            if let line = UserDefaults().value(forKey: "line_\(x+1)")as? String {
-                lines.append(line)
-            }
-        }
-        verifTble.reloadData()
+//        lines.removeAll()
+//        guard let count = UserDefaults().value(forKey: "count") as? Int else{
+//            return
+//        }
+//        for x in 0 ..< count {
+//            if let line = UserDefaults().value(forKey: "line_\(x+1)")as? String {
+//                lines.append(line)
+//            }
+//        }
+//        verifTble.reloadData()
     }
     
     
     func updateLines() {
         
-        lines.removeAll()
-        
-        guard let count = UserDefaults().value(forKey: "count") as? Int else{
-            return
-        }
-        
-        for x in 0 ..< count {
-            if let line = UserDefaults().value(forKey: "line_\(x+1)")as? String {
-                lines.insert(line, at: x)
-            }
-        }
-        verifTble.reloadData()
+//        lines.removeAll()
+//
+//        guard let count = UserDefaults().value(forKey: "count") as? Int else{
+//            return
+//        }
+//
+//        for x in 0 ..< count {
+//            if let line = UserDefaults().value(forKey: "line_\(x+1)")as? String {
+//                lines.insert(line, at: x)
+//            }
+//        }
+//        verifTble.reloadData()
     }
     
     
@@ -72,6 +72,32 @@ class ViewControllerBDA14: UIViewController {
         }
         navigationController?.pushViewController(vc, animated: true)
     }
+    
+    func downloadJSON(completed: @escaping () -> () ) {
+           let url = URL(string: "https://caridapp.herokuapp.com/historyLine")
+           //let url = URL(string: "https://api.opendota.com/api/heroStats")
+           
+           URLSession.shared.dataTask(with: url!) { (data, response, error) in
+               if error == nil {
+                       do {
+                           /*
+                           let dateFormatter = DateFormatter()
+                           dateFormatter.dateFormat = "yyyy-MM-dd"
+                           JSONDecoder.dateDecodingStrategy = .formatted(dateFormatter)
+                           */
+                           
+                           self.lines = try JSONDecoder().decode([LinePV].self, from: data!)
+                           //self.heroes = try JSONDecoder().decode([HeroStats].self, from: data!)
+                           DispatchQueue.main.async {
+                               completed()
+                           }
+                           
+                   } catch {
+                       print("JSON Error")
+                   }
+               }
+           }.resume()
+       }
 }
 
 extension ViewControllerBDA14: UITableViewDelegate {
@@ -79,7 +105,6 @@ extension ViewControllerBDA14: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         let vc = storyboard?.instantiateViewController(identifier: "task") as! ViewControllerBDA14_2
-        vc.line = lines[indexPath.row]
         vc.update = {
             DispatchQueue.main.async {
                 self.updateLines()
@@ -96,7 +121,10 @@ extension ViewControllerBDA14: UITableViewDataSource {
         return self.lines.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
+        //let cell = UITableViewCell()
+        let cell = UITableViewCell(style: .default, reuseIdentifier: nil)
+               cell.textLabel?.text = String(lines[indexPath.row].itemName) + ", Cantidad: " +
+                   String(lines[indexPath.row].quantity)
         cell.textLabel?.text = "\(self.lines[indexPath.row])"
         return cell
     }
