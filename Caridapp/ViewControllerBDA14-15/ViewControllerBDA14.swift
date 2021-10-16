@@ -14,19 +14,25 @@ class ViewControllerBDA14: UIViewController {
     @IBOutlet var verifTble: UITableView!
     
     var lines = [LinePV]()
-    var tableViewDataSource = Array(0...100)
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        downloadJSON {
+            print ("Successful")
+            self.verifTble.reloadData()
+        }
+
         // Get all current saved tasks
         verifTble.delegate = self
         verifTble.dataSource = self
         
-        if !UserDefaults().bool(forKey: "setup"){
-            UserDefaults().set(true, forKey: "setup")
-            UserDefaults().set(0, forKey: "count")
-        }
-        addLines()
+//        if !UserDefaults().bool(forKey: "setup"){
+//            UserDefaults().set(true, forKey: "setup")
+//            UserDefaults().set(0, forKey: "count")
+//        }
+//        addLines()
     }
     
     func addLines() {
@@ -38,23 +44,6 @@ class ViewControllerBDA14: UIViewController {
 //        for x in 0 ..< count {
 //            if let line = UserDefaults().value(forKey: "line_\(x+1)")as? String {
 //                lines.append(line)
-//            }
-//        }
-//        verifTble.reloadData()
-    }
-    
-    
-    func updateLines() {
-        
-//        lines.removeAll()
-//
-//        guard let count = UserDefaults().value(forKey: "count") as? Int else{
-//            return
-//        }
-//
-//        for x in 0 ..< count {
-//            if let line = UserDefaults().value(forKey: "line_\(x+1)")as? String {
-//                lines.insert(line, at: x)
 //            }
 //        }
 //        verifTble.reloadData()
@@ -74,7 +63,7 @@ class ViewControllerBDA14: UIViewController {
     }
     
     func downloadJSON(completed: @escaping () -> () ) {
-           let url = URL(string: "https://caridapp.herokuapp.com/historyLine")
+           let url = URL(string: "https://caridapp.herokuapp.com/VerifyLine")
            //let url = URL(string: "https://api.opendota.com/api/heroStats")
            
            URLSession.shared.dataTask(with: url!) { (data, response, error) in
@@ -105,11 +94,6 @@ extension ViewControllerBDA14: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         let vc = storyboard?.instantiateViewController(identifier: "task") as! ViewControllerBDA14_2
-        vc.update = {
-            DispatchQueue.main.async {
-                self.updateLines()
-            }
-        }
         navigationController?.pushViewController(vc, animated: true)
     }
 }
@@ -122,10 +106,10 @@ extension ViewControllerBDA14: UITableViewDataSource {
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         //let cell = UITableViewCell()
+               //cell.textLabel?.text = heroes[indexPath.row].localized_name
+  
         let cell = UITableViewCell(style: .default, reuseIdentifier: nil)
-               cell.textLabel?.text = String(lines[indexPath.row].itemName) + ", Cantidad: " +
-                   String(lines[indexPath.row].quantity)
-        cell.textLabel?.text = "\(self.lines[indexPath.row])"
+        cell.textLabel?.text = String(lines[indexPath.row].itemName) + ", Cantidad: " + String(lines[indexPath.row].quantity)
         return cell
     }
 
