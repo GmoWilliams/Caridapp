@@ -2219,7 +2219,7 @@ en la Lista</string>
                                     <fragment content="upc">
                                         <attributes>
                                             <color key="NSColor" red="1" green="0.34806637101388194" blue="0.014770191276453404" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="14" name=".SFNS-Regular"/>
+                                            <font key="NSFont" metaFont="system" size="14"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
