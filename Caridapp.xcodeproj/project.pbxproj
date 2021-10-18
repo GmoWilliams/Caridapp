@@ -10,6 +10,8 @@
 		721AD2CE271653D50010BE30 /* NewProductService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721AD2CD271653D50010BE30 /* NewProductService.swift */; };
 		721AD2D3271657330010BE30 /* ViewControllerBDA-11.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721AD2D2271657330010BE30 /* ViewControllerBDA-11.swift */; };
 		726877B72718101F009399E1 /* RegisterProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726877B62718101F009399E1 /* RegisterProductViewController.swift */; };
+		728B0D55271D418800ADB185 /* UpdateProductService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728B0D54271D418800ADB185 /* UpdateProductService.swift */; };
+		728B0D5A271D4A5700ADB185 /* LineUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728B0D59271D4A5700ADB185 /* LineUpdate.swift */; };
 		72997B3326EADC6100099692 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72997B3226EADC6100099692 /* AppDelegate.swift */; };
 		72997B3526EADC6100099692 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72997B3426EADC6100099692 /* SceneDelegate.swift */; };
 		72997B3726EADC6100099692 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72997B3626EADC6100099692 /* ViewController.swift */; };
@@ -62,6 +64,8 @@
 		721AD2CD271653D50010BE30 /* NewProductService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewProductService.swift; sourceTree = "<group>"; };
 		721AD2D2271657330010BE30 /* ViewControllerBDA-11.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewControllerBDA-11.swift"; sourceTree = "<group>"; };
 		726877B62718101F009399E1 /* RegisterProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterProductViewController.swift; sourceTree = "<group>"; };
+		728B0D54271D418800ADB185 /* UpdateProductService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateProductService.swift; sourceTree = "<group>"; };
+		728B0D59271D4A5700ADB185 /* LineUpdate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineUpdate.swift; sourceTree = "<group>"; };
 		72997B2F26EADC6100099692 /* Caridapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Caridapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72997B3226EADC6100099692 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		72997B3426EADC6100099692 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -195,7 +199,9 @@
 				72F6DD8A271890AC007E29C3 /* LineViewController.swift */,
 				72F6DD972718925B007E29C3 /* LineTableViewController.swift */,
 				72F6DDA427189C22007E29C3 /* HeroStats.swift */,
+				728B0D59271D4A5700ADB185 /* LineUpdate.swift */,
 				72F6DDA927189CD7007E29C3 /* LineP.swift */,
+				728B0D54271D418800ADB185 /* UpdateProductService.swift */,
 			);
 			path = "BDA-2";
 			sourceTree = "<group>";
@@ -392,6 +398,7 @@
 				72997B3726EADC6100099692 /* ViewController.swift in Sources */,
 				721AD2D3271657330010BE30 /* ViewControllerBDA-11.swift in Sources */,
 				72F6DD8B271890AC007E29C3 /* LineViewController.swift in Sources */,
+				728B0D5A271D4A5700ADB185 /* LineUpdate.swift in Sources */,
 				72997B3326EADC6100099692 /* AppDelegate.swift in Sources */,
 				8A22992D27127266001CE110 /* Product.swift in Sources */,
 				8AE13BD42714CA0F003805DB /* SelectProductViewController.swift in Sources */,
@@ -401,6 +408,7 @@
 				C0FF88B726F80F2D006BA0F9 /* ViewControllerBDA14.swift in Sources */,
 				8A18D29727121ADD00D5720E /* DonationService.swift in Sources */,
 				8AFA66AB27129B9300905EE9 /* ProductTableViewCell.swift in Sources */,
+				728B0D55271D418800ADB185 /* UpdateProductService.swift in Sources */,
 				8A9C957027051A30004DE62A /* Line.swift in Sources */,
 				721AD2CE271653D50010BE30 /* NewProductService.swift in Sources */,
 				72F6DD982718925B007E29C3 /* LineTableViewController.swift in Sources */,

@@ -34,7 +34,7 @@ class LineTableViewController: UIViewController, UITableViewDelegate, UITableVie
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: .default, reuseIdentifier: nil)
         cell.textLabel?.text = String(lineS[indexPath.row].itemName) + ", Cantidad: " +
-            String(lineS[indexPath.row].quantity)
+            String(lineS[indexPath.row].originalQuantity)
         //cell.textLabel?.text = heroes[indexPath.row].localized_name
         
         return cell
