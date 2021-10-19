@@ -28,13 +28,30 @@ class SideMenuViewController: UIViewController {
     
     var delegate: SideMenuViewControllerDelegate?
 
+    var imageView: UIImageView = {
+       let imageView = UIImageView(frame: .zero)
+       imageView.image = UIImage(named: "SideMenuB.jpeg")
+       imageView.contentMode = .scaleToFill
+       imageView.translatesAutoresizingMaskIntoConstraints = false
+       return imageView
+   }()
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        view.insertSubview(imageView, at: 0)
+        NSLayoutConstraint.activate([
+            imageView.topAnchor.constraint(equalTo: view.topAnchor),
+            imageView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            imageView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            imageView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+        ])
+        
+        
         // TableView
+        self.sideMenuTableView.backgroundColor = #colorLiteral(red: 0, green: 0.4784313725, blue: 1, alpha: 1)
         self.sideMenuTableView.delegate = self
         self.sideMenuTableView.dataSource = self
-        self.sideMenuTableView.backgroundColor = #colorLiteral(red: 0.1411764771, green: 0.3960784376, blue: 0.5647059083, alpha: 1)
         self.sideMenuTableView.separatorStyle = .none
 
         // Set Highlighted Cell
@@ -75,7 +92,7 @@ extension SideMenuViewController: UITableViewDataSource {
 
         // Highlighted color
         let myCustomSelectionColorView = UIView()
-        myCustomSelectionColorView.backgroundColor = #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1)
+        myCustomSelectionColorView.backgroundColor = #colorLiteral(red: 0.1501106389, green: 0.269132077, blue: 0.4949238579, alpha: 0.8390410959)
         cell.selectedBackgroundView = myCustomSelectionColorView
         return cell
     }
@@ -85,8 +102,5 @@ extension SideMenuViewController: UITableViewDataSource {
         // ...
         self.delegate?.selectedCell(indexPath.row)
         // Remove highlighted color when you press the 'Profile' and 'Like us on facebook' cell
-        if indexPath.row == 4 || indexPath.row == 6 {
-            tableView.deselectRow(at: indexPath, animated: true)
-        }
     }
 }

@@ -18,6 +18,8 @@ class ViewControllerBDA14: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.title = "VERIFICACION"
 
         downloadJSON {
             print ("Successful")
@@ -63,7 +65,7 @@ class ViewControllerBDA14: UIViewController {
     }
     
     func downloadJSON(completed: @escaping () -> () ) {
-           let url = URL(string: "https://caridapp.herokuapp.com/VerifyLine")
+           let url = URL(string: "https://caridapp.herokuapp.com/HistoryLine")
            //let url = URL(string: "https://api.opendota.com/api/heroStats")
            
            URLSession.shared.dataTask(with: url!) { (data, response, error) in
@@ -109,7 +111,7 @@ extension ViewControllerBDA14: UITableViewDataSource {
                //cell.textLabel?.text = heroes[indexPath.row].localized_name
   
         let cell = UITableViewCell(style: .default, reuseIdentifier: nil)
-        cell.textLabel?.text = String(lines[indexPath.row].itemName) + ", Cantidad: " + String(lines[indexPath.row].quantity)
+        cell.textLabel?.text = String(lines[indexPath.row].itemName) + ", Cantidad: " + String(lines[indexPath.row].originalQuantity)
         return cell
     }
 
