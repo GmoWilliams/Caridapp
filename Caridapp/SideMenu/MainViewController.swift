@@ -38,7 +38,7 @@ class MainViewController: UIViewController {
 
     override public func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1)
+        self.view.backgroundColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
         // Shadow Background View
         self.sideMenuShadowView = UIView(frame: self.view.bounds)
                 self.sideMenuShadowView.autoresizingMask = [.flexibleWidth, .flexibleHeight]

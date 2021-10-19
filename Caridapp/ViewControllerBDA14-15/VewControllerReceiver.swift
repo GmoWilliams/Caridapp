@@ -12,6 +12,7 @@ class ViewControllerReceiver: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "CARIDAPP"
 
         sideMenuBtn.target = revealViewController()
         sideMenuBtn.action = #selector(revealViewController()?.revealSideMenu)
