@@ -57,11 +57,9 @@ class LineViewController: UIViewController {
                 case .success(let datos):
                     print("Se registro en la Base de Datos exitosamente tu producto:\n ID de la linea: \(datos.lineID)\n Costo Unitario: \(datos.unitaryCost)\n Cantidad: \(datos.originalQuantity)")
                     
-                    
                     DispatchQueue.main.async(){
                        self.performSegue(withIdentifier: "showLines", sender: self)
                     }
-                    
                     
                 case .failure(let err):
                     print("Ocurrio un error: \(err)")
@@ -88,9 +86,14 @@ class LineViewController: UIViewController {
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround()
         
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "EEEE, MMM d, yyyy"
+        
         unitaryCostTF.placeholder = "\((lineZ?.unitaryCost)!)"
         
-        //expirationTF.placeholder = "\((lineZ?.unitaryCost)!)"
+        //expirationTF.placeholder = "\((lineZ?.productExpiration)!)"
+        
+        expirationTF.placeholder = dateFormatter.string(from: lineZ!.productExpiration)
         
         quantityTF.placeholder = "\((lineZ?.originalQuantity)!)"
         

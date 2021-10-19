@@ -9,11 +9,11 @@ import UIKit
 
 class LineTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-
     @IBOutlet weak var LineTableView: UITableView!
     
     var lineS = [LineP]()
-    //var heroes = [HeroStats]()
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,14 +28,16 @@ class LineTableViewController: UIViewController, UITableViewDelegate, UITableVie
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return lineS.count
-        //return heroes.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: .default, reuseIdentifier: nil)
-        cell.textLabel?.text = String(lineS[indexPath.row].itemName) + ", Cantidad: " +
-            String(lineS[indexPath.row].originalQuantity)
-        //cell.textLabel?.text = heroes[indexPath.row].localized_name
+        
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "EEEE, MMM d, yyyy"
+        let Date1 = dateFormatter.string(from: lineS[indexPath.row].productExpiration)
+        
+        cell.textLabel?.text = String(lineS[indexPath.row].itemName) + ", Fecha: " + String(Date1)
         
         return cell
     }
@@ -47,25 +49,27 @@ class LineTableViewController: UIViewController, UITableViewDelegate, UITableVie
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destination = segue.destination as? LineViewController {
             destination.lineZ = lineS[(LineTableView.indexPathForSelectedRow?.row)!]
-            //destination.hero = heroes[(LineTableView.indexPathForSelectedRow?.row)!]
         }
     }
     
     func downloadJSON(completed: @escaping () -> () ) {
         let url = URL(string: "https://caridapp.herokuapp.com/historyLine")
-        //let url = URL(string: "https://api.opendota.com/api/heroStats")
         
         URLSession.shared.dataTask(with: url!) { (data, response, error) in
             if error == nil {
                     do {
-                        /*
-                        let dateFormatter = DateFormatter()
-                        dateFormatter.dateFormat = "yyyy-MM-dd"
-                        JSONDecoder.dateDecodingStrategy = .formatted(dateFormatter)
-                        */
                         
-                        self.lineS = try JSONDecoder().decode([LineP].self, from: data!)
-                        //self.heroes = try JSONDecoder().decode([HeroStats].self, from: data!)
+                        let decoder = JSONDecoder()
+                        let dateFormatter = DateFormatter()
+                        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
+                        decoder.dateDecodingStrategy = .formatted(dateFormatter)
+                        
+                        self.lineS = try decoder.decode([LineP].self, from: data!)
+                      
+                        if let jsonResponse = String(data: data!, encoding: String.Encoding.utf8) {
+                            print("JSON String: \(jsonResponse)")
+                        }
+                        
                         DispatchQueue.main.async {
                             completed()
                         }

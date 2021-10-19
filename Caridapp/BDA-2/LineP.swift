@@ -13,17 +13,7 @@ public class LineP: Codable {
     public let upc: Int64;
     public let itemName: String;
     public let unitaryCost: Float;
-    //public let expirationDate: Date;
+    public let productExpiration: Date;
     public let originalQuantity: Int;
     public let quantity: Int;
-    
-    public init (donationID: Int64, lineID: Int64, upc: Int64, itemName: String, unitaryCost: Float, originalQuantity: Int, quantity: Int) {
-        self.donationID = donationID;
-        self.lineID = lineID;
-        self.upc = upc;
-        self.itemName = itemName;
-        self.unitaryCost = unitaryCost;
-        self.originalQuantity = originalQuantity;
-        self.quantity = quantity;
-    }
 }
