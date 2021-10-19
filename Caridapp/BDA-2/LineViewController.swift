@@ -88,6 +88,7 @@ class LineViewController: UIViewController {
         
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "EEEE, MMM d, yyyy"
+        dateFormatter.locale = .init(identifier: "es_ES")
         
         unitaryCostTF.placeholder = "\((lineZ?.unitaryCost)!)"
         
@@ -96,6 +97,8 @@ class LineViewController: UIViewController {
         expirationTF.placeholder = dateFormatter.string(from: lineZ!.productExpiration)
         
         quantityTF.placeholder = "\((lineZ?.originalQuantity)!)"
+        
+        pickUpTF.placeholder = dateFormatter.string(from: lineZ!.pickUpDate)
         
         /*
         print("\((lineZ?.lineID)!)")

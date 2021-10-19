@@ -34,8 +34,9 @@ class LineTableViewController: UIViewController, UITableViewDelegate, UITableVie
         let cell = UITableViewCell(style: .default, reuseIdentifier: nil)
         
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "EEEE, MMM d, yyyy"
-        let Date1 = dateFormatter.string(from: lineS[indexPath.row].productExpiration)
+        dateFormatter.dateFormat = "E, MMM d, yyyy"
+        dateFormatter.locale = .init(identifier: "es_ES")
+        let Date1 = dateFormatter.string(from: lineS[indexPath.row].pickUpDate)
         
         cell.textLabel?.text = String(lineS[indexPath.row].itemName) + ", Fecha: " + String(Date1)
         

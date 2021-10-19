@@ -14,6 +14,7 @@ public class LineP: Codable {
     public let itemName: String;
     public let unitaryCost: Float;
     public let productExpiration: Date;
+    public let pickUpDate: Date;
     public let originalQuantity: Int;
-    public let quantity: Int;
+    
 }
