@@ -6,6 +6,7 @@
 //
 import UIKit
 
+
 class LineTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var LineTableView: UITableView!
@@ -14,8 +15,14 @@ class LineTableViewController: UIViewController, UITableViewDelegate, UITableVie
     
     
     
+    @IBOutlet var sideMenuBtn: UIBarButtonItem!
+    
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "CARIDAPP"
+        sideMenuBtn.target = revealViewController()
+        sideMenuBtn.action = #selector(revealViewController()?.revealSideMenu)
 
         downloadJSON {
             print ("Successful")
@@ -43,7 +50,7 @@ class LineTableViewController: UIViewController, UITableViewDelegate, UITableVie
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "showDetails", sender: self)
+        self.performSegue(withIdentifier: "showDetails", sender: self)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

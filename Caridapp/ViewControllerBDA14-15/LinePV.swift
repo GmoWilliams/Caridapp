@@ -15,5 +15,5 @@ public class LinePV: Decodable {
     //public let unitaryCost: Float;
     //public let expirationDate: Date;
     public let originalQuantity: Int;
-    public let quantity: Int;
+    //public let quantity: Int;
 }

@@ -57,7 +57,8 @@ class LineViewController: UIViewController {
                     print("Se registro en la Base de Datos exitosamente tu producto:\n ID de la linea: \(datos.lineID)\n Costo Unitario: \(datos.unitaryCost)\n Cantidad: \(datos.originalQuantity)")
                     
                     DispatchQueue.main.async(){
-                       self.performSegue(withIdentifier: "showLines", sender: self)
+                        let vc = self.storyboard?.instantiateViewController(identifier: "LineTableID") as! LineTableViewController
+                        self.navigationController?.pushViewController(vc, animated: true)
                     }
                     
                 case .failure(let err):

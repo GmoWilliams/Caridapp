@@ -100,9 +100,9 @@ extension MainViewController: SideMenuViewControllerDelegate {
         case 1:
             // BDA-1,11
             self.showViewController(viewController: UINavigationController.self, storyboardId: "VerNavID")
-//        case 2:
-//            // BDA-2
-//            self.showViewController(viewController: UINavigationController.self, storyboardId: "ModificarID")
+        case 2:
+            // BDA-2
+            self.showViewController(viewController: UINavigationController.self, storyboardId: "UpdNavID")
 //        case 3:
 //            // BDA-14,15
 //            self.showViewController(viewController: UINavigationController.self, storyboardId: "VerNavID")

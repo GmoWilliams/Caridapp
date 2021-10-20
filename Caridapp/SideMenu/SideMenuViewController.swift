@@ -19,9 +19,10 @@ class SideMenuViewController: UIViewController {
 
     var menu: [SideMenuModel] = [
         //SideMenuModel(title: "Inicio"),
-        //SideMenuModel(title: "Agregar Donacion (BDA-2)"),
-        SideMenuModel(title: "Modificar Donacion (BDA-1, 11)"),
+        
+        SideMenuModel(title: "Agregar Donacion (BDA-1, 11)"),
         SideMenuModel(title: "Verificar Donacion (temporal BDA-14,15)"),
+        SideMenuModel(title: "Modificar Donacion (BDA-2)"),
 //        SideMenuModel(title: "Carga Recibida (temporal BDA-13)"),
 //        SideMenuModel(title: "Agregar Donador (temporal BDA-8)"),
     ]
