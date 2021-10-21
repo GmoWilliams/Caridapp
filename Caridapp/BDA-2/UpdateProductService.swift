@@ -27,7 +27,13 @@ struct APIRequest2 {
             var urlRequest = URLRequest(url: resourceURL)
             urlRequest.httpMethod = "PUT"
             urlRequest.addValue("application/json", forHTTPHeaderField: "Content-Type")
-            urlRequest.httpBody = try JSONEncoder().encode(dataToSave)
+            
+            let dateFormatter = DateFormatter();
+            dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'";
+            let encoder = JSONEncoder();
+            encoder.dateEncodingStrategy = .formatted(dateFormatter);
+            
+            urlRequest.httpBody = try encoder.encode(dataToSave)
             
             let task = URLSession.shared.dataTask(with: urlRequest){
                 data, response, _ in
@@ -42,7 +48,11 @@ struct APIRequest2 {
                     return
                 }
             do {
-                let contentData = try JSONDecoder().decode(LineUpdate.self, from: JSONData)
+                let decoder = JSONDecoder()
+                let dateFormatter = DateFormatter()
+                dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+                decoder.dateDecodingStrategy = .formatted(dateFormatter)
+                let contentData = try decoder.decode(LineUpdate.self, from: JSONData)
                 completion(.success(contentData))
             }catch{
                 
