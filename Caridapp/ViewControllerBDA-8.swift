@@ -40,14 +40,13 @@ class ViewControllerBDA8: UIViewController {
             
             let datos = Donator(name: nameD, addressF: adsF, addressR: adsR, rfc: rfc, phone: phone, email: email)
             
-            let postRequest = APIRequest(endpoint: "import")
+            let postRequest = 	DonRequest(endpoint: "SetDonator")
             postRequest.save(datos, completion: {result in
                 switch result{
                 case .success(let datos):
-                    print("Se registro en la Base de Datos exitosamente tu producto:\n Nombre del producto: \(datos.itemName)\n Descripcion: \(datos.description)\n UPC: \(datos.upc)\n Peso: \(datos.unitaryWeight)")
-                    
+                    print("Se registro en la Base de Datos exitosamente tu Donador:\n Nombre del producto: \(datos.name)")
                     DispatchQueue.main.async(){
-                       self.performSegue(withIdentifier: "AddingProduct", sender: self)
+                       self.performSegue(withIdentifier: "AddingDonator", sender: self)
                     }
                     
                 

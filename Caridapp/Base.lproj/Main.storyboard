@@ -250,6 +250,9 @@
                                 <state key="normal" title="Registrar">
                                     <color key="titleColor" systemColor="systemBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="registratAction:" destination="uEn-an-NlH" eventType="touchUpInside" id="Rz7-yO-FKH"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="s2z-Nz-pPa"/>
