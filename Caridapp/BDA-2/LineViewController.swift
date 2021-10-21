@@ -47,21 +47,17 @@ class LineViewController: UIViewController {
             let eTF = self.expirationTF.text
             let pTF = self.pickUpTF.text
             
-        
-            
-            var pickP = self.datePicker.date
-            if self.pickUpTF.text == "" {
-               pickP = self.lineZ!.pickUpDate
-            }
-            
             var expP = self.datePicker.date
             if self.expirationTF.text == "" {
                expP = self.lineZ!.productExpiration
             }
-
+            
+            var pickP = self.datePicker2.date
+            if self.pickUpTF.text == "" {
+               pickP = self.lineZ!.pickUpDate
+            }
             
             print("pickP: ",pickP,"\n", "expP:",expP,"\n","current PickUp:",self.lineZ!.pickUpDate,"\n", "current Expiration:",self.lineZ!.productExpiration,"\n", "datePicker:",self.datePicker.date,"\n", "pTF:",self.pickUpTF.text!,"\n", "eTF:",self.expirationTF.text!,"\n")
-            
  
  let datos = LineUpdate(lineID: lineIDP, donationID: donaIDP, unitaryCost: uCostP, originalQuantity: quantP, pickUpDate: pickP, productExpiration: expP)
             //let datos = LineUpdate(lineID: lineIDP, unitaryCost: uCostP, originalQuantity: quantP)
@@ -100,6 +96,7 @@ class LineViewController: UIViewController {
     @IBOutlet weak var pickUpTF: UITextField!
     
     var datePicker :UIDatePicker!
+    var datePicker2: UIDatePicker!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -118,6 +115,7 @@ class LineViewController: UIViewController {
         
         pickUpTF.placeholder = dateFormatter.string(from: lineZ!.pickUpDate)
         
+        // This process can be optimized to a single function for both labels, but it requires a method that allows giving #selector a parameter
         
             datePicker = UIDatePicker.init(frame: CGRect(x: 0, y: 0, width: view.bounds.size.width, height: 200))
             datePicker.datePickerMode = UIDatePicker.Mode.date
@@ -131,6 +129,17 @@ class LineViewController: UIViewController {
             toolBar.setItems([UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.flexibleSpace, target: nil, action: nil), doneButton], animated: true)
                 expirationTF.inputAccessoryView = toolBar
         
+            datePicker2 = UIDatePicker.init(frame: CGRect(x: 0, y: 0, width: view.bounds.size.width, height: 200))
+            datePicker2.datePickerMode = UIDatePicker.Mode.date
+            datePicker2.minimumDate = Date()
+            
+            datePicker2.addTarget(self, action: #selector(self.dateChanged2), for: .allEvents)
+                   pickUpTF.inputView = datePicker2
+        
+        let doneButton2 = UIBarButtonItem.init(title: "Done", style: .done, target: self, action: #selector(self.datePickerDone2))
+                   let toolBar2 = UIToolbar.init(frame: CGRect(x: 0, y: 0, width: view.bounds.size.width, height: 44))
+            toolBar2.setItems([UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.flexibleSpace, target: nil, action: nil), doneButton2], animated: true)
+                pickUpTF.inputAccessoryView = toolBar2
     }
     
     @objc func datePickerDone() {
@@ -150,18 +159,19 @@ class LineViewController: UIViewController {
        }
     
     @objc func datePickerDone2() {
-           expirationTF.resignFirstResponder()
+           pickUpTF.resignFirstResponder()
        }
 
     @objc func dateChanged2() {
         let dateFormatter = DateFormatter()
-        //dateFormatter.dateFormat = "EEEE, MMM d, yyyy"
-        //dateFormatter.locale = .init(identifier: "es_MX")
-        //dateFormatter.timeZone = TimeZone(identifier: "America/Chihuahua")
-        let selectedDate = dateFormatter.string(from: datePicker.date)
-            expirationTF.text = selectedDate
-            print(datePicker.date)
-        
+        dateFormatter.dateFormat = "EEEE, MMM d, yyyy"
+        dateFormatter.locale = .init(identifier: "es_MX")
+        dateFormatter.timeZone = TimeZone(identifier: "America/Chihuahua")
+        let selectedDate = dateFormatter.string(from: datePicker2.date)
+            pickUpTF.text = selectedDate
+            print(datePicker2.date)
+        let timeZone = TimeZone.current.identifier
+         print(timeZone)
        }
 
 }
