@@ -31,30 +31,42 @@ class LineViewController: UIViewController {
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: {
             action in
             let lineIDP = Int64(self.lineZ!.lineID);
+            let donaIDP = Int64(self.lineZ!.donationID);
             var uCostT = self.unitaryCostTF.text!
                 if self.unitaryCostTF.text == "" {
                     uCostT = String(self.lineZ!.unitaryCost)
                 }
                 let uCostP = Float(uCostT)!
             
-            //guard let expirP = self.expirationTF.text else {print("Hace falta la descripcion"); return}
-            
             var quantT = self.quantityTF.text!
             if self.quantityTF.text == "" {
                 quantT = String(self.lineZ!.originalQuantity)
             }
             let quantP = Int(quantT)!
-            //guard let pickUpT = self.pickUpTF.text, let weightP = Double(pickUpT) else {print("Hace falta el peso"); return}
             
-            //print(lineIDP, uCostP, quantP)
+            let eTF = self.expirationTF.text
+            let pTF = self.pickUpTF.text
             
-            let datos = LineUpdate(lineID: lineIDP, unitaryCost: uCostP, originalQuantity: quantP)
+            var expP = self.datePicker.date
+            if self.expirationTF.text == "" {
+               expP = self.lineZ!.productExpiration
+            }
+            
+            var pickP = self.datePicker2.date
+            if self.pickUpTF.text == "" {
+               pickP = self.lineZ!.pickUpDate
+            }
+            
+            print("pickP: ",pickP,"\n", "expP:",expP,"\n","current PickUp:",self.lineZ!.pickUpDate,"\n", "current Expiration:",self.lineZ!.productExpiration,"\n", "datePicker:",self.datePicker.date,"\n", "pTF:",self.pickUpTF.text!,"\n", "eTF:",self.expirationTF.text!,"\n")
+ 
+ let datos = LineUpdate(lineID: lineIDP, donationID: donaIDP, unitaryCost: uCostP, originalQuantity: quantP, pickUpDate: pickP, productExpiration: expP)
+            //let datos = LineUpdate(lineID: lineIDP, unitaryCost: uCostP, originalQuantity: quantP)
             
             let postRequest = APIRequest2(endpoint: "updateLine")
             postRequest.save(datos, completion: {result in
                 switch result{
                 case .success(let datos):
-                    print("Se registro en la Base de Datos exitosamente tu producto:\n ID de la linea: \(datos.lineID)\n Costo Unitario: \(datos.unitaryCost)\n Cantidad: \(datos.originalQuantity)")
+                    print("Se registro en la Base de Datos exitosamente tu producto:\n ID de la linea: \(datos.lineID)\n Costo Unitario: \(datos.unitaryCost)\n Cantidad: \(datos.originalQuantity)\n Expiracion: \(datos.productExpiration) \n Recoger: \(datos.pickUpDate)")
                     
                     DispatchQueue.main.async(){
                         let vc = self.storyboard?.instantiateViewController(identifier: "LineTableID") as! LineTableViewController
@@ -65,8 +77,9 @@ class LineViewController: UIViewController {
                     print("Ocurrio un error: \(err)")
                 }
                 })
-
+// */
         }))
+ 
         
         self.present(alert, animated: true)
              
@@ -82,17 +95,19 @@ class LineViewController: UIViewController {
     
     @IBOutlet weak var pickUpTF: UITextField!
     
+    var datePicker :UIDatePicker!
+    var datePicker2: UIDatePicker!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround()
         
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "EEEE, MMM d, yyyy"
-        dateFormatter.locale = .init(identifier: "es_ES")
+        dateFormatter.locale = .init(identifier: "es_MX")
+        dateFormatter.timeZone = TimeZone(identifier: "America/Chihuahua")
         
         unitaryCostTF.placeholder = "\((lineZ?.unitaryCost)!)"
-        
-        //expirationTF.placeholder = "\((lineZ?.productExpiration)!)"
         
         expirationTF.placeholder = dateFormatter.string(from: lineZ!.productExpiration)
         
@@ -100,20 +115,63 @@ class LineViewController: UIViewController {
         
         pickUpTF.placeholder = dateFormatter.string(from: lineZ!.pickUpDate)
         
-        /*
-        print("\((lineZ?.lineID)!)")
-        print("\((lineZ?.donationID)!)")
-        print("\((lineZ?.itemName)!)")
-        print("\((lineZ?.upc)!)")
-        print("\((lineZ?.quantity)!)")
-        print("\((lineZ?.originalQuantity)!)")
-        print("\((lineZ?.unitaryCost)!)")
-        */
+        // This process can be optimized to a single function for both labels, but it requires a method that allows giving #selector a parameter
+        
+            datePicker = UIDatePicker.init(frame: CGRect(x: 0, y: 0, width: view.bounds.size.width, height: 200))
+            datePicker.datePickerMode = UIDatePicker.Mode.date
+            datePicker.minimumDate = Date()
+            
+            datePicker.addTarget(self, action: #selector(self.dateChanged), for: .allEvents)
+                   expirationTF.inputView = datePicker
+        
+        let doneButton = UIBarButtonItem.init(title: "Done", style: .done, target: self, action: #selector(self.datePickerDone))
+                   let toolBar = UIToolbar.init(frame: CGRect(x: 0, y: 0, width: view.bounds.size.width, height: 44))
+            toolBar.setItems([UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.flexibleSpace, target: nil, action: nil), doneButton], animated: true)
+                expirationTF.inputAccessoryView = toolBar
+        
+            datePicker2 = UIDatePicker.init(frame: CGRect(x: 0, y: 0, width: view.bounds.size.width, height: 200))
+            datePicker2.datePickerMode = UIDatePicker.Mode.date
+            datePicker2.minimumDate = Date()
+            
+            datePicker2.addTarget(self, action: #selector(self.dateChanged2), for: .allEvents)
+                   pickUpTF.inputView = datePicker2
+        
+        let doneButton2 = UIBarButtonItem.init(title: "Done", style: .done, target: self, action: #selector(self.datePickerDone2))
+                   let toolBar2 = UIToolbar.init(frame: CGRect(x: 0, y: 0, width: view.bounds.size.width, height: 44))
+            toolBar2.setItems([UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.flexibleSpace, target: nil, action: nil), doneButton2], animated: true)
+                pickUpTF.inputAccessoryView = toolBar2
     }
     
-    /*
-    let dateFormatter = DateFormatter()
-            dateFormatter.dateFormat = "YYYY-MM-dd"
-    */
+    @objc func datePickerDone() {
+           expirationTF.resignFirstResponder()
+       }
+
+    @objc func dateChanged() {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "EEEE, MMM d, yyyy"
+        dateFormatter.locale = .init(identifier: "es_MX")
+        dateFormatter.timeZone = TimeZone(identifier: "America/Chihuahua")
+        let selectedDate = dateFormatter.string(from: datePicker.date)
+            expirationTF.text = selectedDate
+            print(datePicker.date)
+        let timeZone = TimeZone.current.identifier
+         print(timeZone)
+       }
+    
+    @objc func datePickerDone2() {
+           pickUpTF.resignFirstResponder()
+       }
+
+    @objc func dateChanged2() {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "EEEE, MMM d, yyyy"
+        dateFormatter.locale = .init(identifier: "es_MX")
+        dateFormatter.timeZone = TimeZone(identifier: "America/Chihuahua")
+        let selectedDate = dateFormatter.string(from: datePicker2.date)
+            pickUpTF.text = selectedDate
+            print(datePicker2.date)
+        let timeZone = TimeZone.current.identifier
+         print(timeZone)
+       }
 
 }

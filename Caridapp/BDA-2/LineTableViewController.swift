@@ -40,11 +40,15 @@ class LineTableViewController: UIViewController, UITableViewDelegate, UITableVie
         let cell = UITableViewCell(style: .default, reuseIdentifier: nil)
         
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "E, MMM d, yyyy"
-        dateFormatter.locale = .init(identifier: "es_ES")
+        dateFormatter.dateFormat = "MM/dd/yyyy"
+        dateFormatter.locale = .init(identifier: "es_MX")
+        dateFormatter.timeZone = TimeZone(identifier: "America/Chihuahua")
         let Date1 = dateFormatter.string(from: lineS[indexPath.row].pickUpDate)
-        
-        cell.textLabel?.text = String(lineS[indexPath.row].itemName) + ", Fecha: " + String(Date1)
+            
+        cell.textLabel?.text = String(lineS[indexPath.row].itemName) + ", \nSe recogera el dia: " + String(Date1)
+        cell.textLabel?.numberOfLines = 4;
+        cell.textLabel?.lineBreakMode = NSLineBreakMode.byWordWrapping
+        print(lineS[indexPath.row].pickUpDate)
         
         return cell
     }
@@ -68,7 +72,7 @@ class LineTableViewController: UIViewController, UITableViewDelegate, UITableVie
                         
                         let decoder = JSONDecoder()
                         let dateFormatter = DateFormatter()
-                        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
+                        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
                         decoder.dateDecodingStrategy = .formatted(dateFormatter)
                         
                         self.lineS = try decoder.decode([LineP].self, from: data!)
