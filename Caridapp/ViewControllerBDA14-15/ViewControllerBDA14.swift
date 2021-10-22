@@ -32,34 +32,6 @@ class ViewControllerBDA14: UIViewController {
         
     }
     
-    func addLines() {
-        
-//        lines.removeAll()
-//        guard let count = UserDefaults().value(forKey: "count") as? Int else{
-//            return
-//        }
-//        for x in 0 ..< count {
-//            if let line = UserDefaults().value(forKey: "line_\(x+1)")as? String {
-//                lines.append(line)
-//            }
-//        }
-//        verifTble.reloadData()
-    }
-    
-    
-    
-    
-    
-    @IBAction func didTapEdit() {
-        
-        let vc = storyboard?.instantiateViewController(identifier: "entry") as! ViewControllerBDA14Lines
-        vc.update = {
-            DispatchQueue.main.async {
-                self.addLines()
-            }
-        }
-        navigationController?.pushViewController(vc, animated: true)
-    }
     
     func downloadJSON(completed: @escaping () -> () ) {
            let url = URL(string: "https://caridapp.herokuapp.com/historyLine")
@@ -70,7 +42,8 @@ class ViewControllerBDA14: UIViewController {
                        do {
                            let decoder = JSONDecoder()
                            let dateFormatter = DateFormatter()
-                           dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
+                           dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'";
+                           dateFormatter.timeZone = TimeZone(identifier:"GMT")
                            decoder.dateDecodingStrategy = .formatted(dateFormatter)
                            
                            self.lines = try decoder.decode([LinePV].self, from: data!)
@@ -91,9 +64,16 @@ class ViewControllerBDA14: UIViewController {
 extension ViewControllerBDA14: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
-        let vc = storyboard?.instantiateViewController(identifier: "task") as! ViewControllerBDA14_2
-        navigationController?.pushViewController(vc, animated: true)
+//        tableView.deselectRow(at: indexPath, animated: true)
+//        let vc = storyboard?.instantiateViewController(identifier: "task") as! ViewControllerBDA14_2
+//        navigationController?.pushViewController(vc, animated: true)
+          self.performSegue(withIdentifier: "ShowVerify", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? ViewControllerBDA14_2 {
+            destination.lineV = lines[(verifTble.indexPathForSelectedRow?.row)!]
+        }
     }
 }
     
@@ -110,6 +90,7 @@ extension ViewControllerBDA14: UITableViewDataSource {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "E, MMM d, yyyy"
         dateFormatter.locale = .init(identifier: "es_ES")
+        dateFormatter.timeZone = TimeZone(identifier:"GMT")
         let Date1 = dateFormatter.string(from: lines[indexPath.row].productExpiration)
 //        let string = "O"
 //        let shadow = NSShadow()

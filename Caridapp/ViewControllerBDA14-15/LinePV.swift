@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class LinePV: Decodable {
+public class LinePV: Codable {
     public let donationID: Int64;
     public let lineID: Int64;
     public let itemName: String;

@@ -36,12 +36,13 @@
 		8AFA66DF2712AE3F00905EE9 /* sideMenuBtn.target = revealViewController()         sideMenuBtn.action = #selector(revealViewController()?.revealSideMenu).swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFA66DE2712AE3F00905EE9 /* sideMenuBtn.target = revealViewController()         sideMenuBtn.action = #selector(revealViewController()?.revealSideMenu).swift */; };
 		C0009EB2271A1402000BD5A8 /* SideMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0009EB0271A1402000BD5A8 /* SideMenuCell.swift */; };
 		C0009EB3271A1402000BD5A8 /* SideMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0009EB1271A1402000BD5A8 /* SideMenuCell.xib */; };
+		C0147767272274DE0091C58B /* DonationVerification.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0147766272274DE0091C58B /* DonationVerification.swift */; };
 		C031CF3F271946EE00A0BB5D /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C031CF3E271946EE00A0BB5D /* SideMenuViewController.swift */; };
 		C031CF4D27194B2A00A0BB5D /* SideMenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C031CF4C27194B2A00A0BB5D /* SideMenuModel.swift */; };
 		C031CF57271950B200A0BB5D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C031CF56271950B200A0BB5D /* MainViewController.swift */; };
 		C033B262271FD86C00510D36 /* LineVerification.swift in Sources */ = {isa = PBXBuildFile; fileRef = C033B261271FD86C00510D36 /* LineVerification.swift */; };
 		C033B267271FD9F300510D36 /* DonationPV.swift in Sources */ = {isa = PBXBuildFile; fileRef = C033B266271FD9F300510D36 /* DonationPV.swift */; };
-		C05D61BE27123661000BE433 /* ViewControllerBDA14Lines.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05D61BD27123661000BE433 /* ViewControllerBDA14Lines.swift */; };
+		C04BAD3F27209BBE00E1914A /* VerifyProductService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04BAD3E27209BBE00E1914A /* VerifyProductService.swift */; };
 		C0851FBC271E94B000CFCADF /* SideMenuB.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C0851FBB271E94B000CFCADF /* SideMenuB.jpeg */; };
 		C094D3972717FEFD0003EF36 /* RegisterProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C094D3962717FEFD0003EF36 /* RegisterProductViewController.swift */; };
 		C0B23DD72703CA34003CE6DE /* VewControllerBDA14_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B23DD62703CA34003CE6DE /* VewControllerBDA14_2.swift */; };
@@ -100,12 +101,13 @@
 		8AFA66DE2712AE3F00905EE9 /* sideMenuBtn.target = revealViewController()         sideMenuBtn.action = #selector(revealViewController()?.revealSideMenu).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "sideMenuBtn.target = revealViewController()         sideMenuBtn.action = #selector(revealViewController()?.revealSideMenu).swift"; sourceTree = "<group>"; };
 		C0009EB0271A1402000BD5A8 /* SideMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuCell.swift; sourceTree = "<group>"; };
 		C0009EB1271A1402000BD5A8 /* SideMenuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SideMenuCell.xib; sourceTree = "<group>"; };
+		C0147766272274DE0091C58B /* DonationVerification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationVerification.swift; sourceTree = "<group>"; };
 		C031CF3E271946EE00A0BB5D /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
 		C031CF4C27194B2A00A0BB5D /* SideMenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuModel.swift; sourceTree = "<group>"; };
 		C031CF56271950B200A0BB5D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		C033B261271FD86C00510D36 /* LineVerification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineVerification.swift; sourceTree = "<group>"; };
 		C033B266271FD9F300510D36 /* DonationPV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationPV.swift; sourceTree = "<group>"; };
-		C05D61BD27123661000BE433 /* ViewControllerBDA14Lines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerBDA14Lines.swift; sourceTree = "<group>"; };
+		C04BAD3E27209BBE00E1914A /* VerifyProductService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyProductService.swift; sourceTree = "<group>"; };
 		C0851FBB271E94B000CFCADF /* SideMenuB.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SideMenuB.jpeg; sourceTree = "<group>"; };
 		C094D3962717FEFD0003EF36 /* RegisterProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterProductViewController.swift; sourceTree = "<group>"; };
 		C0B23DD62703CA34003CE6DE /* VewControllerBDA14_2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VewControllerBDA14_2.swift; sourceTree = "<group>"; };
@@ -275,13 +277,14 @@
 			isa = PBXGroup;
 			children = (
 				C033B266271FD9F300510D36 /* DonationPV.swift */,
+				C0147766272274DE0091C58B /* DonationVerification.swift */,
 				C0B23DDB2703CB78003CE6DE /* VewControllerReceiver.swift */,
 				C033B261271FD86C00510D36 /* LineVerification.swift */,
 				C0FB283D271919A3001E34E9 /* LinePV.swift */,
+				C04BAD3E27209BBE00E1914A /* VerifyProductService.swift */,
 				C0FF88B626F80F2D006BA0F9 /* ViewControllerBDA14.swift */,
 				C0B23DD62703CA34003CE6DE /* VewControllerBDA14_2.swift */,
 				C0B23DE42703CC96003CE6DE /* ViewControllerBDA15.swift */,
-				C05D61BD27123661000BE433 /* ViewControllerBDA14Lines.swift */,
 			);
 			path = "ViewControllerBDA14-15";
 			sourceTree = "<group>";
@@ -421,11 +424,11 @@
 				C0B23DE52703CC96003CE6DE /* ViewControllerBDA15.swift in Sources */,
 				72997B3726EADC6100099692 /* ViewController.swift in Sources */,
 				C0B23DDC2703CB78003CE6DE /* VewControllerReceiver.swift in Sources */,
-				C05D61BE27123661000BE433 /* ViewControllerBDA14Lines.swift in Sources */,
 				72997B3326EADC6100099692 /* AppDelegate.swift in Sources */,
 				C0B23DD72703CA34003CE6DE /* VewControllerBDA14_2.swift in Sources */,
 				72997B3526EADC6100099692 /* SceneDelegate.swift in Sources */,
 				C031CF3F271946EE00A0BB5D /* SideMenuViewController.swift in Sources */,
+				C0147767272274DE0091C58B /* DonationVerification.swift in Sources */,
 				C0FF88B726F80F2D006BA0F9 /* ViewControllerBDA14.swift in Sources */,
 				C033B267271FD9F300510D36 /* DonationPV.swift in Sources */,
 				8AFA66DF2712AE3F00905EE9 /* sideMenuBtn.target = revealViewController()         sideMenuBtn.action = #selector(revealViewController()?.revealSideMenu).swift in Sources */,
@@ -445,6 +448,7 @@
 				C094D3972717FEFD0003EF36 /* RegisterProductViewController.swift in Sources */,
 				72997B3526EADC6100099692 /* SceneDelegate.swift in Sources */,
 				8A9C956E27051A30004DE62A /* Donation.swift in Sources */,
+				C04BAD3F27209BBE00E1914A /* VerifyProductService.swift in Sources */,
 				C0FF88B726F80F2D006BA0F9 /* ViewControllerBDA14.swift in Sources */,
 				C033B262271FD86C00510D36 /* LineVerification.swift in Sources */,
 				8A18D29727121ADD00D5720E /* DonationService.swift in Sources */,
