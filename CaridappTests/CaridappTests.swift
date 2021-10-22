@@ -15,7 +15,7 @@ class CaridappTests: XCTestCase {
         let dateFromatter = DateFormatter()
         dateFromatter.dateFormat = "yyyy-MM-dd"
         let donation = Donation(status: nil, receptionDate: nil, pickUpDate: nil, warehouse: nil)
-        donation.addLine(line: Line(upc: 750105530007, cost: 50.50, expirationDate: dateFromatter.date(from: "2021-10-13")!, orQuantity: 6, quantity: 5))
+        donation.addLine(line: Line(upc: 750105530007, cost: 50.50, expirationDate: dateFromatter.date(from: "2021-10-13")!, orQuantity: 6, quantity: 5, name: "Coca-Cola"))
         
     }
 

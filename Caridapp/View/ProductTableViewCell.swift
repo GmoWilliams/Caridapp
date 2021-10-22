@@ -8,12 +8,13 @@
 import UIKit
 
 class ProductTableViewCell: UITableViewCell {
-    @IBOutlet weak var productImage: UIImageView!
     @IBOutlet weak var productDesc: UILabel!
     @IBOutlet weak var productName: UILabel!
+    @IBOutlet weak var productWeight: UILabel!
     
     func updateCell(product: Product){
-        productName.text = product.itemName
-        productDesc.text = product.description
+        productName.text = "Producto: " + product.itemName
+        productDesc.text = "Descripcion: " + product.description
+        productWeight.text = "Peso: " + String(product.unitaryWeight)
     }
 }

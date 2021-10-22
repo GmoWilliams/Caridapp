@@ -21,8 +21,9 @@ extension UIViewController {
 
 class ViewControllerBDA11: UIViewController {
     
-  
-
+    let importationService = DonationService()
+    
+    
     @IBAction func registratAction(_ sender: Any) {
         
         
@@ -85,11 +86,41 @@ class ViewControllerBDA11: UIViewController {
     var donation : Donation?
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        print("Recieving prepare");
         if segue.identifier == "selectProduct" {
             let controller = (segue.destination as! SelectProductViewController)
+            print("Recognizing identifier")
+            
+            importationService.getProducts() {
+                (products) in
+                DispatchQueue.main.async {
+                    print("Entering dispatch queue")
+                    controller.products = products;
+                    controller.tableView.reloadData();
+                    controller.donation = self.donation;
+                }
+            }
+        } else if segue.identifier == "addingProduct" {
+            let controller = (segue.destination as! RegisterLineViewController)
+            let upcT = self.upcTF.text!;
+            let upcN = Int64(upcT)!
+            let weightT = Double(self.pesoTF.text!)!;
+            let productToSend = Product(upc: upcN, itemName: self.nombreTF.text!, description: self.descripcionTF.text!, unitaryWeight: weightT);
             
             DispatchQueue.main.async {
                 controller.donation = self.donation;
+                controller.product = productToSend;
+            }
+        } else if segue.identifier == "checkImportation" {
+            let controller = (segue.destination as! CheckImportationViewController)
+            
+            DispatchQueue.main.async {
+                controller.donation = self.donation;
+            }
+        } else if segue.identifier == "finishImportation" {
+            importationService.publishDonation(donation: donation!) {
+                () in
+                print("Sending importation...")
             }
         }
     }
