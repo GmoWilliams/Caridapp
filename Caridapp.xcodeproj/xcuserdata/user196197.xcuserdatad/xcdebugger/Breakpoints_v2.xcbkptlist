@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "CF4870DB-C48F-4365-95A2-66D8FC466FD8"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "09B3F4CF-BD43-4115-9BB0-78234580F14A"
+            shouldBeEnabled = "No"
+            nameForDebugger = "TestArrAction"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Caridapp/BDA-2/LineTableViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "prepare(for:sender:)"
+            landmarkType = "7">
+            <Actions>
+               <BreakpointActionProxy
+                  ActionExtensionID = "Xcode.BreakpointAction.DebuggerCommand">
+                  <ActionContent
+                     consoleCommand = "">
+                  </ActionContent>
+               </BreakpointActionProxy>
+            </Actions>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9E7E1F9B-2EA3-469D-A5DB-5A03187C46DB"
+            shouldBeEnabled = "No"
+            nameForDebugger = "looelsa"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Caridapp/BDA-2/LineTableViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "tableView(_:didSelectRowAt:)"
+            landmarkType = "7">
+            <Actions>
+               <BreakpointActionProxy
+                  ActionExtensionID = "Xcode.BreakpointAction.DebuggerCommand">
+                  <ActionContent
+                     consoleCommand = "">
+                  </ActionContent>
+               </BreakpointActionProxy>
+            </Actions>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
