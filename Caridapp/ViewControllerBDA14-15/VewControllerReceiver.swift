@@ -72,6 +72,7 @@ extension ViewControllerReceiver: UITableViewDelegate {
 //        let vc = storyboard?.instantiateViewController(identifier: "task") as! ViewControllerBDA14_2
 //        navigationController?.pushViewController(vc, animated: true)
           self.performSegue(withIdentifier: "ShowLineV", sender: self)
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -95,7 +96,7 @@ extension ViewControllerReceiver: UITableViewDataSource {
         dateFormatter.dateFormat = "E, MMM d, yyyy"
         dateFormatter.locale = .init(identifier: "es_ES")
         dateFormatter.timeZone = TimeZone(identifier:"GMT")
-        let Date1 = dateFormatter.string(from: donations[indexPath.row].productExpiration)
+        let Date1 = dateFormatter.string(from: donations[indexPath.row].pickUpDate)
 //        let string = "O"
 //        let shadow = NSShadow()
 //        shadow.shadowColor = UIColor.red
@@ -108,7 +109,7 @@ extension ViewControllerReceiver: UITableViewDataSource {
 //        let attributedString = NSAttributedString(string: string, attributes: attributes)
         
         let cell = UITableViewCell(style: .default, reuseIdentifier: nil)
-        cell.textLabel?.text =  "Donacion: " + String(donations[indexPath.row].donationID) + "\nExpira el día: " + String(Date1) + "\nRecogida por chofer: " + String(donations[indexPath.row].driverID)
+        cell.textLabel?.text =  "Donacion: " + String(donations[indexPath.row].donationID) + "\nRecogida el día: " + String(Date1) + "\nRecogida por chofer: " + String(donations[indexPath.row].warehouse)
         cell.textLabel?.numberOfLines = 3;
         cell.textLabel?.lineBreakMode = NSLineBreakMode.byWordWrapping
 

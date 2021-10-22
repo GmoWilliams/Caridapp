@@ -75,6 +75,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="donatTble" destination="tfb-PO-cyj" id="ykg-7N-Bas"/>
                         <outlet property="sideMenuBtn" destination="BbK-Kc-69Z" id="iIF-n4-QE1"/>
                         <segue destination="JAz-nL-Yvz" kind="show" identifier="ShowLineV" id="bLk-tL-5Bn"/>
                     </connections>
@@ -102,7 +103,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <segue destination="0AB-xb-S2Q" kind="show" identifier="SegueBDA15" id="4F3-GT-qFb"/>
+                                            <segue destination="0AB-xb-S2Q" kind="show" identifier="ShowDonation" id="4F3-GT-qFb"/>
                                         </connections>
                                     </button>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="b2u-sb-oWe" userLabel="verifTbl">
@@ -274,6 +275,9 @@ recibida.</string>
                                         <state key="normal" title="Guardar">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="verifyDonation:" destination="0AB-xb-S2Q" eventType="touchUpInside" id="k9q-UD-u1g"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.51027397260273977" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -303,6 +307,9 @@ recibida.</string>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="pCm-mV-vIM"/>
+                    <connections>
+                        <outlet property="warehouseTextField" destination="QUK-Zj-cX0" id="ZnI-CI-sQZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O2i-Kh-an9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

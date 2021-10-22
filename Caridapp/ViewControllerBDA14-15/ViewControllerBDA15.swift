@@ -30,7 +30,7 @@ class ViewControllerBDA15: UIViewController, UITextFieldDelegate {
     
     @IBAction func verifyDonation(_ sender: Any) {
         
-        let alert = UIAlertController(title: "Corregir Datos", message: "Se corregira la informacion al servidor", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Guardar a almacén", message: "Se corregira la informacion al servidor", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Cancelar", style:.cancel, handler: nil))
 
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: {

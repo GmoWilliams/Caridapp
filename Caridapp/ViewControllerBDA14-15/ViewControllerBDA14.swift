@@ -14,8 +14,7 @@ class ViewControllerBDA14: UIViewController {
     @IBOutlet var verifTble: UITableView!
     
     var lines = [LinePV]()
-    var stopLight = [String]()
-    var light: Int = 0
+    var donationV:DonationPV?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -68,12 +67,16 @@ extension ViewControllerBDA14: UITableViewDelegate {
 //        let vc = storyboard?.instantiateViewController(identifier: "task") as! ViewControllerBDA14_2
 //        navigationController?.pushViewController(vc, animated: true)
           self.performSegue(withIdentifier: "ShowVerify", sender: self)
+          self.performSegue(withIdentifier: "ShowDonation", sender: self)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destination = segue.destination as? ViewControllerBDA14_2 {
             destination.lineV = lines[(verifTble.indexPathForSelectedRow?.row)!]
         }
+//        if let destination = segue.destination as? ViewControllerBDA15 {
+//            destination.DonationV = donations[(donatTble.indexPathForSelectedRow?.row)!]
+//        }
     }
 }
     
@@ -92,16 +95,7 @@ extension ViewControllerBDA14: UITableViewDataSource {
         dateFormatter.locale = .init(identifier: "es_ES")
         dateFormatter.timeZone = TimeZone(identifier:"GMT")
         let Date1 = dateFormatter.string(from: lines[indexPath.row].productExpiration)
-//        let string = "O"
-//        let shadow = NSShadow()
-//        shadow.shadowColor = UIColor.red
-//        shadow.shadowBlurRadius = 5
-//
-//        let attributes: [NSAttributedString.Key: Any] = [
-//            .foregroundColor: UIColor.white
-//        ]
 
-//        let attributedString = NSAttributedString(string: string, attributes: attributes)
         
         let cell = UITableViewCell(style: .default, reuseIdentifier: nil)
         cell.textLabel?.text =  String(lines[indexPath.row].itemName) + "\nExpira el día: " + String(Date1) + "\nCantidad: " + String(lines[indexPath.row].originalQuantity)
