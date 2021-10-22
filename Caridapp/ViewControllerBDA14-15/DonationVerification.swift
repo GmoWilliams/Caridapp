@@ -11,7 +11,7 @@ public class DonationVerificaion: Codable {
     public let donationID: Int64;
     public let warehouse: Int;
     
-    public init (warehouse: Int, donationID: Int64) {
+    public init (donationID: Int64, warehouse: Int) {
         self.donationID = donationID
         self.warehouse = warehouse;
     }

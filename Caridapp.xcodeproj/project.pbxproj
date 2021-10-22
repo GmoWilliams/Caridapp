@@ -39,6 +39,7 @@
 		C0009EB2271A1402000BD5A8 /* SideMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0009EB0271A1402000BD5A8 /* SideMenuCell.swift */; };
 		C0009EB3271A1402000BD5A8 /* SideMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0009EB1271A1402000BD5A8 /* SideMenuCell.xib */; };
 		C0147767272274DE0091C58B /* DonationVerification.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0147766272274DE0091C58B /* DonationVerification.swift */; };
+		C01477722722936B0091C58B /* VerifyDonationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01477712722936B0091C58B /* VerifyDonationService.swift */; };
 		C031CF3F271946EE00A0BB5D /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C031CF3E271946EE00A0BB5D /* SideMenuViewController.swift */; };
 		C031CF4D27194B2A00A0BB5D /* SideMenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C031CF4C27194B2A00A0BB5D /* SideMenuModel.swift */; };
 		C031CF57271950B200A0BB5D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C031CF56271950B200A0BB5D /* MainViewController.swift */; };
@@ -106,6 +107,7 @@
 		C0009EB0271A1402000BD5A8 /* SideMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuCell.swift; sourceTree = "<group>"; };
 		C0009EB1271A1402000BD5A8 /* SideMenuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SideMenuCell.xib; sourceTree = "<group>"; };
 		C0147766272274DE0091C58B /* DonationVerification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationVerification.swift; sourceTree = "<group>"; };
+		C01477712722936B0091C58B /* VerifyDonationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyDonationService.swift; sourceTree = "<group>"; };
 		C031CF3E271946EE00A0BB5D /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
 		C031CF4C27194B2A00A0BB5D /* SideMenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuModel.swift; sourceTree = "<group>"; };
 		C031CF56271950B200A0BB5D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -288,6 +290,7 @@
 				C033B261271FD86C00510D36 /* LineVerification.swift */,
 				C0FB283D271919A3001E34E9 /* LinePV.swift */,
 				C04BAD3E27209BBE00E1914A /* VerifyProductService.swift */,
+				C01477712722936B0091C58B /* VerifyDonationService.swift */,
 				C0FF88B626F80F2D006BA0F9 /* ViewControllerBDA14.swift */,
 				C0B23DD62703CA34003CE6DE /* VewControllerBDA14_2.swift */,
 				C0B23DE42703CC96003CE6DE /* ViewControllerBDA15.swift */,
@@ -443,6 +446,7 @@
 				72BC2EB3271F979A00855236 /* LineTableViewController.swift in Sources */,
 				72997B3726EADC6100099692 /* ViewController.swift in Sources */,
 				721AD2D3271657330010BE30 /* ViewControllerBDA-11.swift in Sources */,
+				C01477722722936B0091C58B /* VerifyDonationService.swift in Sources */,
 				72997B3326EADC6100099692 /* AppDelegate.swift in Sources */,
 				72BC2EBD271F981C00855236 /* LineViewController.swift in Sources */,
 				C0009EB2271A1402000BD5A8 /* SideMenuCell.swift in Sources */,

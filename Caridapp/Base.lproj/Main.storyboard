@@ -28,7 +28,7 @@
         <!--Receiver-->
         <scene sceneID="eLf-WW-qwm">
             <objects>
-                <viewController id="Cdk-eY-sok" userLabel="Receiver" customClass="ViewControllerReceiver" customModule="Caridapp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BDA-15ID" id="Cdk-eY-sok" userLabel="Receiver" customClass="ViewControllerReceiver" customModule="Caridapp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oAG-TG-AmX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -268,6 +268,11 @@ correcta:</string>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dx5-4w-IVu">
                                 <rect key="frame" x="41" y="331" width="332" height="288.33333333333326"/>
                                 <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QUK-Zj-cX0" userLabel="warehouseTextField">
+                                        <rect key="frame" x="117.66666666666666" y="119.66666666666669" width="97" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dFp-TX-Uag">
                                         <rect key="frame" x="57.666666666666686" y="26" width="217" height="66"/>
                                         <string key="text">Seleccione un almacen 
@@ -277,19 +282,11 @@ recibida.</string>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lUb-9R-3qO">
-                                        <rect key="frame" x="111" y="100" width="110" height="40"/>
-                                        <color key="backgroundColor" white="0.75" alpha="0.49657534246575341" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                        <state key="normal" title="Almacen 1">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="faf-L7-P21">
-                                        <rect key="frame" x="111" y="148" width="110" height="39.333333333333343"/>
+                                        <rect key="frame" x="111" y="184.33333333333337" width="110" height="39.333333333333343"/>
                                         <color key="backgroundColor" white="0.75" alpha="0.49657534246575341" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                        <state key="normal" title="Almacen 2">
+                                        <state key="normal" title="Guardar">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
@@ -297,17 +294,17 @@ recibida.</string>
                                 <color key="backgroundColor" white="0.0" alpha="0.51027397260273977" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="dFp-TX-Uag" firstAttribute="height" secondItem="dx5-4w-IVu" secondAttribute="height" multiplier="0.229236" id="9iF-6s-deQ"/>
-                                    <constraint firstItem="lUb-9R-3qO" firstAttribute="width" secondItem="dx5-4w-IVu" secondAttribute="width" multiplier="0.331325" id="Gu2-h2-CXb"/>
+                                    <constraint firstItem="faf-L7-P21" firstAttribute="top" secondItem="QUK-Zj-cX0" secondAttribute="bottom" multiplier="1.2" id="Kna-CT-tet"/>
                                     <constraint firstItem="faf-L7-P21" firstAttribute="centerX" secondItem="dx5-4w-IVu" secondAttribute="centerX" id="N7w-0B-ulX"/>
-                                    <constraint firstItem="lUb-9R-3qO" firstAttribute="centerX" secondItem="dx5-4w-IVu" secondAttribute="centerX" id="OOS-Hp-cql"/>
+                                    <constraint firstItem="QUK-Zj-cX0" firstAttribute="height" secondItem="dx5-4w-IVu" secondAttribute="height" multiplier="0.117919" id="Svj-by-oRA"/>
                                     <constraint firstItem="dFp-TX-Uag" firstAttribute="width" secondItem="dx5-4w-IVu" secondAttribute="width" multiplier="0.653614" id="U0Y-aa-XMa"/>
-                                    <constraint firstItem="lUb-9R-3qO" firstAttribute="top" secondItem="dFp-TX-Uag" secondAttribute="bottom" constant="8" id="U0d-tK-3KD"/>
+                                    <constraint firstItem="QUK-Zj-cX0" firstAttribute="width" secondItem="dx5-4w-IVu" secondAttribute="width" multiplier="0.292169" id="Wzw-Wj-aYm"/>
                                     <constraint firstItem="faf-L7-P21" firstAttribute="width" secondItem="dx5-4w-IVu" secondAttribute="width" multiplier="0.331325" id="aFZ-6D-3AW"/>
-                                    <constraint firstItem="lUb-9R-3qO" firstAttribute="height" secondItem="dx5-4w-IVu" secondAttribute="height" multiplier="0.139535" id="fCw-mr-toK"/>
-                                    <constraint firstItem="faf-L7-P21" firstAttribute="top" secondItem="lUb-9R-3qO" secondAttribute="bottom" constant="8" id="h1G-yz-RAE"/>
+                                    <constraint firstItem="QUK-Zj-cX0" firstAttribute="centerX" secondItem="dx5-4w-IVu" secondAttribute="centerX" id="jgj-Ea-LPe"/>
                                     <constraint firstItem="faf-L7-P21" firstAttribute="height" secondItem="dx5-4w-IVu" secondAttribute="height" multiplier="0.136213" id="rhM-08-a06"/>
                                     <constraint firstItem="dFp-TX-Uag" firstAttribute="centerX" secondItem="dx5-4w-IVu" secondAttribute="centerX" id="sBJ-6o-llO"/>
                                     <constraint firstItem="dFp-TX-Uag" firstAttribute="top" secondItem="dx5-4w-IVu" secondAttribute="topMargin" constant="18" id="xx3-Jc-HzW"/>
+                                    <constraint firstItem="QUK-Zj-cX0" firstAttribute="top" secondItem="dFp-TX-Uag" secondAttribute="bottom" multiplier="1.3" id="y7w-MO-col"/>
                                 </constraints>
                             </view>
                         </subviews>
