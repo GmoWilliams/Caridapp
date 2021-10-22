@@ -100,13 +100,14 @@ class ViewControllerBDA11: UIViewController {
             }
         } else if segue.identifier == "addingProduct" {
             let controller = (segue.destination as! RegisterLineViewController)
-            let upcT = self.upcTF.text;
-            let upcN = Int64(upcT!)
+            let upcT = self.upcTF.text!;
+            let upcN = Int64(upcT)!
+            let weightT = Double(self.pesoTF.text!)!;
+            let productToSend = Product(upc: upcN, itemName: self.nombreTF.text!, description: self.descripcionTF.text!, unitaryWeight: weightT);
             
             DispatchQueue.main.async {
-                controller.upc = upcN!;
-                controller.name = self.nombreTF.text!;
                 controller.donation = self.donation;
+                controller.product = productToSend;
             }
         } else if segue.identifier == "checkImportation" {
             let controller = (segue.destination as! CheckImportationViewController)

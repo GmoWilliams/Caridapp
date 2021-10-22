@@ -44,5 +44,17 @@ class SelectProductViewController: UIViewController, UITableViewDelegate, UITabl
         }
         return UITableViewCell()
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "selectingProduct" {
+            let controller = (segue.destination as! RegisterLineViewController)
+            
+            if let indexPath = tableView.indexPathForSelectedRow{
+                controller.donation = donation;
+                controller.product = products![indexPath.row]
+            }
+            
+        }
+    }
 
 }

@@ -7,13 +7,19 @@
 
 import UIKit
 
-class CheckImportationViewController: UIViewController {
+class CheckImportationViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var tableView: UITableView!
-    var donation : Donation?;
+    var donation : Donation? {
+        didSet {
+            
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        tableView.delegate = self
+        tableView.dataSource = self
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {

@@ -31,7 +31,7 @@
 		8AFA66AB27129B9300905EE9 /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFA66AA27129B9300905EE9 /* ProductTableViewCell.swift */; };
 		8AFA66DF2712AE3F00905EE9 /* MenuImportationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFA66DE2712AE3F00905EE9 /* MenuImportationViewController.swift */; };
 		8AFD0BA72718EF860025B2CB /* LineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFD0BA62718EF860025B2CB /* LineTableViewCell.swift */; };
-		8AFD0BAC2718F39F0025B2CB /* checkImportationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFD0BAB2718F39F0025B2CB /* checkImportationViewController.swift */; };
+		8AFD0BAC2718F39F0025B2CB /* CheckImportationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFD0BAB2718F39F0025B2CB /* CheckImportationViewController.swift */; };
 		C0FF88B726F80F2D006BA0F9 /* ViewControllerBDA14.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FF88B626F80F2D006BA0F9 /* ViewControllerBDA14.swift */; };
 /* End PBXBuildFile section */
 
@@ -79,7 +79,7 @@
 		8AFA66AA27129B9300905EE9 /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
 		8AFA66DE2712AE3F00905EE9 /* MenuImportationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuImportationViewController.swift; sourceTree = "<group>"; };
 		8AFD0BA62718EF860025B2CB /* LineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineTableViewCell.swift; sourceTree = "<group>"; };
-		8AFD0BAB2718F39F0025B2CB /* checkImportationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = checkImportationViewController.swift; sourceTree = "<group>"; };
+		8AFD0BAB2718F39F0025B2CB /* CheckImportationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckImportationViewController.swift; sourceTree = "<group>"; };
 		C0FF88B626F80F2D006BA0F9 /* ViewControllerBDA14.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerBDA14.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -139,7 +139,7 @@
 				72997B3626EADC6100099692 /* ViewController.swift */,
 				72997B3826EADC6100099692 /* Main.storyboard */,
 				721AD2D2271657330010BE30 /* ViewControllerBDA-11.swift */,
-				8AFD0BAB2718F39F0025B2CB /* checkImportationViewController.swift */,
+				8AFD0BAB2718F39F0025B2CB /* CheckImportationViewController.swift */,
 				72997B3B26EADC6200099692 /* Assets.xcassets */,
 				72997B3D26EADC6200099692 /* LaunchScreen.storyboard */,
 				72997B4026EADC6200099692 /* Info.plist */,
@@ -338,7 +338,7 @@
 			files = (
 				8AFA66DF2712AE3F00905EE9 /* MenuImportationViewController.swift in Sources */,
 				72997B3726EADC6100099692 /* ViewController.swift in Sources */,
-				8AFD0BAC2718F39F0025B2CB /* checkImportationViewController.swift in Sources */,
+				8AFD0BAC2718F39F0025B2CB /* CheckImportationViewController.swift in Sources */,
 				721AD2D3271657330010BE30 /* ViewControllerBDA-11.swift in Sources */,
 				72997B3326EADC6100099692 /* AppDelegate.swift in Sources */,
 				8A22992D27127266001CE110 /* Product.swift in Sources */,

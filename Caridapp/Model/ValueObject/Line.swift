@@ -16,6 +16,7 @@ public class Line: Codable {
     public let name: String;
     
     public init (upc: Int64, cost: Float, expirationDate: Date, orQuantity: Int, quantity: Int, name: String){
+        print("New line added")
         self.upc = upc;
         self.unitaryCost = cost;
         self.expirationDate = expirationDate;

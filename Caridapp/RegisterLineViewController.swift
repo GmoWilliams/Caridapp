@@ -14,15 +14,23 @@ class RegisterLineViewController: UIViewController {
     @IBOutlet weak var unitaryCost: UITextField!
     @IBOutlet weak var expirationDate: UIDatePicker!
     @IBOutlet weak var quantity: UITextField!
-    var upc : Int64 = 750105530007;
-    var name : String = "Coca-Cola";
-    var donation : Donation?;
+    var donation : Donation? {
+        didSet {
+            
+        }
+    }
+    var product: Product? {
+        didSet {
+            
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        print("upc selected: /(upc)")
+        print("upc selected: \(product!.upc)")
+        print("name of the product: \(product!.itemName)")
     }
 
     @IBAction func savingLine(_ sender: Any) {
@@ -30,7 +38,7 @@ class RegisterLineViewController: UIViewController {
         let date = self.expirationDate.date as Date;
         guard let quantityProduct = Int(self.quantity.text!) else { print("No hay cantidad"); return;}
         
-        let data = Line(upc: upc, cost: cost, expirationDate: date, orQuantity: quantityProduct, quantity: quantityProduct, name: name);
+        let data = Line(upc: product!.upc, cost: cost, expirationDate: date, orQuantity: quantityProduct, quantity: quantityProduct, name: product!.itemName);
         
         donation?.addLine(line: data);
     }
