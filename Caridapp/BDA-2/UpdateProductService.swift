@@ -30,6 +30,7 @@ struct APIRequest2 {
             
             let dateFormatter = DateFormatter();
             dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'";
+            dateFormatter.timeZone = TimeZone(identifier:"GMT")
             let encoder = JSONEncoder();
             encoder.dateEncodingStrategy = .formatted(dateFormatter);
             
@@ -51,6 +52,7 @@ struct APIRequest2 {
                 let decoder = JSONDecoder()
                 let dateFormatter = DateFormatter()
                 dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+                dateFormatter.timeZone = TimeZone(identifier:"GMT")
                 decoder.dateDecodingStrategy = .formatted(dateFormatter)
                 let contentData = try decoder.decode(LineUpdate.self, from: JSONData)
                 completion(.success(contentData))

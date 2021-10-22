@@ -42,7 +42,8 @@ class LineTableViewController: UIViewController, UITableViewDelegate, UITableVie
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "MM/dd/yyyy"
         dateFormatter.locale = .init(identifier: "es_MX")
-        dateFormatter.timeZone = TimeZone(identifier: "America/Chihuahua")
+        //dateFormatter.timeZone = TimeZone(identifier: "America/Chihuahua")
+        dateFormatter.timeZone = TimeZone(identifier:"GMT")
         let Date1 = dateFormatter.string(from: lineS[indexPath.row].pickUpDate)
             
         cell.textLabel?.text = String(lineS[indexPath.row].itemName) + ", \nSe recogera el dia: " + String(Date1)
@@ -73,6 +74,7 @@ class LineTableViewController: UIViewController, UITableViewDelegate, UITableVie
                         let decoder = JSONDecoder()
                         let dateFormatter = DateFormatter()
                         dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+                        dateFormatter.timeZone = TimeZone(identifier:"GMT")
                         decoder.dateDecodingStrategy = .formatted(dateFormatter)
                         
                         self.lineS = try decoder.decode([LineP].self, from: data!)

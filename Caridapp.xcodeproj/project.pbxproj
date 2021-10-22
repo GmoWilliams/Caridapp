@@ -22,6 +22,8 @@
 		72BC2EB8271F97E000855236 /* LineUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72BC2EB7271F97E000855236 /* LineUpdate.swift */; };
 		72BC2EBD271F981C00855236 /* LineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72BC2EBC271F981C00855236 /* LineViewController.swift */; };
 		72BC2EC2271F988A00855236 /* UpdateProductService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72BC2EC1271F988A00855236 /* UpdateProductService.swift */; };
+		72D386EB272214DC00C56EAE /* BDA-11_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D386EA272214DC00C56EAE /* BDA-11_Tests.swift */; };
+		72D386F0272254E900C56EAE /* BDA-11_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D386EF272254E900C56EAE /* BDA-11_Test.swift */; };
 		8A18D29727121ADD00D5720E /* DonationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A18D29627121ADD00D5720E /* DonationService.swift */; };
 		8A18D29C27122D8400D5720E /* CaridappServiceTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A18D29B27122D8400D5720E /* CaridappServiceTestCase.swift */; };
 		8A22992D27127266001CE110 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A22992C27127266001CE110 /* Product.swift */; };
@@ -88,6 +90,8 @@
 		72BC2EB7271F97E000855236 /* LineUpdate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineUpdate.swift; sourceTree = "<group>"; };
 		72BC2EBC271F981C00855236 /* LineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineViewController.swift; sourceTree = "<group>"; };
 		72BC2EC1271F988A00855236 /* UpdateProductService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateProductService.swift; sourceTree = "<group>"; };
+		72D386EA272214DC00C56EAE /* BDA-11_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BDA-11_Tests.swift"; sourceTree = "<group>"; };
+		72D386EF272254E900C56EAE /* BDA-11_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BDA-11_Test.swift"; sourceTree = "<group>"; };
 		8A18D29627121ADD00D5720E /* DonationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationService.swift; sourceTree = "<group>"; };
 		8A18D29B27122D8400D5720E /* CaridappServiceTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaridappServiceTestCase.swift; sourceTree = "<group>"; };
 		8A22992C27127266001CE110 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
@@ -186,6 +190,8 @@
 			children = (
 				72997B4926EADC6200099692 /* CaridappTests.swift */,
 				8A18D29B27122D8400D5720E /* CaridappServiceTestCase.swift */,
+				72D386EA272214DC00C56EAE /* BDA-11_Tests.swift */,
+				72D386EF272254E900C56EAE /* BDA-11_Test.swift */,
 				72997B4B26EADC6200099692 /* Info.plist */,
 			);
 			path = CaridappTests;
@@ -452,8 +458,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				72997B4A26EADC6200099692 /* CaridappTests.swift in Sources */,
+				72D386F0272254E900C56EAE /* BDA-11_Test.swift in Sources */,
 				8A18D29C27122D8400D5720E /* CaridappServiceTestCase.swift in Sources */,
 				8AE13BDF2714D8F7003805DB /* Product.swift in Sources */,
+				72D386EB272214DC00C56EAE /* BDA-11_Tests.swift in Sources */,
 				8AE13BE32714D8FE003805DB /* DonationService.swift in Sources */,
 				8A9C956F27051A30004DE62A /* Donation.swift in Sources */,
 				8A9C957127051A30004DE62A /* Line.swift in Sources */,
