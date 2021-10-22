@@ -50,11 +50,11 @@ class ViewControllerBDA15: UIViewController, UITextFieldDelegate {
 
             let datos = DonationVerificaion(donationID: donationIDPV, warehouse: warehouse)
             
-            let postRequest = APIRequest3(endpoint: "verifyDonation")
+            let postRequest = APIRequest4(endpoint: "verifyDonation")
             postRequest.save(datos, completion: {result in
                 switch result{
                 case .success(let datos):
-                    print("Se registro en la Base de Datos exitosamente tu producto:\n ID de la linea: \(datos.lineID)\n Cantidad: \(datos.quantity)")
+                    print("Se registro en la Base de Datos exitosamente tu producto:\n ID de la donacion: \(datos.donationID)\n Almacen: \(datos.warehouse)")
 
                     DispatchQueue.main.async(){
                         let vc = self.storyboard?.instantiateViewController(identifier: "BDA-15ID") as! ViewControllerReceiver
