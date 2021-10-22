@@ -12,7 +12,6 @@ public class LinePV: Codable {
     public let lineID: Int64;
     public let itemName: String;
     public let productExpiration: Date;
-    
     public let originalQuantity: Int;
 
 }

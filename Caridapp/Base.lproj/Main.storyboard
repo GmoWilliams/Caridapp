@@ -28,7 +28,7 @@
         <!--Receiver-->
         <scene sceneID="eLf-WW-qwm">
             <objects>
-                <viewController id="Cdk-eY-sok" userLabel="Receiver" customClass="ViewControllerReceiver" customModule="Caridapp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BDA-15ID" id="Cdk-eY-sok" userLabel="Receiver" customClass="ViewControllerReceiver" customModule="Caridapp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oAG-TG-AmX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -36,41 +36,27 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TD8-YV-0S2" userLabel="Main">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AZJ-aQ-aVL">
-                                        <rect key="frame" x="46" y="424.33333333333337" width="323" height="62.333333333333314"/>
-                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
-                                        <string key="text">	XX / XX / XXXX
-	Chofer: Nombre Apellido</string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <color key="highlightedColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8PX-o1-vft">
-                                        <rect key="frame" x="46" y="349.66666666666669" width="323" height="74.666666666666686"/>
-                                        <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
-                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" title="Importacion n">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="goToBDA14_2:" destination="eMd-Cp-BT0" eventType="touchUpInside" id="rbs-Tj-0ik"/>
-                                            <segue destination="JAz-nL-Yvz" kind="show" id="FLZ-90-vBj"/>
-                                        </connections>
-                                    </button>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tfb-PO-cyj">
+                                        <rect key="frame" x="20.666666666666657" y="71.666666666666629" width="372.66666666666674" height="631"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="R7E-Nn-Khz">
+                                                <rect key="frame" x="0.0" y="28" width="372.66666666666674" height="43.666667938232422"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="R7E-Nn-Khz" id="SLN-AJ-BOU">
+                                                    <rect key="frame" x="0.0" y="0.0" width="372.66666666666674" height="43.666667938232422"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </tableViewCellContentView>
+                                            </tableViewCell>
+                                        </prototypes>
+                                    </tableView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstItem="8PX-o1-vft" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="TD8-YV-0S2" secondAttribute="leadingMargin" id="7G1-mH-G2R"/>
-                                    <constraint firstItem="AZJ-aQ-aVL" firstAttribute="height" secondItem="TD8-YV-0S2" secondAttribute="height" multiplier="0.0806846" id="BCg-o3-vHB"/>
-                                    <constraint firstItem="AZJ-aQ-aVL" firstAttribute="width" secondItem="TD8-YV-0S2" secondAttribute="width" multiplier="0.780193" id="KMr-6L-FsO"/>
-                                    <constraint firstItem="8PX-o1-vft" firstAttribute="width" secondItem="TD8-YV-0S2" secondAttribute="width" multiplier="0.780193" id="Vcd-a2-HBY"/>
-                                    <constraint firstItem="8PX-o1-vft" firstAttribute="height" secondItem="TD8-YV-0S2" secondAttribute="height" multiplier="0.096577" id="cON-Rk-xv9"/>
-                                    <constraint firstAttribute="trailing" secondItem="AZJ-aQ-aVL" secondAttribute="trailing" constant="45" id="jQv-A5-h0M"/>
-                                    <constraint firstAttribute="trailing" secondItem="8PX-o1-vft" secondAttribute="trailing" constant="45" id="mJD-02-lLp"/>
-                                    <constraint firstItem="AZJ-aQ-aVL" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="TD8-YV-0S2" secondAttribute="leadingMargin" id="qcw-fr-Z0n"/>
-                                    <constraint firstItem="8PX-o1-vft" firstAttribute="centerY" secondItem="TD8-YV-0S2" secondAttribute="centerY" id="suk-rW-nsu"/>
-                                    <constraint firstItem="AZJ-aQ-aVL" firstAttribute="top" secondItem="8PX-o1-vft" secondAttribute="bottom" id="yJn-jR-uTn"/>
+                                    <constraint firstItem="tfb-PO-cyj" firstAttribute="width" secondItem="TD8-YV-0S2" secondAttribute="width" multiplier="0.9" id="Emn-mY-h5q"/>
+                                    <constraint firstItem="tfb-PO-cyj" firstAttribute="centerX" secondItem="TD8-YV-0S2" secondAttribute="centerX" id="NbP-JG-rrR"/>
+                                    <constraint firstItem="tfb-PO-cyj" firstAttribute="height" secondItem="TD8-YV-0S2" secondAttribute="height" multiplier="0.815245" id="U4O-6b-wJk"/>
+                                    <constraint firstItem="tfb-PO-cyj" firstAttribute="centerY" secondItem="TD8-YV-0S2" secondAttribute="centerY" id="oVe-jf-jjS"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -89,12 +75,12 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="ReceiverDonationInfo" destination="AZJ-aQ-aVL" id="Rx9-jH-Lnx"/>
+                        <outlet property="donatTble" destination="tfb-PO-cyj" id="ykg-7N-Bas"/>
                         <outlet property="sideMenuBtn" destination="BbK-Kc-69Z" id="iIF-n4-QE1"/>
+                        <segue destination="JAz-nL-Yvz" kind="show" identifier="ShowLineV" id="bLk-tL-5Bn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ee9-yI-IIR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="eMd-Cp-BT0" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3895.652173913044" y="1485.9375"/>
         </scene>
@@ -117,7 +103,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <segue destination="0AB-xb-S2Q" kind="show" identifier="SegueBDA15" id="4F3-GT-qFb"/>
+                                            <segue destination="0AB-xb-S2Q" kind="show" identifier="ShowDonation" id="4F3-GT-qFb"/>
                                         </connections>
                                     </button>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="b2u-sb-oWe" userLabel="verifTbl">
@@ -268,6 +254,11 @@ correcta:</string>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dx5-4w-IVu">
                                 <rect key="frame" x="41" y="331" width="332" height="288.33333333333326"/>
                                 <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QUK-Zj-cX0" userLabel="warehouseTextField">
+                                        <rect key="frame" x="117.66666666666666" y="119.66666666666669" width="97" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dFp-TX-Uag">
                                         <rect key="frame" x="57.666666666666686" y="26" width="217" height="66"/>
                                         <string key="text">Seleccione un almacen 
@@ -277,37 +268,32 @@ recibida.</string>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lUb-9R-3qO">
-                                        <rect key="frame" x="111" y="100" width="110" height="40"/>
-                                        <color key="backgroundColor" white="0.75" alpha="0.49657534246575341" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                        <state key="normal" title="Almacen 1">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="faf-L7-P21">
-                                        <rect key="frame" x="111" y="148" width="110" height="39.333333333333343"/>
+                                        <rect key="frame" x="111" y="184.33333333333337" width="110" height="39.333333333333343"/>
                                         <color key="backgroundColor" white="0.75" alpha="0.49657534246575341" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                        <state key="normal" title="Almacen 2">
+                                        <state key="normal" title="Guardar">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="verifyDonation:" destination="0AB-xb-S2Q" eventType="touchUpInside" id="k9q-UD-u1g"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.51027397260273977" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="dFp-TX-Uag" firstAttribute="height" secondItem="dx5-4w-IVu" secondAttribute="height" multiplier="0.229236" id="9iF-6s-deQ"/>
-                                    <constraint firstItem="lUb-9R-3qO" firstAttribute="width" secondItem="dx5-4w-IVu" secondAttribute="width" multiplier="0.331325" id="Gu2-h2-CXb"/>
+                                    <constraint firstItem="faf-L7-P21" firstAttribute="top" secondItem="QUK-Zj-cX0" secondAttribute="bottom" multiplier="1.2" id="Kna-CT-tet"/>
                                     <constraint firstItem="faf-L7-P21" firstAttribute="centerX" secondItem="dx5-4w-IVu" secondAttribute="centerX" id="N7w-0B-ulX"/>
-                                    <constraint firstItem="lUb-9R-3qO" firstAttribute="centerX" secondItem="dx5-4w-IVu" secondAttribute="centerX" id="OOS-Hp-cql"/>
+                                    <constraint firstItem="QUK-Zj-cX0" firstAttribute="height" secondItem="dx5-4w-IVu" secondAttribute="height" multiplier="0.117919" id="Svj-by-oRA"/>
                                     <constraint firstItem="dFp-TX-Uag" firstAttribute="width" secondItem="dx5-4w-IVu" secondAttribute="width" multiplier="0.653614" id="U0Y-aa-XMa"/>
-                                    <constraint firstItem="lUb-9R-3qO" firstAttribute="top" secondItem="dFp-TX-Uag" secondAttribute="bottom" constant="8" id="U0d-tK-3KD"/>
+                                    <constraint firstItem="QUK-Zj-cX0" firstAttribute="width" secondItem="dx5-4w-IVu" secondAttribute="width" multiplier="0.292169" id="Wzw-Wj-aYm"/>
                                     <constraint firstItem="faf-L7-P21" firstAttribute="width" secondItem="dx5-4w-IVu" secondAttribute="width" multiplier="0.331325" id="aFZ-6D-3AW"/>
-                                    <constraint firstItem="lUb-9R-3qO" firstAttribute="height" secondItem="dx5-4w-IVu" secondAttribute="height" multiplier="0.139535" id="fCw-mr-toK"/>
-                                    <constraint firstItem="faf-L7-P21" firstAttribute="top" secondItem="lUb-9R-3qO" secondAttribute="bottom" constant="8" id="h1G-yz-RAE"/>
+                                    <constraint firstItem="QUK-Zj-cX0" firstAttribute="centerX" secondItem="dx5-4w-IVu" secondAttribute="centerX" id="jgj-Ea-LPe"/>
                                     <constraint firstItem="faf-L7-P21" firstAttribute="height" secondItem="dx5-4w-IVu" secondAttribute="height" multiplier="0.136213" id="rhM-08-a06"/>
                                     <constraint firstItem="dFp-TX-Uag" firstAttribute="centerX" secondItem="dx5-4w-IVu" secondAttribute="centerX" id="sBJ-6o-llO"/>
                                     <constraint firstItem="dFp-TX-Uag" firstAttribute="top" secondItem="dx5-4w-IVu" secondAttribute="topMargin" constant="18" id="xx3-Jc-HzW"/>
+                                    <constraint firstItem="QUK-Zj-cX0" firstAttribute="top" secondItem="dFp-TX-Uag" secondAttribute="bottom" multiplier="1.3" id="y7w-MO-col"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -321,6 +307,9 @@ recibida.</string>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="pCm-mV-vIM"/>
+                    <connections>
+                        <outlet property="warehouseTextField" destination="QUK-Zj-cX0" id="ZnI-CI-sQZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O2i-Kh-an9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2705,9 +2694,6 @@ en la Lista</string>
         </systemColor>
         <systemColor name="systemGray2Color">
             <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemGray5Color">
-            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
