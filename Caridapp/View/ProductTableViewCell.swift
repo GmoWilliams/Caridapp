@@ -10,9 +10,11 @@ import UIKit
 class ProductTableViewCell: UITableViewCell {
     @IBOutlet weak var productDesc: UILabel!
     @IBOutlet weak var productName: UILabel!
+    @IBOutlet weak var productWeight: UILabel!
     
     func updateCell(product: Product){
-        productName.text = String(product.itemName)
-        productDesc.text = String(product.description)
+        productName.text = "Producto: " + product.itemName
+        productDesc.text = "Descripcion: " + product.description
+        productWeight.text = "Peso: " + String(product.unitaryWeight)
     }
 }

@@ -540,25 +540,44 @@ recibida.</string>
                                                     <rect key="frame" x="0.0" y="0.0" width="321" height="93"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Producto" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IkN-WB-qXz" userLabel="productName">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Producto" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IkN-WB-qXz" userLabel="productName">
                                                             <rect key="frame" x="0.0" y="0.0" width="224.5" height="23.5"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Descripcion" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CVM-Gu-yWu" userLabel="productDesc.">
-                                                            <rect key="frame" x="0.0" y="23.5" width="224.5" height="69.5"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descripcion" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CVM-Gu-yWu" userLabel="productDesc.">
+                                                            <rect key="frame" x="0.0" y="46.5" width="224.5" height="46.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Peso" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ri8-cE-ltM" userLabel="productWeight">
+                                                            <rect key="frame" x="0.0" y="23.5" width="224.5" height="23"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="CVM-Gu-yWu" firstAttribute="leading" secondItem="18g-4X-XNx" secondAttribute="leading" id="4dJ-4b-r4W"/>
+                                                        <constraint firstItem="IkN-WB-qXz" firstAttribute="leading" secondItem="18g-4X-XNx" secondAttribute="leading" id="EGS-1C-ctw"/>
+                                                        <constraint firstItem="IkN-WB-qXz" firstAttribute="width" secondItem="18g-4X-XNx" secondAttribute="width" multiplier="0.7" id="Ex2-Er-DCj"/>
+                                                        <constraint firstItem="CVM-Gu-yWu" firstAttribute="height" secondItem="18g-4X-XNx" secondAttribute="height" multiplier="0.5" id="GUN-KE-ukT"/>
+                                                        <constraint firstItem="ri8-cE-ltM" firstAttribute="top" secondItem="IkN-WB-qXz" secondAttribute="bottom" id="VBe-pc-EhR"/>
+                                                        <constraint firstItem="ri8-cE-ltM" firstAttribute="width" secondItem="18g-4X-XNx" secondAttribute="width" multiplier="0.7" id="Z8f-Fm-fIZ"/>
+                                                        <constraint firstItem="IkN-WB-qXz" firstAttribute="height" secondItem="18g-4X-XNx" secondAttribute="height" multiplier="0.25" id="bBR-r7-6w2"/>
+                                                        <constraint firstAttribute="bottom" secondItem="CVM-Gu-yWu" secondAttribute="bottom" id="brq-N7-od4"/>
+                                                        <constraint firstItem="ri8-cE-ltM" firstAttribute="leading" secondItem="18g-4X-XNx" secondAttribute="leading" id="gq1-4F-0ed"/>
+                                                        <constraint firstItem="CVM-Gu-yWu" firstAttribute="width" secondItem="18g-4X-XNx" secondAttribute="width" multiplier="0.7" id="hyg-pQ-nbx"/>
+                                                        <constraint firstItem="IkN-WB-qXz" firstAttribute="top" secondItem="18g-4X-XNx" secondAttribute="top" id="jFu-Uh-eXr"/>
+                                                        <constraint firstItem="ri8-cE-ltM" firstAttribute="height" secondItem="18g-4X-XNx" secondAttribute="height" multiplier="0.25" id="uzm-4G-WFe"/>
+                                                    </constraints>
                                                 </tableViewCellContentView>
                                                 <connections>
                                                     <outlet property="productDesc" destination="CVM-Gu-yWu" id="cM6-gj-hNb"/>
                                                     <outlet property="productName" destination="IkN-WB-qXz" id="Hoi-cF-nkd"/>
+                                                    <outlet property="productWeight" destination="ri8-cE-ltM" id="xC1-UU-rgQ"/>
                                                     <segue destination="Xmt-DU-kpm" kind="showDetail" id="a5a-sJ-RrV"/>
                                                 </connections>
                                             </tableViewCell>

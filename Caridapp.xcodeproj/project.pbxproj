@@ -30,7 +30,7 @@
 		8AE13BE32714D8FE003805DB /* DonationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A18D29627121ADD00D5720E /* DonationService.swift */; };
 		8AFA66AB27129B9300905EE9 /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFA66AA27129B9300905EE9 /* ProductTableViewCell.swift */; };
 		8AFA66DF2712AE3F00905EE9 /* MenuImportationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFA66DE2712AE3F00905EE9 /* MenuImportationViewController.swift */; };
-		8AFD0BA72718EF860025B2CB /* lineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFD0BA62718EF860025B2CB /* lineTableViewCell.swift */; };
+		8AFD0BA72718EF860025B2CB /* LineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFD0BA62718EF860025B2CB /* LineTableViewCell.swift */; };
 		8AFD0BAC2718F39F0025B2CB /* checkImportationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFD0BAB2718F39F0025B2CB /* checkImportationViewController.swift */; };
 		C0FF88B726F80F2D006BA0F9 /* ViewControllerBDA14.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FF88B626F80F2D006BA0F9 /* ViewControllerBDA14.swift */; };
 /* End PBXBuildFile section */
@@ -78,7 +78,7 @@
 		8AE13BD32714CA0F003805DB /* SelectProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectProductViewController.swift; sourceTree = "<group>"; };
 		8AFA66AA27129B9300905EE9 /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
 		8AFA66DE2712AE3F00905EE9 /* MenuImportationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuImportationViewController.swift; sourceTree = "<group>"; };
-		8AFD0BA62718EF860025B2CB /* lineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lineTableViewCell.swift; sourceTree = "<group>"; };
+		8AFD0BA62718EF860025B2CB /* LineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineTableViewCell.swift; sourceTree = "<group>"; };
 		8AFD0BAB2718F39F0025B2CB /* checkImportationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = checkImportationViewController.swift; sourceTree = "<group>"; };
 		C0FF88B626F80F2D006BA0F9 /* ViewControllerBDA14.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerBDA14.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -201,7 +201,7 @@
 			isa = PBXGroup;
 			children = (
 				8AFA66AA27129B9300905EE9 /* ProductTableViewCell.swift */,
-				8AFD0BA62718EF860025B2CB /* lineTableViewCell.swift */,
+				8AFD0BA62718EF860025B2CB /* LineTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -344,7 +344,7 @@
 				8A22992D27127266001CE110 /* Product.swift in Sources */,
 				8AE13BD42714CA0F003805DB /* SelectProductViewController.swift in Sources */,
 				72997B3526EADC6100099692 /* SceneDelegate.swift in Sources */,
-				8AFD0BA72718EF860025B2CB /* lineTableViewCell.swift in Sources */,
+				8AFD0BA72718EF860025B2CB /* LineTableViewCell.swift in Sources */,
 				8A9C956E27051A30004DE62A /* Donation.swift in Sources */,
 				8A4A3F5A271813BF00744FE2 /* RegisterLineViewController.swift in Sources */,
 				C0FF88B726F80F2D006BA0F9 /* ViewControllerBDA14.swift in Sources */,
