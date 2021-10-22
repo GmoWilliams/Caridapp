@@ -21,7 +21,9 @@ class SelectProductViewController: UIViewController, UITableViewDelegate, UITabl
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        tableView.delegate = self
+        tableView.dataSource = self
         }
     
     func numberOfSections(in tableView: UITableView) -> Int {

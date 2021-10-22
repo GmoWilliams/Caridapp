@@ -23,6 +23,7 @@ class ViewControllerBDA11: UIViewController {
     
     let importationService = DonationService()
     
+    
     @IBAction func registratAction(_ sender: Any) {
         
         
@@ -104,9 +105,18 @@ class ViewControllerBDA11: UIViewController {
             
             DispatchQueue.main.async {
                 controller.upc = upcN!;
+                controller.name = self.nombreTF.text!;
                 controller.donation = self.donation;
             }
-        }
+        } else if segue.identifier == "checkImportation" {
+            let controller = (segue.destination as! CheckImportationViewController)
+            
+            DispatchQueue.main.async {
+                controller.donation = self.donation;
+            }
+        } /*else if segue.identifier == "finishImportation" {
+            importationService.publishDonation(donation: donation!, <#T##handler: DonationService.PublishDonationClosure##DonationService.PublishDonationClosure##(Data) -> Void#>)
+        }*/
     }
     
 
