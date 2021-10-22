@@ -22,7 +22,7 @@ class CaridappServiceTestCase: XCTestCase {
         // When
         let convertExpectation = expectation(description: "Publish Done")
         donationService.publishDonation(donation: donation) {
-            (responseData) in
+            () in
             convertExpectation.fulfill()
         }
         

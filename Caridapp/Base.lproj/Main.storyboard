@@ -1266,8 +1266,7 @@ en la Lista</string>
                                                     <color key="titleColor" systemColor="systemBackgroundColor"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="endingAction:" destination="nNb-nu-5CU" eventType="touchUpInside" id="nq3-Nw-mC3"/>
-                                                    <segue destination="abA-Gj-j3w" kind="show" id="g2e-Li-Hgc"/>
+                                                    <segue destination="abA-Gj-j3w" kind="show" identifier="finishImportation" id="EXd-Ye-Ada"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gUY-yu-qGH" userLabel="checkImportation">
@@ -2293,8 +2292,8 @@ en la Lista</string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="g0e-cW-mlL"/>
-        <segue reference="a5a-sJ-RrV"/>
+        <segue reference="dDj-3g-bAi"/>
+        <segue reference="qUF-QR-Pfd"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="checkmark.rectangle.fill" catalog="system" width="128" height="93"/>

@@ -115,9 +115,12 @@ class ViewControllerBDA11: UIViewController {
             DispatchQueue.main.async {
                 controller.donation = self.donation;
             }
-        } /*else if segue.identifier == "finishImportation" {
-            importationService.publishDonation(donation: donation!, <#T##handler: DonationService.PublishDonationClosure##DonationService.PublishDonationClosure##(Data) -> Void#>)
-        }*/
+        } else if segue.identifier == "finishImportation" {
+            importationService.publishDonation(donation: donation!) {
+                () in
+                print("Sending importation...")
+            }
+        }
     }
     
 

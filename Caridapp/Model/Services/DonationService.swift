@@ -8,7 +8,7 @@
 import Foundation
 
 public class DonationService {
-    public typealias PublishDonationClosure = (Data) -> Void
+    public typealias PublishDonationClosure = () -> Void
     public typealias GetProductsClosure = ([Product]) -> Void
     
     public func publishDonation(donation: Donation , _ handler: @escaping PublishDonationClosure) {
@@ -54,7 +54,7 @@ public class DonationService {
                 print("statusCode: \(httpResponse.statusCode)")
             }
             
-            handler(responseData)
+            handler()
         }
         task.resume()
     }

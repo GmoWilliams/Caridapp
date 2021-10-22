@@ -39,5 +39,15 @@ class CheckImportationViewController: UIViewController, UITableViewDelegate, UIT
 
         return UITableViewCell()
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "exitList" {
+            let controller = (segue.destination as! ViewControllerBDA11)
+            
+            DispatchQueue.main.async {
+                controller.donation = self.donation;
+            }
+        }
+    }
 
 }
