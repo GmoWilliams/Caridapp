@@ -57,7 +57,9 @@ class LineViewController: UIViewController {
                pickP = self.lineZ!.pickUpDate
             }
             
-            print("pickP: ",pickP,"\n", "expP:",expP,"\n","current PickUp:",self.lineZ!.pickUpDate,"\n", "current Expiration:",self.lineZ!.productExpiration,"\n", "datePicker:",self.datePicker.date,"\n", "pTF:",self.pickUpTF.text!,"\n", "eTF:",self.expirationTF.text!,"\n")
+            /*print("pickP: ",pickP,"\n", "expP:",expP,"\n","current PickUp:",self.lineZ!.pickUpDate,"\n", "current Expiration:",self.lineZ!.productExpiration,"\n", "datePicker:",self.datePicker.date,"\n", "pTF:",self.pickUpTF.text!,"\n", "eTF:",self.expirationTF.text!,"\n")
+            */
+            print("Fecha sin formatear:", self.lineZ!.pickUpDate)
  
  let datos = LineUpdate(lineID: lineIDP, donationID: donaIDP, unitaryCost: uCostP, originalQuantity: quantP, pickUpDate: pickP, productExpiration: expP)
             //let datos = LineUpdate(lineID: lineIDP, unitaryCost: uCostP, originalQuantity: quantP)
@@ -103,9 +105,10 @@ class LineViewController: UIViewController {
         self.hideKeyboardWhenTappedAround()
         
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "EEEE, MMM d, yyyy"
+        dateFormatter.dateFormat = "EEEE, MMM d, yyyy ZZZZ"
         dateFormatter.locale = .init(identifier: "es_MX")
-        dateFormatter.timeZone = TimeZone(identifier: "America/Chihuahua")
+        //dateFormatter.timeZone = TimeZone(identifier: "America/Chihuahua")
+        dateFormatter.timeZone = TimeZone(identifier:"GMT")
         
         unitaryCostTF.placeholder = "\((lineZ?.unitaryCost)!)"
         
@@ -113,13 +116,16 @@ class LineViewController: UIViewController {
         
         quantityTF.placeholder = "\((lineZ?.originalQuantity)!)"
         
+        
         pickUpTF.placeholder = dateFormatter.string(from: lineZ!.pickUpDate)
+        
         
         // This process can be optimized to a single function for both labels, but it requires a method that allows giving #selector a parameter
         
             datePicker = UIDatePicker.init(frame: CGRect(x: 0, y: 0, width: view.bounds.size.width, height: 200))
             datePicker.datePickerMode = UIDatePicker.Mode.date
             datePicker.minimumDate = Date()
+            datePicker.timeZone = TimeZone(identifier:"GMT")
             
             datePicker.addTarget(self, action: #selector(self.dateChanged), for: .allEvents)
                    expirationTF.inputView = datePicker
@@ -132,6 +138,7 @@ class LineViewController: UIViewController {
             datePicker2 = UIDatePicker.init(frame: CGRect(x: 0, y: 0, width: view.bounds.size.width, height: 200))
             datePicker2.datePickerMode = UIDatePicker.Mode.date
             datePicker2.minimumDate = Date()
+            datePicker2.timeZone = TimeZone(identifier:"GMT")
             
             datePicker2.addTarget(self, action: #selector(self.dateChanged2), for: .allEvents)
                    pickUpTF.inputView = datePicker2
@@ -148,12 +155,16 @@ class LineViewController: UIViewController {
 
     @objc func dateChanged() {
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "EEEE, MMM d, yyyy"
+        dateFormatter.dateFormat = "EEEE, MMM d, yyyy ZZZZ"
         dateFormatter.locale = .init(identifier: "es_MX")
-        dateFormatter.timeZone = TimeZone(identifier: "America/Chihuahua")
+        //dateFormatter.timeZone = TimeZone(identifier: "America/Chihuahua")
+        dateFormatter.timeZone = TimeZone(identifier:"GMT")
+        
         let selectedDate = dateFormatter.string(from: datePicker.date)
             expirationTF.text = selectedDate
-            print(datePicker.date)
+        print("Raw date: ",datePicker.date, " Selected date: ", selectedDate)
+        
+            
         let timeZone = TimeZone.current.identifier
          print(timeZone)
        }
@@ -166,7 +177,8 @@ class LineViewController: UIViewController {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "EEEE, MMM d, yyyy"
         dateFormatter.locale = .init(identifier: "es_MX")
-        dateFormatter.timeZone = TimeZone(identifier: "America/Chihuahua")
+        //dateFormatter.timeZone = TimeZone(identifier: "America/Chihuahua")
+        dateFormatter.timeZone = TimeZone(identifier:"GMT")
         let selectedDate = dateFormatter.string(from: datePicker2.date)
             pickUpTF.text = selectedDate
             print(datePicker2.date)
