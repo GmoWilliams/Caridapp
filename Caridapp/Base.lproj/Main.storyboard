@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4pw-u8-rrd">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ab6-He-e7D">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -2000,7 +2000,7 @@ en la Lista</string>
         <!--DriverImportations-->
         <scene sceneID="Gve-jo-27n">
             <objects>
-                <viewController id="Ab6-He-e7D" userLabel="DriverImportations" sceneMemberID="viewController">
+                <viewController id="Ab6-He-e7D" userLabel="DriverImportations" customClass="DriverImportationsViewController" customModule="Caridapp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Vpt-NX-mnz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2049,7 +2049,7 @@ en la Lista</string>
                                         <rect key="frame" x="26.333333333333343" y="112" width="299.33333333333326" height="609.33333333333337"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="73" id="rwC-lV-yt2">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="driverCell" rowHeight="73" id="rwC-lV-yt2" customClass="DriverTableViewCell" customModule="Caridapp" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="28" width="299.33333333333326" height="73"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rwC-lV-yt2" id="Fh2-O6-A7C">
@@ -2101,6 +2101,11 @@ en la Lista</string>
                                                         <constraint firstItem="MuM-L2-YEV" firstAttribute="height" secondItem="Fh2-O6-A7C" secondAttribute="height" multiplier="0.25" id="yTf-dR-WsZ"/>
                                                     </constraints>
                                                 </tableViewCellContentView>
+                                                <connections>
+                                                    <outlet property="addressField" destination="Lbo-i6-GVb" id="q9D-zZ-qwH"/>
+                                                    <outlet property="donationField" destination="MuM-L2-YEV" id="mAN-j2-dfN"/>
+                                                    <outlet property="nameField" destination="tWo-Xg-1G0" id="YsR-6M-22U"/>
+                                                </connections>
                                             </tableViewCell>
                                         </prototypes>
                                     </tableView>
@@ -2131,6 +2136,9 @@ en la Lista</string>
                             <constraint firstItem="tIB-VD-nxl" firstAttribute="centerX" secondItem="dST-sO-wQs" secondAttribute="centerX" id="u0Q-sz-Wvv"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="xJ9-Zd-eHj" id="2fh-F4-0aE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mD1-ue-8sa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2141,7 +2149,7 @@ en la Lista</string>
             <objects>
                 <viewController id="PtG-vt-LNi" userLabel="ImportationList" customClass="CheckImportationViewController" customModule="Caridapp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hmm-1L-czX">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TzF-mD-hdB" userLabel="Main">
