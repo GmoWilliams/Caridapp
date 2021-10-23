@@ -103,9 +103,9 @@ extension MainViewController: SideMenuViewControllerDelegate {
         case 2:
             // BDA-2
             self.showViewController(viewController: UINavigationController.self, storyboardId: "UpdNavID")
-//        case 3:
-//            // BDA-14,15
-//            self.showViewController(viewController: UINavigationController.self, storyboardId: "VerNavID")
+        case 3:
+            // BDA-13 / Driver Navigation Controller
+            self.showViewController(viewController: UINavigationController.self, storyboardId: "drivNav")
 //        case 4:
 //            // BDA-13
 //            self.showViewController(viewController: UINavigationController.self, storyboardId: "RecNavID")
