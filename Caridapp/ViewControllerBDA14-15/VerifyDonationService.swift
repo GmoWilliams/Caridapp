@@ -7,13 +7,13 @@
 
 import Foundation
 
-enum APIError3:Error{
+enum APIError4:Error{
     case responseProblem
     case decodingProblem
     case encodingProblem
 }
 
-struct APIRequest3 {
+struct APIRequest4 {
     let resourceURL: URL
     
     init (endpoint:String){
@@ -23,17 +23,14 @@ struct APIRequest3 {
         self.resourceURL = resourceURL
     }
     
-    func save(_ dataToSave:LineVerification, completion: @escaping(Result<LineVerification, APIError3>) -> Void){
+    func save(_ dataToSave:DonationVerification, completion: @escaping(Result<DonationVerification, APIError4>) -> Void){
         do{
             var urlRequest = URLRequest(url: resourceURL)
             urlRequest.httpMethod = "PUT"
             urlRequest.addValue("application/json", forHTTPHeaderField: "Content-Type")
            
-            let dateFormatter = DateFormatter();
-            dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'";
-            dateFormatter.timeZone = TimeZone(identifier:"GMT")
             let encoder = JSONEncoder();
-            encoder.dateEncodingStrategy = .formatted(dateFormatter);
+
            
             urlRequest.httpBody = try encoder.encode(dataToSave)
             
@@ -51,22 +48,13 @@ struct APIRequest3 {
                 }
             do {
                 let decoder = JSONDecoder()
-                let dateFormatter = DateFormatter()
-                dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'";
-                dateFormatter.timeZone = TimeZone(identifier:"GMT")
-                decoder.dateDecodingStrategy = .formatted(dateFormatter)
-                
-                let contentData = try decoder.decode(LineVerification.self, from: JSONData)
+                let contentData = try decoder.decode(DonationVerification.self, from: JSONData)
                 completion(.success(contentData))
             }catch{
                 
                 if let jsonResponse = String(data: data!, encoding: String.Encoding.utf8) {
                     print("JSON String: \(jsonResponse)")
                 }
-                /*  // Another way to get the servers Response
-                let JSONResponse = String(data: JSONData, encoding: String.Encoding.utf8)
-                print(JSONResponse!)
-                */
                 completion(.failure(.decodingProblem))
                 }
             }
