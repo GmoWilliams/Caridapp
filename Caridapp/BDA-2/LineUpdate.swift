@@ -6,6 +6,7 @@
 //
 import Foundation
 
+// This class is made to match the data that is updatable for editting a Line into DB
 public class LineUpdate: Codable {
     public let lineID: Int64;
     public let donationID: Int64;

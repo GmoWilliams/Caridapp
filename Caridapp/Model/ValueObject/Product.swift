@@ -5,7 +5,7 @@
 //  Created by user194082 on 10/9/21.
 //
 import Foundation
-
+// This class is for managing all Products
 public class Product: Codable {
     public let upc: Int64;
     public let itemName: String;
