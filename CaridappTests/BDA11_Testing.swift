@@ -4,7 +4,6 @@
 //
 //  Created by user190825 on 10/21/21.
 //
-
 import XCTest
 @testable import Caridapp
 class BDA11Test: XCTestCase {
@@ -51,7 +50,6 @@ class BDA11Test: XCTestCase {
     // PERFORMANCE TESTS
     /*
     let getLines = LineTableViewController()
-
        func testRetrieveLines() throws {
            // This is an example of a performance test case.
            self.measure {
@@ -64,28 +62,31 @@ class BDA11Test: XCTestCase {
     */
     
     // REGRESION TESTS
-let registerP = APIRequest(endpoint: "import")
+    let registerP = APIRequest(endpoint: "import")
 
-    func testRegisterProduct() throws {
-        // Given
-        let upcP: Int64 = 345901
-        let nameP: String = "Jabon"
-        let descP: String = "Jabon de maiz"
-        let weightP:Double = 5.0
-        
-        let datos = Product(upc: upcP, itemName: nameP, description: descP, unitaryWeight: weightP)
-        // When
-        let postRequest = APIRequest(endpoint: "import")
-        postRequest.save(datos, completion: {result in
-            switch result{
-            case .success(let datos):
-                print("Se registro en la Base de Datos exitosamente tu producto:\n Nombre del producto: \(datos.itemName)\n Descripcion: \(datos.description)\n UPC: \(datos.upc)\n Peso: \(datos.unitaryWeight)")
+        func testRegisterProduct() throws {
+            // Given
+            let upcP: Int64 = 345901
+            let nameP: String = "Jabon"
+            let descP: String = "Jabon de maiz"
+            let weightP:Double = 5.0
             
-            case .failure(let err):
-                print("Ocurrio un error: \(err)")
-            }
-            })
-        // Then
-        XCTAssertNotEqual(postRequest.save.jsonResponse, "Ocurrio un error: \(err)")
-    }
+            let datos = Product(upc: upcP, itemName: nameP, description: descP, unitaryWeight: weightP)
+            // When
+            let postRequest = APIRequest(endpoint: "import")
+            postRequest.save(datos, completion: {result in
+                switch result{
+                case .success(let datos):
+                    print("Se registro en la Base de Datos exitosamente tu producto:\n Nombre del producto: \(datos.itemName)\n Descripcion: \(datos.description)\n UPC: \(datos.upc)\n Peso: \(datos.unitaryWeight)")
+                    // Then
+                    XCTAssert(true)
+                
+                case .failure(let err):
+                    print("Ocurrio un error: \(err)")
+                    // Then
+                    XCTFail()
+                }
+                })
+            
+        }
 }
