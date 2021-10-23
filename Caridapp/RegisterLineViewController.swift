@@ -28,9 +28,9 @@ class RegisterLineViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
-        print("upc selected: \(product!.upc)")
-        print("name of the product: \(product!.itemName)")
+        self.hideKeyboardWhenTappedAround()
+        //print("upc selected: \(product!.upc)")
+        //print("name of the product: \(product!.itemName)")
     }
 
     @IBAction func savingLine(_ sender: Any) {
@@ -41,15 +41,17 @@ class RegisterLineViewController: UIViewController {
         let data = Line(upc: product!.upc, cost: cost, expirationDate: date, orQuantity: quantityProduct, quantity: quantityProduct, name: product!.itemName);
         
         donation?.addLine(line: data);
+        
+        DispatchQueue.main.async(){
+            let vc = self.storyboard?.instantiateViewController(identifier: "BDA-11ID") as! ViewControllerBDA11
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "lineAdded" {
-            let controller = (segue.destination as! ViewControllerBDA11)
-            
-            DispatchQueue.main.async {
-                controller.donation = self.donation;
-            }
+        DispatchQueue.main.async(){
+            let vc = self.storyboard?.instantiateViewController(identifier: "BDA-11ID") as! ViewControllerBDA11
+            self.navigationController?.pushViewController(vc, animated: true)
         }
     }
 }

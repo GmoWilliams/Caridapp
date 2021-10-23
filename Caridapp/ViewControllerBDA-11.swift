@@ -47,7 +47,7 @@ class ViewControllerBDA11: UIViewController {
                     print("Se registro en la Base de Datos exitosamente tu producto:\n Nombre del producto: \(datos.itemName)\n Descripcion: \(datos.description)\n UPC: \(datos.upc)\n Peso: \(datos.unitaryWeight)")
                     
                     DispatchQueue.main.async(){
-                       self.performSegue(withIdentifier: "AddingProduct", sender: self)
+                       self.performSegue(withIdentifier: "addingProduct", sender: self)
                     }
                     
                 

@@ -23,7 +23,7 @@ struct APIRequest3 {
         self.resourceURL = resourceURL
     }
     
-    func save(_ dataToSave:LineVerificaion, completion: @escaping(Result<LineVerificaion, APIError3>) -> Void){
+    func save(_ dataToSave:LineVerification, completion: @escaping(Result<LineVerification, APIError3>) -> Void){
         do{
             var urlRequest = URLRequest(url: resourceURL)
             urlRequest.httpMethod = "PUT"
@@ -56,7 +56,7 @@ struct APIRequest3 {
                 dateFormatter.timeZone = TimeZone(identifier:"GMT")
                 decoder.dateDecodingStrategy = .formatted(dateFormatter)
                 
-                let contentData = try decoder.decode(LineVerificaion.self, from: JSONData)
+                let contentData = try decoder.decode(LineVerification.self, from: JSONData)
                 completion(.success(contentData))
             }catch{
                 
