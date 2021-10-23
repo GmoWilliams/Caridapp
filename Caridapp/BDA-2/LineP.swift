@@ -5,7 +5,7 @@
 //  Created by user190825 on 10/14/21.
 //
 import Foundation
-
+// This class is made to match the retrieved data from historyLine endpoint
 public class LineP: Codable {
     public let donationID: Int64;
     public let lineID: Int64;

@@ -5,7 +5,7 @@
 //  Created by user190825 on 10/18/21.
 //
 import Foundation
-
+// This class is made to match the required data for UpdateService
 public class LineUpdate: Codable {
     public let lineID: Int64;
     public let donationID: Int64;

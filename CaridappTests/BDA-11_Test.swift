@@ -80,12 +80,15 @@ let registerP = APIRequest(endpoint: "import")
             switch result{
             case .success(let datos):
                 print("Se registro en la Base de Datos exitosamente tu producto:\n Nombre del producto: \(datos.itemName)\n Descripcion: \(datos.description)\n UPC: \(datos.upc)\n Peso: \(datos.unitaryWeight)")
+                // Then
+                XCTAssert(true)
             
             case .failure(let err):
                 print("Ocurrio un error: \(err)")
+                // Then
+                XCTFail()
             }
             })
-        // Then
-        XCTAssertNotEqual(postRequest.save.jsonResponse, "Ocurrio un error: \(err)")
+        
     }
 }

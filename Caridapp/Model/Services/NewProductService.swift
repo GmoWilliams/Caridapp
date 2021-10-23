@@ -12,7 +12,7 @@ enum APIError:Error{
     case encodingProblem
 }
 
-struct APIRequest {
+class APIRequest {
     let resourceURL: URL
     
     init (endpoint:String){
@@ -37,6 +37,7 @@ struct APIRequest {
                     // Getting the servers Response for debugging
                     if let jsonResponse = String(data: data!, encoding: String.Encoding.utf8) {
                         print("JSON String: \(jsonResponse)")
+                
                     }
                     
                     return
