@@ -4,34 +4,27 @@
 //
 //  Created by user190825 on 10/14/21.
 //
-extension UIViewController {
-    func hideKeyboardWhenTappedAround2() {
-        let tap = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
-        tap.cancelsTouchesInView = false
-        view.addGestureRecognizer(tap)
-    }
-    
-    @objc func dismissKeyboard2() {
-        view.endEditing(true)
-    }
-}
 
 import UIKit
 
 class LineViewController: UIViewController {
-    
+    // Variable of type LineP for managing values from retrieved Lines from DB
     var lineZ:LineP?
     
+    // MARK: - corregirAction
     @IBAction func corregirAction(_ sender: Any) {
-        
         
         let alert = UIAlertController(title: "Corregir Datos", message: "Se corregira la informacion al servidor", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Cancelar", style:.cancel, handler: nil))
         
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: {
             action in
+            
+            // We initialize the values retrieved from past scene, IDs are never modified
             let lineIDP = Int64(self.lineZ!.lineID);
             let donaIDP = Int64(self.lineZ!.donationID);
+            
+            // If a textfield is blank it will take the value retrieved from DB
             var uCostT = self.unitaryCostTF.text!
                 if self.unitaryCostTF.text == "" {
                     uCostT = String(self.lineZ!.unitaryCost)
@@ -44,9 +37,7 @@ class LineViewController: UIViewController {
             }
             let quantP = Int(quantT)!
             
-            let eTF = self.expirationTF.text
-            let pTF = self.pickUpTF.text
-            
+            // For date textfields values will be picked from datePicker tool
             var expP = self.datePicker.date
             if self.expirationTF.text == "" {
                expP = self.lineZ!.productExpiration
@@ -57,19 +48,18 @@ class LineViewController: UIViewController {
                pickP = self.lineZ!.pickUpDate
             }
             
-            /*print("pickP: ",pickP,"\n", "expP:",expP,"\n","current PickUp:",self.lineZ!.pickUpDate,"\n", "current Expiration:",self.lineZ!.productExpiration,"\n", "datePicker:",self.datePicker.date,"\n", "pTF:",self.pickUpTF.text!,"\n", "eTF:",self.expirationTF.text!,"\n")
-            */
-            print("Fecha sin formatear:", self.lineZ!.pickUpDate)
- 
- let datos = LineUpdate(lineID: lineIDP, donationID: donaIDP, unitaryCost: uCostP, originalQuantity: quantP, pickUpDate: pickP, productExpiration: expP)
-            //let datos = LineUpdate(lineID: lineIDP, unitaryCost: uCostP, originalQuantity: quantP)
+            // All values are now initialized in an object for Updating Line in DB
+            let datos = LineUpdate(lineID: lineIDP, donationID: donaIDP, unitaryCost: uCostP, originalQuantity: quantP, pickUpDate: pickP, productExpiration: expP)
             
+            // We make an APIRequest, in this case it will be a put request and it will manage dates
             let postRequest = APIRequest2(endpoint: "updateLine")
             postRequest.save(datos, completion: {result in
                 switch result{
+                // If connection & decodification is succesful, print the data sent
                 case .success(let datos):
                     print("Se registro en la Base de Datos exitosamente tu producto:\n ID de la linea: \(datos.lineID)\n Costo Unitario: \(datos.unitaryCost)\n Cantidad: \(datos.originalQuantity)\n Expiracion: \(datos.productExpiration) \n Recoger: \(datos.pickUpDate)")
                     
+                    // Scene will move then to previous one (Listing current Lines)
                     DispatchQueue.main.async(){
                         let vc = self.storyboard?.instantiateViewController(identifier: "LineTableID") as! LineTableViewController
                         self.navigationController?.pushViewController(vc, animated: true)
@@ -84,11 +74,9 @@ class LineViewController: UIViewController {
  
         
         self.present(alert, animated: true)
-             
- 
     }//end of corregirAction
     
-
+    // MARK: - Declaring Labels
     @IBOutlet weak var unitaryCostTF: UITextField!
     
     @IBOutlet weak var expirationTF: UITextField!
@@ -104,12 +92,16 @@ class LineViewController: UIViewController {
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround()
         
+        
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "EEEE, MMM d, yyyy ZZZZ"
+        // Desired format for date output
+        dateFormatter.dateFormat = "E, MMM d, yyyy ZZZZ"
+        // Desired language for date output
         dateFormatter.locale = .init(identifier: "es_MX")
-        //dateFormatter.timeZone = TimeZone(identifier: "America/Chihuahua")
+        // Desired timezone for date output *NOTE: It MUST be GMT to match DBs format
         dateFormatter.timeZone = TimeZone(identifier:"GMT")
         
+        // We give as placeholder the retrieved data for each textfield, for convenience
         unitaryCostTF.placeholder = "\((lineZ?.unitaryCost)!)"
         
         expirationTF.placeholder = dateFormatter.string(from: lineZ!.productExpiration)
@@ -119,21 +111,29 @@ class LineViewController: UIViewController {
         
         pickUpTF.placeholder = dateFormatter.string(from: lineZ!.pickUpDate)
         
+        // MARK: - DatePicker
+        // *NOTE: This process can be optimized to a single function for both labels, but it requires a method that allows giving #selector a parameter
         
-        // This process can be optimized to a single function for both labels, but it requires a method that allows giving #selector a parameter
-        
+        // DatePicker#1
+                // We initiate datePicker window with the given size
             datePicker = UIDatePicker.init(frame: CGRect(x: 0, y: 0, width: view.bounds.size.width, height: 200))
+                // We just want to ask for date
             datePicker.datePickerMode = UIDatePicker.Mode.date
+                // We do not allow past dates to be selected
             datePicker.minimumDate = Date()
+                // We MUST have timezone GMT to match DBs format
             datePicker.timeZone = TimeZone(identifier:"GMT")
-            
+                // We declare action for datePicker
             datePicker.addTarget(self, action: #selector(self.dateChanged), for: .allEvents)
                    expirationTF.inputView = datePicker
         
+        // We give format to doneButton
         let doneButton = UIBarButtonItem.init(title: "Done", style: .done, target: self, action: #selector(self.datePickerDone))
                    let toolBar = UIToolbar.init(frame: CGRect(x: 0, y: 0, width: view.bounds.size.width, height: 44))
             toolBar.setItems([UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.flexibleSpace, target: nil, action: nil), doneButton], animated: true)
                 expirationTF.inputAccessoryView = toolBar
+        
+            // DatePicker#2
         
             datePicker2 = UIDatePicker.init(frame: CGRect(x: 0, y: 0, width: view.bounds.size.width, height: 200))
             datePicker2.datePickerMode = UIDatePicker.Mode.date
@@ -157,16 +157,10 @@ class LineViewController: UIViewController {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "EEEE, MMM d, yyyy ZZZZ"
         dateFormatter.locale = .init(identifier: "es_MX")
-        //dateFormatter.timeZone = TimeZone(identifier: "America/Chihuahua")
         dateFormatter.timeZone = TimeZone(identifier:"GMT")
         
         let selectedDate = dateFormatter.string(from: datePicker.date)
             expirationTF.text = selectedDate
-        print("Raw date: ",datePicker.date, " Selected date: ", selectedDate)
-        
-            
-        let timeZone = TimeZone.current.identifier
-         print(timeZone)
        }
     
     @objc func datePickerDone2() {
@@ -177,13 +171,10 @@ class LineViewController: UIViewController {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "EEEE, MMM d, yyyy"
         dateFormatter.locale = .init(identifier: "es_MX")
-        //dateFormatter.timeZone = TimeZone(identifier: "America/Chihuahua")
         dateFormatter.timeZone = TimeZone(identifier:"GMT")
+        
         let selectedDate = dateFormatter.string(from: datePicker2.date)
             pickUpTF.text = selectedDate
-            print(datePicker2.date)
-        let timeZone = TimeZone.current.identifier
-         print(timeZone)
        }
 
-}
+}// endOfClass

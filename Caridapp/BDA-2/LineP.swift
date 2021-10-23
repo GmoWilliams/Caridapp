@@ -6,6 +6,7 @@
 //
 import Foundation
 
+// This class is used to match the required data for retrieving Lines from DB
 public class LineP: Codable {
     public let donationID: Int64;
     public let lineID: Int64;
