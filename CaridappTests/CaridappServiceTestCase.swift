@@ -6,7 +6,7 @@
 //
 
 import XCTest
-
+@testable import Caridapp
 class CaridappServiceTestCase: XCTestCase {
     let donationService = DonationService()
 
@@ -91,3 +91,4 @@ class CaridappServiceTestCase: XCTestCase {
     }
 
 }
+
