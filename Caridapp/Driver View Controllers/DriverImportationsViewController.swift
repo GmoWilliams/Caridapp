@@ -52,6 +52,23 @@ class DriverImportationsViewController: UIViewController, UITableViewDelegate, U
         }
         return UITableViewCell()
     }
-
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let cell = tableView.cellForRow(at: indexPath) else { return }
+        
+        let donation = donations?[indexPath.row]
+        
+        driverService.updateDonationStatus(donation: donation!){
+            () in
+        }
+        
+        if (cell.accessoryType == .none) {
+            cell.accessoryType = .checkmark
+        } else {
+            cell.accessoryType = .none
+            cell.backgroundColor = .systemBackground
+        }
+        
+    }
 
 }

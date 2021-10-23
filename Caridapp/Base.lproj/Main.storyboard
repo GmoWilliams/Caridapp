@@ -3,7 +3,6 @@
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
-        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -2074,26 +2073,15 @@ en la Lista</string>
                                                             <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <color key="highlightedColor" systemColor="systemGray2Color"/>
                                                         </label>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d1D-zf-79V" userLabel="Check">
-                                                            <rect key="frame" x="194.66666666666666" y="0.0" width="104.66666666666666" height="73"/>
-                                                            <color key="tintColor" systemColor="opaqueSeparatorColor"/>
-                                                            <state key="normal">
-                                                                <imageReference key="image" image="checkmark.rectangle.fill" catalog="system" symbolScale="large"/>
-                                                            </state>
-                                                        </button>
                                                     </subviews>
                                                     <constraints>
                                                         <constraint firstItem="tWo-Xg-1G0" firstAttribute="leading" secondItem="Fh2-O6-A7C" secondAttribute="leading" id="1gR-1A-kZu"/>
-                                                        <constraint firstAttribute="trailing" secondItem="d1D-zf-79V" secondAttribute="trailing" id="5Tb-uH-Yly"/>
                                                         <constraint firstItem="Lbo-i6-GVb" firstAttribute="height" secondItem="Fh2-O6-A7C" secondAttribute="height" multiplier="0.5" id="AFm-iB-mi1"/>
                                                         <constraint firstItem="Lbo-i6-GVb" firstAttribute="leading" secondItem="Fh2-O6-A7C" secondAttribute="leading" id="EUI-Cq-kZE"/>
                                                         <constraint firstItem="Lbo-i6-GVb" firstAttribute="top" secondItem="tWo-Xg-1G0" secondAttribute="bottom" id="KPh-18-pli"/>
                                                         <constraint firstItem="tWo-Xg-1G0" firstAttribute="width" secondItem="Fh2-O6-A7C" secondAttribute="width" multiplier="0.5" id="bGd-kB-uTy"/>
                                                         <constraint firstItem="tWo-Xg-1G0" firstAttribute="height" secondItem="Fh2-O6-A7C" secondAttribute="height" multiplier="0.25" id="gcT-vF-hcq"/>
                                                         <constraint firstItem="Lbo-i6-GVb" firstAttribute="width" secondItem="Fh2-O6-A7C" secondAttribute="width" multiplier="0.5" id="hEf-h8-rDw"/>
-                                                        <constraint firstItem="d1D-zf-79V" firstAttribute="top" secondItem="Fh2-O6-A7C" secondAttribute="top" id="j2E-20-K5S"/>
-                                                        <constraint firstItem="d1D-zf-79V" firstAttribute="height" secondItem="Fh2-O6-A7C" secondAttribute="height" id="l0x-Ob-MXe"/>
-                                                        <constraint firstItem="d1D-zf-79V" firstAttribute="width" secondItem="Fh2-O6-A7C" secondAttribute="width" multiplier="0.35" id="qTY-4x-66E"/>
                                                         <constraint firstItem="MuM-L2-YEV" firstAttribute="leading" secondItem="Fh2-O6-A7C" secondAttribute="leading" id="qsn-sS-aYC"/>
                                                         <constraint firstItem="tWo-Xg-1G0" firstAttribute="top" secondItem="MuM-L2-YEV" secondAttribute="bottom" id="vQt-md-ON7"/>
                                                         <constraint firstItem="MuM-L2-YEV" firstAttribute="top" secondItem="Fh2-O6-A7C" secondAttribute="top" id="w8V-h6-wcz"/>
@@ -2583,7 +2571,6 @@ en la Lista</string>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
     <resources>
-        <image name="checkmark.rectangle.fill" catalog="system" width="128" height="93"/>
         <image name="line.horizontal.3" catalog="system" width="128" height="64"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
