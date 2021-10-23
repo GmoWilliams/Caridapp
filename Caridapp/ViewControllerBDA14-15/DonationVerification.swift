@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class DonationVerificaion: Codable {
+public class DonationVerification: Codable {
     public let donationID: Int64;
     public let warehouse: Int;
     

@@ -23,7 +23,7 @@ struct APIRequest4 {
         self.resourceURL = resourceURL
     }
     
-    func save(_ dataToSave:DonationVerificaion, completion: @escaping(Result<DonationVerificaion, APIError4>) -> Void){
+    func save(_ dataToSave:DonationVerification, completion: @escaping(Result<DonationVerification, APIError4>) -> Void){
         do{
             var urlRequest = URLRequest(url: resourceURL)
             urlRequest.httpMethod = "PUT"
@@ -48,7 +48,7 @@ struct APIRequest4 {
                 }
             do {
                 let decoder = JSONDecoder()
-                let contentData = try decoder.decode(DonationVerificaion.self, from: JSONData)
+                let contentData = try decoder.decode(DonationVerification.self, from: JSONData)
                 completion(.success(contentData))
             }catch{
                 

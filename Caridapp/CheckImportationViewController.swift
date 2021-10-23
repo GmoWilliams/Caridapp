@@ -41,12 +41,9 @@ class CheckImportationViewController: UIViewController, UITableViewDelegate, UIT
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "exitList" {
-            let controller = (segue.destination as! ViewControllerBDA11)
-            
-            DispatchQueue.main.async {
-                controller.donation = self.donation;
-            }
+        DispatchQueue.main.async(){
+            let vc = self.storyboard?.instantiateViewController(identifier: "BDA-11ID") as! ViewControllerBDA11
+            self.navigationController?.pushViewController(vc, animated: true)
         }
     }
 

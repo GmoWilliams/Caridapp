@@ -13,7 +13,10 @@ class ViewControllerBDA15: UIViewController, UITextFieldDelegate {
     @IBOutlet var warehouseTextField: UITextField!
 
 
-    var DonationV:DonationPV?
+    
+    var DonationV : DonationPV?
+    
+    
 
     
     override func viewDidLoad() {
@@ -21,13 +24,14 @@ class ViewControllerBDA15: UIViewController, UITextFieldDelegate {
         warehouseTextField.delegate = self
         
         warehouseTextField.placeholder = "\((DonationV!.warehouse))"
-        
-        
-        
-        //navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Save", style: .done, target: self, action: #selector(verifyLine))
+        self.hideKeyboardWhenTappedAround()
         
     }
     
+    
+    
+    
+    //Function to update quantity and productExpiration using the API request on VerifyProductService
     @IBAction func verifyDonation(_ sender: Any) {
         
         let alert = UIAlertController(title: "Guardar a almacén", message: "Se corregira la informacion al servidor", preferredStyle: .alert)
@@ -44,11 +48,7 @@ class ViewControllerBDA15: UIViewController, UITextFieldDelegate {
             }
             let warehouse = Int(warehouseText)!
 
-            //guard let pickUpT = self.pickUpTF.text, let weightP = Double(pickUpT) else {print("Hace falta el peso"); return}
-
-            //print("donationID: ",donationIDPV," \nLineID: " ,lineIDPV, "\nquan: ", quantP , "\nexpP: ", expP)
-
-            let datos = DonationVerificaion(donationID: donationIDPV, warehouse: warehouse)
+            let datos = DonationVerification(donationID: donationIDPV, warehouse: warehouse)
             
             let postRequest = APIRequest4(endpoint: "verifyDonation")
             postRequest.save(datos, completion: {result in

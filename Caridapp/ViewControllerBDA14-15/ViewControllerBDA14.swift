@@ -13,8 +13,10 @@ class ViewControllerBDA14: UIViewController {
     
     @IBOutlet var verifTble: UITableView!
     
+    
     var lines = [LinePV]()
-    var donationV:DonationPV?
+    var donationS = [DonationPV]()
+    var DonationV:DonationPV?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,39 +59,68 @@ class ViewControllerBDA14: UIViewController {
                }
            }.resume()
        }
+    
+    @IBAction func listoAction(_ sender: Any) {
+        
+        
+        
+        let url = URL(string: "https://caridapp.herokuapp.com/historyDonation")
+        
+        URLSession.shared.dataTask(with: url!) { (data, response, error) in
+            if error == nil {
+                    do {
+                     let decoder = JSONDecoder()
+                     let dateFormatter = DateFormatter()
+                     dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'";
+                     dateFormatter.timeZone = TimeZone(identifier:"GMT")
+                     decoder.dateDecodingStrategy = .formatted(dateFormatter)
+                        
+                        self.donationS = try decoder.decode([DonationPV].self, from: data!)
+                        //self.heroes = try JSONDecoder().decode([HeroStats].self, from: data!)
+                        DispatchQueue.main.async {
+                            self.performSegue(withIdentifier: "ShowDonation", sender: self)
+                        }
+                        
+                } catch {
+                    print("JSON Error")
+                }
+            }
+        }.resume()
+        
+    }
 }
 
 
 extension ViewControllerBDA14: UITableViewDelegate {
     
+    //function which shows next screen based on segue 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        tableView.deselectRow(at: indexPath, animated: true)
-//        let vc = storyboard?.instantiateViewController(identifier: "task") as! ViewControllerBDA14_2
-//        navigationController?.pushViewController(vc, animated: true)
+
           self.performSegue(withIdentifier: "ShowVerify", sender: self)
-          self.performSegue(withIdentifier: "ShowDonation", sender: self)
     }
     
+    //function to prepare data to be sended towards the next screen
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let destination = segue.destination as? ViewControllerBDA14_2 {
+        if  let destination = segue.destination as? ViewControllerBDA14_2 {
             destination.lineV = lines[(verifTble.indexPathForSelectedRow?.row)!]
+        } else if let destination = segue.destination as? ViewControllerBDA15 {
+            destination.DonationV = DonationV
         }
-//        if let destination = segue.destination as? ViewControllerBDA15 {
-//            destination.DonationV = donations[(donatTble.indexPathForSelectedRow?.row)!]
-//        }
     }
 }
     
 
 extension ViewControllerBDA14: UITableViewDataSource {
     
+    //Function which designates number of cells to display
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         return self.lines.count
     }
+    
+    //This function displays the data gotten from JSON in string format in each cell
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        //let cell = UITableViewCell()
-               //cell.textLabel?.text = heroes[indexPath.row].localized_name
+        
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "E, MMM d, yyyy"
         dateFormatter.locale = .init(identifier: "es_ES")

@@ -44,6 +44,7 @@ class ViewControllerBDA14_2: UIViewController, UITextFieldDelegate {
         expireTextField.inputAccessoryView = toolBar
         
         
+        self.hideKeyboardWhenTappedAround()
         //navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Save", style: .done, target: self, action: #selector(verifyLine))
         
     }
@@ -75,7 +76,7 @@ class ViewControllerBDA14_2: UIViewController, UITextFieldDelegate {
 
             print("donationID: ",donationIDPV," \nLineID: " ,lineIDPV, "\nquan: ", quantP , "\nexpP: ", expP)
 
-            let datos = LineVerificaion(donationID: donationIDPV, lineID: lineIDPV, productExpiration: expP , quantity: quantP)
+            let datos = LineVerification(donationID: donationIDPV, lineID: lineIDPV, productExpiration: expP , quantity: quantP)
             
             let postRequest = APIRequest3(endpoint: "verifyLine")
             postRequest.save(datos, completion: {result in
