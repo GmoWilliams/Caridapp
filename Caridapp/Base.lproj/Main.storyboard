@@ -2130,6 +2130,7 @@ en la Lista</string>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="sideMenuBtn" destination="QmZ-fn-ghJ" id="ft9-x6-hmS"/>
                         <outlet property="tableView" destination="xJ9-Zd-eHj" id="2fh-F4-0aE"/>
                     </connections>
                 </viewController>

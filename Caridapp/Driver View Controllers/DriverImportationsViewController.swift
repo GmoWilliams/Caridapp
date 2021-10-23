@@ -10,6 +10,7 @@ import UIKit
 class DriverImportationsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var sideMenuBtn: UIBarButtonItem!
     
     let driverService = DriverService()
     
@@ -22,6 +23,9 @@ class DriverImportationsViewController: UIViewController, UITableViewDelegate, U
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "CARIDAPP"
+        sideMenuBtn.target = revealViewController()
+        sideMenuBtn.action = #selector(revealViewController()?.revealSideMenu)
         
         DispatchQueue.main.async {
             self.driverService.getDonations() {
