@@ -29,6 +29,7 @@
 		72BC2EC2271F988A00855236 /* UpdateProductService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72BC2EC1271F988A00855236 /* UpdateProductService.swift */; };
 		72CA3B432723FD7E00286F38 /* BDA11_Testing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CA3B422723FD7E00286F38 /* BDA11_Testing.swift */; };
 		72CA3B4B2723FDD900286F38 /* (null) in Sources */ = {isa = PBXBuildFile; };
+		72DC54B82724C7D200C2455D /* BDA11_UITesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DC54B72724C7D200C2455D /* BDA11_UITesting.swift */; };
 		8A4A3F5A271813BF00744FE2 /* RegisterLineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4A3F59271813BF00744FE2 /* RegisterLineViewController.swift */; };
 		8A4C0B9E2723A579009CC3D6 /* DriverTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4C0B9D2723A579009CC3D6 /* DriverTableViewCell.swift */; };
 		8A7364B2272383BA004D78DD /* DonationDriver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7364B1272383BA004D78DD /* DonationDriver.swift */; };
@@ -103,6 +104,7 @@
 		72BC2EBC271F981C00855236 /* LineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineViewController.swift; sourceTree = "<group>"; };
 		72BC2EC1271F988A00855236 /* UpdateProductService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateProductService.swift; sourceTree = "<group>"; };
 		72CA3B422723FD7E00286F38 /* BDA11_Testing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BDA11_Testing.swift; sourceTree = "<group>"; };
+		72DC54B72724C7D200C2455D /* BDA11_UITesting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BDA11_UITesting.swift; sourceTree = "<group>"; };
 		8A4A3F59271813BF00744FE2 /* RegisterLineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterLineViewController.swift; sourceTree = "<group>"; };
 		8A4C0B9D2723A579009CC3D6 /* DriverTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverTableViewCell.swift; sourceTree = "<group>"; };
 		8A7364B1272383BA004D78DD /* DonationDriver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationDriver.swift; sourceTree = "<group>"; };
@@ -216,6 +218,7 @@
 			isa = PBXGroup;
 			children = (
 				72997B5426EADC6200099692 /* CaridappUITests.swift */,
+				72DC54B72724C7D200C2455D /* BDA11_UITesting.swift */,
 				72997B5626EADC6200099692 /* Info.plist */,
 			);
 			path = CaridappUITests;
@@ -522,6 +525,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72DC54B82724C7D200C2455D /* BDA11_UITesting.swift in Sources */,
 				72997B5526EADC6200099692 /* CaridappUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
