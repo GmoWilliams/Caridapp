@@ -8,6 +8,7 @@ import XCTest
 @testable import Caridapp
 class BDA11Test: XCTestCase {
     
+    // REGRESION TEST
     func testDecodableProduct() throws {
            // Given
            let json = """
@@ -61,7 +62,7 @@ class BDA11Test: XCTestCase {
        }
     */
     
-    // REGRESION TESTS
+    // INTEGRATION TESTS
     let registerP = APIRequest(endpoint: "import")
 
         func testRegisterProduct() throws {
@@ -83,10 +84,10 @@ class BDA11Test: XCTestCase {
                 
                 case .failure(let err):
                     print("Ocurrio un error: \(err)")
+                    
                     // Then
                     XCTFail()
                 }
                 })
-            
         }
-}
+}// end of Class Tests

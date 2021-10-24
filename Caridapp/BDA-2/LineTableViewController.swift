@@ -8,6 +8,7 @@ import UIKit
 
 class LineTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    
     // Variable of type LineP for managing values from retrieved Lines from DB
     var lineS = [LineP]()
     
@@ -21,6 +22,8 @@ class LineTableViewController: UIViewController, UITableViewDelegate, UITableVie
         sideMenuBtn.target = revealViewController()
         sideMenuBtn.action = #selector(revealViewController()?.revealSideMenu)
 
+        LineTableView.accessibilityIdentifier = "BDA-2 LineTable"
+        
         // Call made when retrieving data works
         downloadJSON {
             print ("Successful")

@@ -2376,6 +2376,7 @@ en la Lista</string>
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2hv-Uv-35h" userLabel="UnitaryCostTextField">
                                                                 <rect key="frame" x="0.0" y="34.666666666666686" width="179.66666666666666" height="34.333333333333343"/>
+                                                                <accessibility key="accessibilityConfiguration" identifier="UnitaryCostTextField"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                                             </textField>
