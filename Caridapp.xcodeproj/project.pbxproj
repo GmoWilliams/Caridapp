@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		721AD2CE271653D50010BE30 /* NewProductService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721AD2CD271653D50010BE30 /* NewProductService.swift */; };
 		721AD2D3271657330010BE30 /* ViewControllerBDA-11.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721AD2D2271657330010BE30 /* ViewControllerBDA-11.swift */; };
+		72690D2C272682A900D3865A /* BDA2_UITesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72690D2B272682A900D3865A /* BDA2_UITesting.swift */; };
 		72997B3326EADC6100099692 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72997B3226EADC6100099692 /* AppDelegate.swift */; };
 		72997B3526EADC6100099692 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72997B3426EADC6100099692 /* SceneDelegate.swift */; };
 		72997B3726EADC6100099692 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72997B3626EADC6100099692 /* ViewController.swift */; };
@@ -30,6 +31,7 @@
 		72CA3B432723FD7E00286F38 /* BDA11_Testing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CA3B422723FD7E00286F38 /* BDA11_Testing.swift */; };
 		72CA3B4B2723FDD900286F38 /* (null) in Sources */ = {isa = PBXBuildFile; };
 		72DC54B82724C7D200C2455D /* BDA11_UITesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DC54B72724C7D200C2455D /* BDA11_UITesting.swift */; };
+		72FFBBBC272635B100BFFE94 /* BDA2_Testing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FFBBBB272635B100BFFE94 /* BDA2_Testing.swift */; };
 		8A4A3F5A271813BF00744FE2 /* RegisterLineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4A3F59271813BF00744FE2 /* RegisterLineViewController.swift */; };
 		8A4C0B9E2723A579009CC3D6 /* DriverTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4C0B9D2723A579009CC3D6 /* DriverTableViewCell.swift */; };
 		8A7364B2272383BA004D78DD /* DonationDriver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7364B1272383BA004D78DD /* DonationDriver.swift */; };
@@ -79,6 +81,7 @@
 /* Begin PBXFileReference section */
 		721AD2CD271653D50010BE30 /* NewProductService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewProductService.swift; sourceTree = "<group>"; };
 		721AD2D2271657330010BE30 /* ViewControllerBDA-11.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewControllerBDA-11.swift"; sourceTree = "<group>"; };
+		72690D2B272682A900D3865A /* BDA2_UITesting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BDA2_UITesting.swift; sourceTree = "<group>"; };
 		72997B2F26EADC6100099692 /* Caridapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Caridapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72997B3226EADC6100099692 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		72997B3426EADC6100099692 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -105,6 +108,7 @@
 		72BC2EC1271F988A00855236 /* UpdateProductService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateProductService.swift; sourceTree = "<group>"; };
 		72CA3B422723FD7E00286F38 /* BDA11_Testing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BDA11_Testing.swift; sourceTree = "<group>"; };
 		72DC54B72724C7D200C2455D /* BDA11_UITesting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BDA11_UITesting.swift; sourceTree = "<group>"; };
+		72FFBBBB272635B100BFFE94 /* BDA2_Testing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BDA2_Testing.swift; sourceTree = "<group>"; };
 		8A4A3F59271813BF00744FE2 /* RegisterLineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterLineViewController.swift; sourceTree = "<group>"; };
 		8A4C0B9D2723A579009CC3D6 /* DriverTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverTableViewCell.swift; sourceTree = "<group>"; };
 		8A7364B1272383BA004D78DD /* DonationDriver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationDriver.swift; sourceTree = "<group>"; };
@@ -208,6 +212,7 @@
 				72A95A31272404F600387CC8 /* CaridappServiceTestCase.swift */,
 				72997B4926EADC6200099692 /* CaridappTests.swift */,
 				72CA3B422723FD7E00286F38 /* BDA11_Testing.swift */,
+				72FFBBBB272635B100BFFE94 /* BDA2_Testing.swift */,
 				72997B4B26EADC6200099692 /* Info.plist */,
 				8ABD6E542723817000F1A565 /* DriverServiceTestCase.swift */,
 			);
@@ -219,6 +224,7 @@
 			children = (
 				72997B5426EADC6200099692 /* CaridappUITests.swift */,
 				72DC54B72724C7D200C2455D /* BDA11_UITesting.swift */,
+				72690D2B272682A900D3865A /* BDA2_UITesting.swift */,
 				72997B5626EADC6200099692 /* Info.plist */,
 			);
 			path = CaridappUITests;
@@ -517,6 +523,7 @@
 				72997B4A26EADC6200099692 /* CaridappTests.swift in Sources */,
 				8ABD6E552723817000F1A565 /* DriverServiceTestCase.swift in Sources */,
 				72CA3B432723FD7E00286F38 /* BDA11_Testing.swift in Sources */,
+				72FFBBBC272635B100BFFE94 /* BDA2_Testing.swift in Sources */,
 				72A95A32272404F700387CC8 /* CaridappServiceTestCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -525,6 +532,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72690D2C272682A900D3865A /* BDA2_UITesting.swift in Sources */,
 				72DC54B82724C7D200C2455D /* BDA11_UITesting.swift in Sources */,
 				72997B5526EADC6200099692 /* CaridappUITests.swift in Sources */,
 			);
