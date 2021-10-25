@@ -13,6 +13,7 @@ public class DonationPV: Codable {
     public let pickUpDate: Date;
     public let warehouse: Int;
     
+    
     public init (donationID: Int64, warehouse: Int, pickUpDate: Date) {
         self.donationID = donationID;
         self.warehouse = warehouse;

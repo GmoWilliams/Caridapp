@@ -95,7 +95,7 @@ extension ViewControllerReceiver: UITableViewDataSource {
 
         
         let cell = UITableViewCell(style: .default, reuseIdentifier: nil)
-        cell.textLabel?.text =  "Donacion: " + String(donations[indexPath.row].donationID) + "\nRecogida el día: " + String(Date1) + "\nRecogida por chofer: " + String(donations[indexPath.row].warehouse)
+        cell.textLabel?.text =  "Donacion: " + String(donations[indexPath.row].donationID) + "\nRecogida el día: " + String(Date1) + "\nAlmacen: " + String(donations[indexPath.row].warehouse)
         cell.textLabel?.numberOfLines = 3;
         cell.textLabel?.lineBreakMode = NSLineBreakMode.byWordWrapping
 

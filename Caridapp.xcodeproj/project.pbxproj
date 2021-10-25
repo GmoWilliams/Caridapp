@@ -49,9 +49,11 @@
 		C031CF57271950B200A0BB5D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C031CF56271950B200A0BB5D /* MainViewController.swift */; };
 		C033B262271FD86C00510D36 /* LineVerification.swift in Sources */ = {isa = PBXBuildFile; fileRef = C033B261271FD86C00510D36 /* LineVerification.swift */; };
 		C033B267271FD9F300510D36 /* DonationPV.swift in Sources */ = {isa = PBXBuildFile; fileRef = C033B266271FD9F300510D36 /* DonationPV.swift */; };
+		C03913E727261C290000C4BF /* VerifyLineService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03913E627261C290000C4BF /* VerifyLineService.swift */; };
 		C04BAD3F27209BBE00E1914A /* VerifyProductService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04BAD3E27209BBE00E1914A /* VerifyProductService.swift */; };
 		C056517527238FC800B5FD8A /* MenuImportationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C056517427238FC800B5FD8A /* MenuImportationViewController.swift */; };
 		C0851FBC271E94B000CFCADF /* SideMenuB.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C0851FBB271E94B000CFCADF /* SideMenuB.jpeg */; };
+		C08842ED2724F36500FF277E /* CaridappVerificationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08842EC2724F36500FF277E /* CaridappVerificationTests.swift */; };
 		C0B23DD72703CA34003CE6DE /* VewControllerBDA14_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B23DD62703CA34003CE6DE /* VewControllerBDA14_2.swift */; };
 		C0B23DDC2703CB78003CE6DE /* VewControllerReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B23DDB2703CB78003CE6DE /* VewControllerReceiver.swift */; };
 		C0B23DE52703CC96003CE6DE /* ViewControllerBDA15.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B23DE42703CC96003CE6DE /* ViewControllerBDA15.swift */; };
@@ -68,6 +70,13 @@
 			remoteInfo = Caridapp;
 		};
 		72997B5126EADC6200099692 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72997B2726EADC6100099692 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 72997B2E26EADC6100099692;
+			remoteInfo = Caridapp;
+		};
+		C08842EF2724F36500FF277E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 72997B2726EADC6100099692 /* Project object */;
 			proxyType = 1;
@@ -124,9 +133,13 @@
 		C031CF56271950B200A0BB5D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		C033B261271FD86C00510D36 /* LineVerification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineVerification.swift; sourceTree = "<group>"; };
 		C033B266271FD9F300510D36 /* DonationPV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationPV.swift; sourceTree = "<group>"; };
+		C03913E627261C290000C4BF /* VerifyLineService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerifyLineService.swift; sourceTree = "<group>"; };
 		C04BAD3E27209BBE00E1914A /* VerifyProductService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyProductService.swift; sourceTree = "<group>"; };
 		C056517427238FC800B5FD8A /* MenuImportationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuImportationViewController.swift; sourceTree = "<group>"; };
 		C0851FBB271E94B000CFCADF /* SideMenuB.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SideMenuB.jpeg; sourceTree = "<group>"; };
+		C08842EA2724F36500FF277E /* CaridappVerificationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CaridappVerificationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C08842EC2724F36500FF277E /* CaridappVerificationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaridappVerificationTests.swift; sourceTree = "<group>"; };
+		C08842EE2724F36500FF277E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C0B23DD62703CA34003CE6DE /* VewControllerBDA14_2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VewControllerBDA14_2.swift; sourceTree = "<group>"; };
 		C0B23DDB2703CB78003CE6DE /* VewControllerReceiver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VewControllerReceiver.swift; sourceTree = "<group>"; };
 		C0B23DE42703CC96003CE6DE /* ViewControllerBDA15.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerBDA15.swift; sourceTree = "<group>"; };
@@ -156,6 +169,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C08842E72724F36500FF277E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -165,6 +185,7 @@
 				72997B3126EADC6100099692 /* Caridapp */,
 				72997B4826EADC6200099692 /* CaridappTests */,
 				72997B5326EADC6200099692 /* CaridappUITests */,
+				C08842EB2724F36500FF277E /* CaridappVerificationTests */,
 				72997B3026EADC6100099692 /* Products */,
 				C094D38F2717FAFE0003EF36 /* Recovered References */,
 			);
@@ -176,6 +197,7 @@
 				72997B2F26EADC6100099692 /* Caridapp.app */,
 				72997B4526EADC6200099692 /* CaridappTests.xctest */,
 				72997B5026EADC6200099692 /* CaridappUITests.xctest */,
+				C08842EA2724F36500FF277E /* CaridappVerificationTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -308,6 +330,15 @@
 			path = SideMenu;
 			sourceTree = "<group>";
 		};
+		C08842EB2724F36500FF277E /* CaridappVerificationTests */ = {
+			isa = PBXGroup;
+			children = (
+				C08842EC2724F36500FF277E /* CaridappVerificationTests.swift */,
+				C08842EE2724F36500FF277E /* Info.plist */,
+			);
+			path = CaridappVerificationTests;
+			sourceTree = "<group>";
+		};
 		C094D38F2717FAFE0003EF36 /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
@@ -325,6 +356,7 @@
 				C0FB283D271919A3001E34E9 /* LinePV.swift */,
 				C04BAD3E27209BBE00E1914A /* VerifyProductService.swift */,
 				C01477712722936B0091C58B /* VerifyDonationService.swift */,
+				C03913E627261C290000C4BF /* VerifyLineService.swift */,
 				C0FF88B626F80F2D006BA0F9 /* ViewControllerBDA14.swift */,
 				C0B23DD62703CA34003CE6DE /* VewControllerBDA14_2.swift */,
 				C0B23DE42703CC96003CE6DE /* ViewControllerBDA15.swift */,
@@ -388,6 +420,24 @@
 			productReference = 72997B5026EADC6200099692 /* CaridappUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		C08842E92724F36500FF277E /* CaridappVerificationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C08842F32724F36500FF277E /* Build configuration list for PBXNativeTarget "CaridappVerificationTests" */;
+			buildPhases = (
+				C08842E62724F36500FF277E /* Sources */,
+				C08842E72724F36500FF277E /* Frameworks */,
+				C08842E82724F36500FF277E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C08842F02724F36500FF277E /* PBXTargetDependency */,
+			);
+			name = CaridappVerificationTests;
+			productName = CaridappVerificationTests;
+			productReference = C08842EA2724F36500FF277E /* CaridappVerificationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -405,6 +455,10 @@
 						TestTargetID = 72997B2E26EADC6100099692;
 					};
 					72997B4F26EADC6200099692 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 72997B2E26EADC6100099692;
+					};
+					C08842E92724F36500FF277E = {
 						CreatedOnToolsVersion = 12.4;
 						TestTargetID = 72997B2E26EADC6100099692;
 					};
@@ -426,6 +480,7 @@
 				72997B2E26EADC6100099692 /* Caridapp */,
 				72997B4426EADC6200099692 /* CaridappTests */,
 				72997B4F26EADC6200099692 /* CaridappUITests */,
+				C08842E92724F36500FF277E /* CaridappVerificationTests */,
 			);
 		};
 /* End PBXProject section */
@@ -451,6 +506,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		72997B4E26EADC6200099692 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C08842E82724F36500FF277E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -488,6 +550,7 @@
 				C01477722722936B0091C58B /* VerifyDonationService.swift in Sources */,
 				72997B3326EADC6100099692 /* AppDelegate.swift in Sources */,
 				72BC2EBD271F981C00855236 /* LineViewController.swift in Sources */,
+				C03913E727261C290000C4BF /* VerifyLineService.swift in Sources */,
 				C0009EB2271A1402000BD5A8 /* SideMenuCell.swift in Sources */,
 				C031CF4D27194B2A00A0BB5D /* SideMenuModel.swift in Sources */,
 				8A7364B2272383BA004D78DD /* DonationDriver.swift in Sources */,
@@ -530,6 +593,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C08842E62724F36500FF277E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C08842ED2724F36500FF277E /* CaridappVerificationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -542,6 +613,11 @@
 			isa = PBXTargetDependency;
 			target = 72997B2E26EADC6100099692 /* Caridapp */;
 			targetProxy = 72997B5126EADC6200099692 /* PBXContainerItemProxy */;
+		};
+		C08842F02724F36500FF277E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 72997B2E26EADC6100099692 /* Caridapp */;
+			targetProxy = C08842EF2724F36500FF277E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -797,6 +873,44 @@
 			};
 			name = Release;
 		};
+		C08842F12724F36500FF277E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CaridappVerificationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mx.tec.tc2007.lab.CaridappVerificationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Caridapp.app/Caridapp";
+			};
+			name = Debug;
+		};
+		C08842F22724F36500FF277E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CaridappVerificationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mx.tec.tc2007.lab.CaridappVerificationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Caridapp.app/Caridapp";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -832,6 +946,15 @@
 			buildConfigurations = (
 				72997B6026EADC6200099692 /* Debug */,
 				72997B6126EADC6200099692 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C08842F32724F36500FF277E /* Build configuration list for PBXNativeTarget "CaridappVerificationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C08842F12724F36500FF277E /* Debug */,
+				C08842F22724F36500FF277E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
