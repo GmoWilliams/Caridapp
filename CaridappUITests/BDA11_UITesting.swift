@@ -7,6 +7,8 @@
 
 import XCTest
 
+// NOTE: Since UPC is a value that cannot be repeated let key2 must be changed into the next number for each iteration
+
 class BDA11_UITesting: XCTestCase {
 
     override func setUpWithError() throws {
@@ -49,7 +51,7 @@ class BDA11_UITesting: XCTestCase {
         key.tap()
         
         // THIS KEY
-        let key2 = app.keys["4"]
+        let key2 = app.keys["5"]
         key2.tap()
         
         app.children(matching: .window).element(boundBy: 0).children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element(boundBy: 1).children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element(boundBy: 1).tap()
