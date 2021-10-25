@@ -20,30 +20,50 @@ class BDA11_UITesting: XCTestCase {
 
     func testBDA_2() throws {
         
+        // NOTE: Since UPC is a value that cannot be repeated let key2 must be changed into the next number for each iteration
+        
         // When
-        
         let app = XCUIApplication()
-        app.navigationBars["CARIDAPP"].buttons["SideMenuButton"].tap()
-        app.tables/*@START_MENU_TOKEN@*/.staticTexts["Modificar Donacion (BDA-2)"]/*[[".cells.staticTexts[\"Modificar Donacion (BDA-2)\"]",".staticTexts[\"Modificar Donacion (BDA-2)\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
-    
-        app.tables["BDA-2 LineTable"].cells.element(boundBy: 0).press(forDuration: 2.0)
+        app/*@START_MENU_TOKEN@*/.staticTexts["Agregar Importacion"]/*[[".buttons[\"Agregar Importacion\"].staticTexts[\"Agregar Importacion\"]",".staticTexts[\"Agregar Importacion\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        app.textFields["itemName"].tap()
         
-        app/*@START_MENU_TOKEN@*/.textFields["UnitaryCostTextField"]/*[[".textFields[\"32.0\"]",".textFields[\"UnitaryCostTextField\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        let tKey = app/*@START_MENU_TOKEN@*/.keys["t"]/*[[".keyboards.keys[\"t\"]",".keys[\"t\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        tKey.tap()
+        let eKey = app/*@START_MENU_TOKEN@*/.keys["e"]/*[[".keyboards.keys[\"e\"]",".keys[\"e\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        eKey.tap()
+        let sKey = app/*@START_MENU_TOKEN@*/.keys["s"]/*[[".keyboards.keys[\"s\"]",".keys[\"s\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        sKey.tap()
+        tKey.tap()
         
-        let key = app/*@START_MENU_TOKEN@*/.keys["3"]/*[[".keyboards.keys[\"3\"]",".keys[\"3\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        app.textFields["desc"].tap()
+        tKey.tap()
+        eKey.tap()
+        sKey.tap()
+        tKey.tap()
+        
+        app.children(matching: .window).element(boundBy: 0).children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element(boundBy: 1).children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element(boundBy: 1).tap()
+        
+        app.textFields["upc"].tap()
+        
+        let key = app/*@START_MENU_TOKEN@*/.keys["1"]/*[[".keyboards.keys[\"1\"]",".keys[\"1\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
         key.tap()
         
-        let key2 = app/*@START_MENU_TOKEN@*/.keys["2"]/*[[".keyboards.keys[\"2\"]",".keys[\"2\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        // THIS KEY
+        let key2 = app.keys["4"]
         key2.tap()
-    
-        app.staticTexts["Costo Unitario:"].tap()
-        app/*@START_MENU_TOKEN@*/.staticTexts["CORREGIR"]/*[[".buttons[\"CORREGIR\"].staticTexts[\"CORREGIR\"]",".staticTexts[\"CORREGIR\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
-        app.alerts["Corregir Datos"].scrollViews.otherElements.buttons["OK"].tap()
-        app.tables["BDA-2 LineTable"].cells.element(boundBy: 0).press(forDuration: 2.0)
-
-        let input = XCUIApplication().textFields["UnitaryCostTextField"].placeholderValue
-        XCTAssertEqual(input, "32.0")
         
+        app.children(matching: .window).element(boundBy: 0).children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element(boundBy: 1).children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element(boundBy: 1).tap()
+        
+        app.textFields["weight"].tap()
+        key.tap()
+        let key3 = app/*@START_MENU_TOKEN@*/.keys["."]/*[[".keyboards.keys[\".\"]",".keys[\".\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        key3.tap()
+        key2.tap()
+        
+        app/*@START_MENU_TOKEN@*/.staticTexts["REGISTRAR"]/*[[".buttons[\"REGISTRAR\"].staticTexts[\"REGISTRAR\"]",".staticTexts[\"REGISTRAR\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        app.alerts["Registrar Datos"].scrollViews.otherElements.buttons["OK"].tap()
+        app.staticTexts["Costo Unitario:"].tap()
+        
+        XCTAssert(true)
     }
-
 }

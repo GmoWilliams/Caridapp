@@ -13,36 +13,27 @@ class BDA11Test: XCTestCase {
            // Given
            let json = """
                {
-                    "lineID": 15,
-                    "pickUpDate": "2021-11-03T00:00:00.000Z",
-                    "donationID": 165,
-                    "unitaryCost": 32.5,
-                    "productExpiration": "2021-11-03T00:00:00.000Z",
-                    "originalQuantity": 32
+                    "upc": 15555,
+                    "itemName": "Chocolate abuelita",
+                    "description": "Saborizante de vainilla",
+                    "unitaryWeight": 12.5
                }
            """.data(using: .utf8)!
            do {
                 
                 let decoder = JSONDecoder()
-                let dateFormatter = DateFormatter()
-                dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
-                decoder.dateDecodingStrategy = .formatted(dateFormatter)
                 
                // When
-            let line = try decoder.decode(LineUpdate.self, from: json)
+            let product = try decoder.decode(Product.self, from: json)
             
-            let pick = "2021-11-03T00:00:00.000Z"
-            let pickE = dateFormatter.date(from:pick)!
-            let exp = "2021-11-03T00:00:00.000Z"
-            let expE = dateFormatter.date(from:exp)!
+            
            
                // Then
-            XCTAssertEqual(line.lineID, 15)
-            XCTAssertEqual(line.pickUpDate, pickE)
-            XCTAssertEqual(line.donationID, 165)
-            XCTAssertEqual(line.unitaryCost, 32.5)
-            XCTAssertEqual(line.productExpiration, expE)
-            XCTAssertEqual(line.originalQuantity, 32)
+            XCTAssertEqual(product.upc, 15555)
+            XCTAssertEqual(product.itemName, "Chocolate abuelita")
+            XCTAssertEqual(product.description, "Saborizante de vainilla")
+            XCTAssertEqual(product.unitaryWeight, 12.5)
+           
            } catch {
                XCTFail("error info: \(error)")
            }
@@ -63,8 +54,6 @@ class BDA11Test: XCTestCase {
     */
     
     // INTEGRATION TESTS
-    let registerP = APIRequest(endpoint: "import")
-
         func testRegisterProduct() throws {
             // Given
             let upcP: Int64 = 345901
@@ -90,4 +79,35 @@ class BDA11Test: XCTestCase {
                 }
                 })
         }
-}// end of Class Tests
+    
+    // PERFORMANCE TESTS
+    
+    func testRegProductPerfromance(){
+        self.measure {
+            // Given
+            let upcP: Int64 = 345901
+            let nameP: String = "Jabon"
+            let descP: String = "Jabon de maiz"
+            let weightP:Double = 5.0
+            
+            let datos = Product(upc: upcP, itemName: nameP, description: descP, unitaryWeight: weightP)
+            // When
+            let postRequest = APIRequest(endpoint: "import")
+            postRequest.save(datos, completion: {result in
+                switch result{
+                case .success(let datos):
+                    print("Se registro en la Base de Datos exitosamente tu producto:\n Nombre del producto: \(datos.itemName)\n Descripcion: \(datos.description)\n UPC: \(datos.upc)\n Peso: \(datos.unitaryWeight)")
+                    // Then
+                    XCTAssert(true)
+                
+                case .failure(let err):
+                    print("Ocurrio un error: \(err)")
+                    
+                    // Then
+                    XCTFail()
+                }
+                })
+               
+        }
+    }
+}// end of BDA-11 Tests
