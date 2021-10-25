@@ -15,7 +15,6 @@ class ViewControllerBDA14: UIViewController {
     
     
     var lines = [LinePV]()
-    var donationS = [DonationPV]()
     var DonationV:DonationPV?
     
     override func viewDidLoad() {
@@ -27,16 +26,22 @@ class ViewControllerBDA14: UIViewController {
             print ("Successful")
             self.verifTble.reloadData()
         }
-
         verifTble.delegate = self
         verifTble.dataSource = self
         
     }
     
+    func getQueryStringParameter(url: String, param: String) -> String? {
+      guard let url = URLComponents(string: url) else { return nil }
+      return url.queryItems?.first(where: { $0.name == param })?.value
+    }
     
     func downloadJSON(completed: @escaping () -> () ) {
-           let url = URL(string: "https://caridapp.herokuapp.com/historyLine")
-           //let url = URL(string: "https://api.opendota.com/api/heroStats")
+        let donationIDPV = String(self.DonationV!.donationID);
+        //let postRequest = APIRequest5(endpoint: donationIDPV)
+        let api = "https://caridapp.herokuapp.com/historyVerify"
+        let endpoint = "/\(donationIDPV)"
+        let url = URL(string: api + endpoint)
            
            URLSession.shared.dataTask(with: url!) { (data, response, error) in
                if error == nil {
@@ -46,6 +51,7 @@ class ViewControllerBDA14: UIViewController {
                            dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'";
                            dateFormatter.timeZone = TimeZone(identifier:"GMT")
                            decoder.dateDecodingStrategy = .formatted(dateFormatter)
+                            
                            
                            self.lines = try decoder.decode([LinePV].self, from: data!)
                            //self.heroes = try JSONDecoder().decode([HeroStats].self, from: data!)
@@ -59,35 +65,6 @@ class ViewControllerBDA14: UIViewController {
                }
            }.resume()
        }
-    
-    @IBAction func listoAction(_ sender: Any) {
-        
-        
-        
-        let url = URL(string: "https://caridapp.herokuapp.com/historyDonation")
-        
-        URLSession.shared.dataTask(with: url!) { (data, response, error) in
-            if error == nil {
-                    do {
-                     let decoder = JSONDecoder()
-                     let dateFormatter = DateFormatter()
-                     dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'";
-                     dateFormatter.timeZone = TimeZone(identifier:"GMT")
-                     decoder.dateDecodingStrategy = .formatted(dateFormatter)
-                        
-                        self.donationS = try decoder.decode([DonationPV].self, from: data!)
-                        //self.heroes = try JSONDecoder().decode([HeroStats].self, from: data!)
-                        DispatchQueue.main.async {
-                            self.performSegue(withIdentifier: "ShowDonation", sender: self)
-                        }
-                        
-                } catch {
-                    print("JSON Error")
-                }
-            }
-        }.resume()
-        
-    }
 }
 
 
@@ -121,6 +98,7 @@ extension ViewControllerBDA14: UITableViewDataSource {
     //This function displays the data gotten from JSON in string format in each cell
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
+        
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "E, MMM d, yyyy"
         dateFormatter.locale = .init(identifier: "es_ES")
@@ -129,8 +107,8 @@ extension ViewControllerBDA14: UITableViewDataSource {
 
         
         let cell = UITableViewCell(style: .default, reuseIdentifier: nil)
-        cell.textLabel?.text =  String(lines[indexPath.row].itemName) + "\nExpira el día: " + String(Date1) + "\nCantidad: " + String(lines[indexPath.row].originalQuantity)
-        cell.textLabel?.numberOfLines = 3;
+        cell.textLabel?.text =  String(lines[indexPath.row].itemName) + "\nExpira el día: " + String(Date1) + "\nCantidad: " + String(lines[indexPath.row].quantity) + "\nDonacionID: " + String(lines[indexPath.row].donationID)
+        cell.textLabel?.numberOfLines = 4;
         cell.textLabel?.lineBreakMode = NSLineBreakMode.byWordWrapping
 
         

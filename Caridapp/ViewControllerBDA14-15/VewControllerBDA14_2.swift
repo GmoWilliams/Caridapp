@@ -15,6 +15,7 @@ class ViewControllerBDA14_2: UIViewController, UITextFieldDelegate {
 
     var datePicker :UIDatePicker!
     var lineV:LinePV?
+    var DonationV:DonationPV?
 
     
     override func viewDidLoad() {
@@ -28,7 +29,7 @@ class ViewControllerBDA14_2: UIViewController, UITextFieldDelegate {
         
         expireTextField.placeholder = dateFormatter.string(from: lineV!.productExpiration)
         
-        quantityTextField.placeholder = "\((lineV!.originalQuantity))"
+        quantityTextField.placeholder = "\((lineV!.quantity))"
         
         datePicker = UIDatePicker.init(frame: CGRect(x: 0, y: 0, width: view.bounds.size.width, height: 200))
         datePicker.datePickerMode = UIDatePicker.Mode.date
@@ -68,7 +69,7 @@ class ViewControllerBDA14_2: UIViewController, UITextFieldDelegate {
 
             var quantityText = self.quantityTextField.text!
             if self.quantityTextField.text == "" {
-                quantityText = String(self.lineV!.originalQuantity)
+                quantityText = String(self.lineV!.quantity)
             }
             let quantP = Int(quantityText)!
 
@@ -85,7 +86,7 @@ class ViewControllerBDA14_2: UIViewController, UITextFieldDelegate {
                     print("Se registro en la Base de Datos exitosamente tu producto:\n ID de la linea: \(datos.lineID)\n Cantidad: \(datos.quantity)")
 
                     DispatchQueue.main.async(){
-                        let vc = self.storyboard?.instantiateViewController(identifier: "BDA-14ID") as! ViewControllerBDA14
+                        let vc = self.storyboard?.instantiateViewController(identifier: "BDA-15ID") as! ViewControllerReceiver
                         self.navigationController?.pushViewController(vc, animated: true)
                     }
 
