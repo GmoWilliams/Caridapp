@@ -47,11 +47,11 @@ class BDA11_UITesting: XCTestCase {
         
         app.textFields["upc"].tap()
         
-        let key = app/*@START_MENU_TOKEN@*/.keys["1"]/*[[".keyboards.keys[\"1\"]",".keys[\"1\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        let key = app.keys["9"]
         key.tap()
         
         // THIS KEY
-        let key2 = app.keys["5"]
+        let key2 = app.keys["0"]
         key2.tap()
         
         app.children(matching: .window).element(boundBy: 0).children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element(boundBy: 1).children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element(boundBy: 1).tap()

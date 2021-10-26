@@ -33,7 +33,7 @@ class DriverServiceTestCase: XCTestCase {
     
     func testUpdateDonationStatus() throws {
         // Given
-        let donation = DonationDriver(id: 15, name: "jaja", address: "jaja")
+        let donation = DonationDriver(id: 15, name: "name", address: "address")
         
         // When
         let convertExpectation = expectation(description: "Update Status Done!")
