@@ -1310,7 +1310,6 @@ en la Lista</string>
                                                     <color key="titleColor" systemColor="systemBackgroundColor"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="terminarImportacion:" destination="nNb-nu-5CU" eventType="touchUpInside" id="0XR-Iz-UpP"/>
                                                     <segue destination="d2W-6T-m03" kind="show" id="9Yy-nb-PTY"/>
                                                 </connections>
                                             </button>
@@ -1430,7 +1429,6 @@ en la Lista</string>
                     </view>
                     <navigationItem key="navigationItem" id="OLe-fc-Z8U"/>
                     <connections>
-                        <outlet property="TerminarImportacionB" destination="sVu-gN-JJC" id="izj-ga-Bh7"/>
                         <outlet property="descripcionTF" destination="pBn-7a-dPh" id="kWE-ee-NkC"/>
                         <outlet property="nombreTF" destination="7Oe-zz-tdr" id="f8t-F3-hiN"/>
                         <outlet property="pesoTF" destination="AzD-ro-ixM" id="lE6-ll-9h9"/>
