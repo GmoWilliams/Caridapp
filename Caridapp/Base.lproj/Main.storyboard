@@ -730,20 +730,16 @@ recibida.</string>
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MOb-7f-xTa" userLabel="Expiration">
-
-                                                        <rect key="frame" x="0.0" y="77.000000000000028" width="179.66666666666666" height="72"/>
+                                                        <rect key="frame" x="0.0" y="77.000000000000014" width="179.66666666666666" height="180.33333333333337"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Expiracion:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gHZ-AR-XdS">
-                                                                <rect key="frame" x="0.0" y="0.0" width="179.66666666666666" height="36"/>
-
+                                                                <rect key="frame" x="0.0" y="0.0" width="179.66666666666666" height="90.333333333333329"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                 <nil key="textColor"/>
                                                                 <color key="highlightedColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             </label>
                                                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="9Sa-sV-1sm" userLabel="ExpirationPicker">
-
-                                                                <rect key="frame" x="0.0" y="36" width="179.66666666666666" height="36"/>
-
+                                                                <rect key="frame" x="0.0" y="90.333333333333314" width="179.66666666666666" height="90"/>
                                                             </datePicker>
                                                         </subviews>
                                                         <constraints>
@@ -758,9 +754,7 @@ recibida.</string>
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CIH-nE-XzQ" userLabel="Quantity">
-
-                                                        <rect key="frame" x="0.0" y="154.00000000000003" width="179.66666666666666" height="72"/>
-
+                                                        <rect key="frame" x="0.0" y="262.33333333333337" width="179.66666666666666" height="72"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cantidad:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9T0-Mi-yjY">
                                                                 <rect key="frame" x="0.0" y="0.0" width="179.66666666666666" height="36"/>
@@ -769,9 +763,7 @@ recibida.</string>
                                                                 <color key="highlightedColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sGh-YQ-Cg7" userLabel="QuantityTextField">
-
                                                                 <rect key="frame" x="0.0" y="36" width="179.66666666666666" height="36"/>
-
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits"/>
                                                             </textField>
@@ -787,34 +779,6 @@ recibida.</string>
                                                             <constraint firstItem="sGh-YQ-Cg7" firstAttribute="width" secondItem="CIH-nE-XzQ" secondAttribute="width" id="s3n-Pb-MbZ"/>
                                                         </constraints>
                                                     </view>
-
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1si-Mr-V07" userLabel="DateToGet">
-                                                        <rect key="frame" x="0.0" y="231" width="179.66666666666666" height="72"/>
-                                                        <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fecha Para Recoger:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e2o-ec-Rrb">
-                                                                <rect key="frame" x="0.0" y="0.0" width="179.66666666666666" height="36"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                                <nil key="textColor"/>
-                                                                <color key="highlightedColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                            </label>
-                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bl3-4v-fIh" userLabel="DateToGetTextField">
-                                                                <rect key="frame" x="0.0" y="36" width="179.66666666666666" height="36"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                <textInputTraits key="textInputTraits"/>
-                                                            </textField>
-                                                        </subviews>
-                                                        <constraints>
-                                                            <constraint firstItem="bl3-4v-fIh" firstAttribute="width" secondItem="1si-Mr-V07" secondAttribute="width" id="1Cj-Mw-0io"/>
-                                                            <constraint firstAttribute="bottom" secondItem="bl3-4v-fIh" secondAttribute="bottom" id="3b2-gv-AZF"/>
-                                                            <constraint firstItem="e2o-ec-Rrb" firstAttribute="height" secondItem="1si-Mr-V07" secondAttribute="height" multiplier="0.5" id="6AN-rw-Cww"/>
-                                                            <constraint firstItem="bl3-4v-fIh" firstAttribute="leading" secondItem="1si-Mr-V07" secondAttribute="leading" id="NJg-k9-VoD"/>
-                                                            <constraint firstItem="e2o-ec-Rrb" firstAttribute="width" secondItem="1si-Mr-V07" secondAttribute="width" id="XIk-lF-KIh"/>
-                                                            <constraint firstItem="e2o-ec-Rrb" firstAttribute="top" secondItem="1si-Mr-V07" secondAttribute="top" id="qyL-Db-EDT"/>
-                                                            <constraint firstItem="bl3-4v-fIh" firstAttribute="height" secondItem="1si-Mr-V07" secondAttribute="height" multiplier="0.5" id="w4E-4s-3F4"/>
-                                                            <constraint firstItem="e2o-ec-Rrb" firstAttribute="centerX" secondItem="1si-Mr-V07" secondAttribute="centerX" id="yjY-bo-k2b"/>
-                                                        </constraints>
-                                                    </view>
-
                                                 </subviews>
                                                 <constraints>
                                                     <constraint firstItem="MOb-7f-xTa" firstAttribute="top" secondItem="8PC-ys-6tb" secondAttribute="bottom" constant="5" id="0qP-7A-CtX"/>
