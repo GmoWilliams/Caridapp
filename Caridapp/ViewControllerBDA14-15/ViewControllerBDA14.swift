@@ -13,7 +13,6 @@ class ViewControllerBDA14: UIViewController {
     
     @IBOutlet var verifTble: UITableView!
     
-    
     var lines = [LinePV]()
     var DonationV:DonationPV?
     
@@ -21,13 +20,14 @@ class ViewControllerBDA14: UIViewController {
         super.viewDidLoad()
         
         self.title = "VERIFICACION"
-
+        verifTble.accessibilityIdentifier = "BDA-14 verifTble"
         downloadJSON {
             print ("Successful")
             self.verifTble.reloadData()
         }
         verifTble.delegate = self
         verifTble.dataSource = self
+        
         
     }
     

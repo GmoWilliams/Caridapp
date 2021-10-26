@@ -185,13 +185,15 @@ correcta:</string>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lHw-cU-ly7">
                                         <rect key="frame" x="16" y="158" width="150" height="30.333333333333343"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="expDateTextFieldID"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kq9-ea-g0F" userLabel="Update Quantity">
                                         <rect key="frame" x="215.66666666666663" y="158" width="82" height="30.333333333333343"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="quantityTextFieldID"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YNs-L6-1At" userLabel="VerifyButton">
                                         <rect key="frame" x="122" y="226" width="90" height="38"/>
@@ -255,6 +257,7 @@ correcta:</string>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QUK-Zj-cX0" userLabel="warehouseTextField">
                                         <rect key="frame" x="117.66666666666666" y="119.66666666666669" width="97" height="34"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="warehouseTextFieldID"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                     </textField>
@@ -890,6 +893,29 @@ recibida.</string>
             </objects>
             <point key="canvasLocation" x="4370" y="50"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="tfB-eg-5a6">
+            <objects>
+                <viewController id="d2W-6T-m03" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="f2Q-uM-Kuc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8rn-yK-csO">
+                                <rect key="frame" x="137" y="433" width="106" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="XhH-Xb-xpk"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="T1O-nn-Nec"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OZa-fB-pxx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5114.4927536231889" y="96.428571428571431"/>
+        </scene>
         <!--Base-->
         <scene sceneID="U4l-Cf-bKp">
             <objects>
@@ -1317,6 +1343,10 @@ en la Lista</string>
                                                 <state key="normal" title="Terminar Importacion">
                                                     <color key="titleColor" systemColor="systemBackgroundColor"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="terminarImportacion:" destination="nNb-nu-5CU" eventType="touchUpInside" id="0XR-Iz-UpP"/>
+                                                    <segue destination="d2W-6T-m03" kind="show" id="9Yy-nb-PTY"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gUY-yu-qGH" userLabel="checkImportation">
                                                 <rect key="frame" x="186.33333333333331" y="546.33333333333337" width="186.33333333333331" height="28.666666666666629"/>
@@ -1434,6 +1464,7 @@ en la Lista</string>
                     </view>
                     <navigationItem key="navigationItem" id="OLe-fc-Z8U"/>
                     <connections>
+                        <outlet property="TerminarImportacionB" destination="sVu-gN-JJC" id="izj-ga-Bh7"/>
                         <outlet property="descripcionTF" destination="pBn-7a-dPh" id="kWE-ee-NkC"/>
                         <outlet property="nombreTF" destination="7Oe-zz-tdr" id="f8t-F3-hiN"/>
                         <outlet property="pesoTF" destination="AzD-ro-ixM" id="lE6-ll-9h9"/>

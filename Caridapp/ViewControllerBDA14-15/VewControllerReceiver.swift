@@ -15,9 +15,12 @@ class ViewControllerReceiver: UIViewController {
         super.viewDidLoad()
         self.title = "CARIDAPP"
         
+        
         sideMenuBtn.target = revealViewController()
         sideMenuBtn.action = #selector(revealViewController()?.revealSideMenu)
         self.hideKeyboardWhenTappedAround()
+        
+        donatTble.accessibilityIdentifier = "BDA-15 donatTble"
         
         downloadJSON {
             print ("Successful")
