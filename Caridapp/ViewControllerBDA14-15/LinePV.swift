@@ -13,13 +13,7 @@ public class LinePV: Codable {
     public let itemName: String;
     public let productExpiration: Date;
     public let quantity: Int;
+    public let originalQuantity: Int;
     
-    public init (donationID: Int64, lineID: Int64, itemName: String , productExpiration: Date, quantity: Int) {
-        self.donationID = donationID;
-        self.lineID = lineID;
-        self.itemName = itemName;
-        self.productExpiration = productExpiration;
-        self.quantity = quantity;
-    }
 
 }

@@ -52,7 +52,6 @@
 		C031CF57271950B200A0BB5D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C031CF56271950B200A0BB5D /* MainViewController.swift */; };
 		C033B262271FD86C00510D36 /* LineVerification.swift in Sources */ = {isa = PBXBuildFile; fileRef = C033B261271FD86C00510D36 /* LineVerification.swift */; };
 		C033B267271FD9F300510D36 /* DonationPV.swift in Sources */ = {isa = PBXBuildFile; fileRef = C033B266271FD9F300510D36 /* DonationPV.swift */; };
-		C03913E727261C290000C4BF /* VerifyLineService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03913E627261C290000C4BF /* VerifyLineService.swift */; };
 		C04BAD3F27209BBE00E1914A /* VerifyProductService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04BAD3E27209BBE00E1914A /* VerifyProductService.swift */; };
 		C056517527238FC800B5FD8A /* MenuImportationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C056517427238FC800B5FD8A /* MenuImportationViewController.swift */; };
 		C0851FBC271E94B000CFCADF /* SideMenuB.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C0851FBB271E94B000CFCADF /* SideMenuB.jpeg */; };
@@ -149,7 +148,6 @@
 		C031CF56271950B200A0BB5D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		C033B261271FD86C00510D36 /* LineVerification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineVerification.swift; sourceTree = "<group>"; };
 		C033B266271FD9F300510D36 /* DonationPV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationPV.swift; sourceTree = "<group>"; };
-		C03913E627261C290000C4BF /* VerifyLineService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerifyLineService.swift; sourceTree = "<group>"; };
 		C04BAD3E27209BBE00E1914A /* VerifyProductService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyProductService.swift; sourceTree = "<group>"; };
 		C056517427238FC800B5FD8A /* MenuImportationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuImportationViewController.swift; sourceTree = "<group>"; };
 		C0851FBB271E94B000CFCADF /* SideMenuB.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SideMenuB.jpeg; sourceTree = "<group>"; };
@@ -400,7 +398,6 @@
 				C0FB283D271919A3001E34E9 /* LinePV.swift */,
 				C04BAD3E27209BBE00E1914A /* VerifyProductService.swift */,
 				C01477712722936B0091C58B /* VerifyDonationService.swift */,
-				C03913E627261C290000C4BF /* VerifyLineService.swift */,
 				C0FF88B626F80F2D006BA0F9 /* ViewControllerBDA14.swift */,
 				C0B23DD62703CA34003CE6DE /* VewControllerBDA14_2.swift */,
 				C0B23DE42703CC96003CE6DE /* ViewControllerBDA15.swift */,
@@ -624,7 +621,6 @@
 				C01477722722936B0091C58B /* VerifyDonationService.swift in Sources */,
 				72997B3326EADC6100099692 /* AppDelegate.swift in Sources */,
 				72BC2EBD271F981C00855236 /* LineViewController.swift in Sources */,
-				C03913E727261C290000C4BF /* VerifyLineService.swift in Sources */,
 				C0009EB2271A1402000BD5A8 /* SideMenuCell.swift in Sources */,
 				C031CF4D27194B2A00A0BB5D /* SideMenuModel.swift in Sources */,
 				8A7364B2272383BA004D78DD /* DonationDriver.swift in Sources */,

@@ -12,7 +12,7 @@ public class LineVerification: Codable {
     public let lineID: Int64;
     public let productExpiration: Date;
     public let quantity: Int;
-    
+    		
     public init (donationID: Int64, lineID: Int64, productExpiration: Date, quantity: Int) {
         self.donationID = donationID;
         self.lineID = lineID;
