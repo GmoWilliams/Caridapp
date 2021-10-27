@@ -98,7 +98,6 @@ extension ViewControllerBDA14: UITableViewDataSource {
     //This function displays the data gotten from JSON in string format in each cell
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "E, MMM d, yyyy"
         dateFormatter.locale = .init(identifier: "es_ES")
@@ -107,8 +106,8 @@ extension ViewControllerBDA14: UITableViewDataSource {
 
         
         let cell = UITableViewCell(style: .default, reuseIdentifier: nil)
-        cell.textLabel?.text =  String(lines[indexPath.row].itemName) + "\nExpira el día: " + String(Date1) + "\nCantidad: " + String(lines[indexPath.row].quantity) + "\nDonacionID: " + String(lines[indexPath.row].donationID)
-        cell.textLabel?.numberOfLines = 4;
+        cell.textLabel?.text =  String(lines[indexPath.row].itemName) + "\nExpira el día: " + String(Date1) + "\nCantidad: " + String(lines[indexPath.row].quantity) + "\nEn la donacion: " + String(lines[indexPath.row].donationID) + "\nCantidad original: " + String(lines[indexPath.row].originalQuantity)
+        cell.textLabel?.numberOfLines = 5;
         cell.textLabel?.lineBreakMode = NSLineBreakMode.byWordWrapping
 
         
