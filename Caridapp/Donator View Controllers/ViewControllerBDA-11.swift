@@ -114,6 +114,7 @@ class ViewControllerBDA11: UIViewController {
             // We retrieve the current donation
             DispatchQueue.main.async {
                 controller.donation = self.donation;
+                controller.tableView.reloadData()
             }
         } else if segue.identifier == "finishImportation" {
             importationService.publishDonation(donation: donation!) {
