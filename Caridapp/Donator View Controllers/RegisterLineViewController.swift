@@ -45,6 +45,7 @@ class RegisterLineViewController: UIViewController {
         DispatchQueue.main.async(){
             let vc = self.storyboard?.instantiateViewController(identifier: "BDA-11ID") as! ViewControllerBDA11
             self.navigationController?.pushViewController(vc, animated: true)
+            vc.donation = self.donation;
         }
     }
     
